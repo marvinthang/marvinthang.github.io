@@ -6,7 +6,7 @@ tags: [cpp, cppcon, declarations, c++]
 description: Back to Basics. Declarations in C++ - Ben Saks - CppCon 2022
 math: true
 ---
-[Back to Basics: Declarations in C++ - Ben Saks - CppCon 2022
+Source: [Back to Basics: Declarations in C++ - Ben Saks - CppCon 2022
 ](https://www.youtube.com/watch?v=IK4GhjmSC6w&list=PLHTh1InhhwT47Xpx7Cn-bPw9Qygjr98rs&index=3)
 
 ## Entities and Properties
@@ -104,7 +104,11 @@ Example: `const int *v[N]`, then **const** modifies `int`, thus
 > `const` and `volatile` are only symbols that can appear **either as declaration specifiers or in declarators**.
 {: .prompt-info }
 
+
 `*const` turns the pointer into a **const pointer**, it is effectively a single operator with the same precedence as *.
+
+> `const (int*)` is equivalent to `int *const`. The type here is `(int*)` and const modifies the whole type, thus it is a const pointer to `int`.
+{: .prompt-warning }
 
 > Trick: Read from right to left 
 {: .prompt-tip }
@@ -122,7 +126,7 @@ How to declare like what you intend:
   * Start by writing without `const` and `volatile`: "array of N ~~<font color="red">const</font>~~ **<font color="red">pointer</font>** to ~~<font color="red">volatile</font>~~ **<font color="red">uint32_t</font>**": `uint_32_t *x[N]`
   * Then add `const` to the right of * and `volatile` to the right of uint_32: `uint_32_t volatile *const x[N]`
 
-### Declarator Initalizer
+### Declarator Initializer
 ```c++
 int n = 42; // "equal" initializer
 int n (42); // "parenthesized" initializer
@@ -279,13 +283,15 @@ A forwarding reference "remembers" whether it’s bound to an lvalue or to an rv
 
 `arg` is a forwarding reference iff:
 #### - `arg` has no cv-qualifiers
-- A forwarding reference may not be declared `const` or `volatile`
+- A forwarding reference may not be declared `const` or `volatile`.
+- This is because `const` on a reference type is pointless, because you cannot modify the reference itself (`const (T&)` is const reference to `T`, not reference to a const object, so it is equivalent to `T&`).
 - In this declaration, `arg2` is an rvalue reference:
 
 ```c++
 template <typename T>  
 void func2(T const &&arg2);   // an rvalue reference (to const T)
 ```
+
 
 #### - `arg` is in a "deduction context"
 Here, `arg` is in a deduction context because the type `T` may be deduced from a template argument:
