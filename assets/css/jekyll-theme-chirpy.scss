@@ -1,0 +1,14 @@
+---
+---
+
+@use "main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+";
+
+#toc,
+#toc * {
+  transition: none !important;
+  animation: none !important;
+}
