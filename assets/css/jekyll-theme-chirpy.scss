@@ -7,32 +7,6 @@
 {%- endif -%}
 ";
 
-/* append your custom style below */
-/* Gray bordered tables */
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-table th,
-table td {
-  border: 1px solid #d0d0d0;
-  padding: 10px 12px;
-}
-
-table th {
-  background: #f5f5f5;
-}
-
-/* avoid double active states */
-// #toc a.active {
-//   all: unset;
-// } /* if you previously used .active in custom code */
-// /* TOC: instant expand/collapse (no lag) */
-// #toc,
-
-
-/* TOC: instant expand/collapse (no lag) */
 #toc,
 #toc * {
   transition: none !important;
