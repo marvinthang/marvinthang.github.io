@@ -2,8 +2,8 @@
 title: NUS Y1S2 AY25/26 Course Review
 date: 2026-02-26 00:00:00 +0800
 categories: [nus-course-review, y1s2]
-tags: [nus, course, review, y1s2, cs1231s, cs2030s, ma1521, ma1522, st1131, cfg1004]
-description: A review of my Year 1 Semester 2 courses at NUS (Computer Science, second major in Statistics).
+tags: [nus, course, review, y1s2, cs2100, cs2109s, cs3230, cs3233, is1108, ma2213, st2334, cfg1002]
+description: A review of my Year 1 Semester 2 AY25/26 courses at NUS (Computer Science, second major in Statistics).
 authors: [marvinthang]
 layout: post
 toc: true
@@ -35,13 +35,20 @@ toc_sticky: true
 
 ### Midterm
 
-**Format**: Pen-and-paper
+**Format**: 
+- Pen-and-paper, open-book
+- **Duration**: 1.5hrs
+- Question Types: MCQs (20 marks) and FITBS (20 marks)
 
-**Scope**: Everything from Week 1 to Week 6 topics
+**Scope**: Everything covered up to and including Processor Datapath and Control, recitations 0-6, tutorials 1-5, and labs 0-4.
 
 **Materials**:
-- Open book
+- Any printed materials
 - Calculator
+
+**Notes**:
+- Bring your own rough papers, pencils, eraser, etc.
+
 ## CS2109S - Introduction to AI and Machine Learning
 
 | Component        | Weightage |
@@ -161,6 +168,10 @@ No cheatsheet or calculator allowed.
 
 The quiz was fairly easy.
 
+Mean: 79.29 / 100
+Quartiles: -1 / 68 / 92.5 / 100 / 100
+Mine: 100 / 100
+
 ### Midterm
 
 **Scope:** cover the first two chapters
@@ -172,7 +183,7 @@ The quiz was fairly easy.
 ## ST2334 - Probability and Statistics
 
 Lecturers: 
-Prof. Adrian Roellin (Weeks 1–7)
+Prof. Adrian Roellin (Weeks 1–7),
 Dr Somabha Mukherjee (Weeks 7–13)
 
 TA: Wong Yean Ling

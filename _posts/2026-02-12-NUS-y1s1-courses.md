@@ -3,7 +3,7 @@ title: NUS Y1S1 AY25/26 Course Review
 date: 2026-02-12 05:13:14 +0800
 categories: [nus-course-review, y1s1]
 tags: [nus, course, review, y1s1, cs1231s, cs2030s, ma1521, ma1522, st1131, cfg1004]
-description: A review of my Year 1 Semester 1 courses at NUS (Computer Science, second major in Statistics).
+description: A review of my Year 1 Semester 1 AY25/26 courses at NUS (Computer Science, second major in Statistics).
 authors: [marvinthang]
 layout: post
 toc: true
