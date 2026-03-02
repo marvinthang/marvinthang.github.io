@@ -197,7 +197,8 @@ TA: Wong Yean Ling
 
 
 ### Midterm 
-**Format:** Written Assessment (Pen and Paper)
+
+**Format:**: Digital Assessment (Examplify)
 
 **Scope:** Chapters 1 to 4.
 
