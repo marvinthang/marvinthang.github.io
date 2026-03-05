@@ -198,11 +198,13 @@ TA: Wong Yean Ling
 
 ### Midterm 
 
-**Format:**: Digital Assessment (Examplify)
-
-**Scope:** Chapters 1 to 4.
+**CONTENT AND FORMAT:**: 
+- Digital Assessment (Examplify)
+- Multiple-choice, True/False, Fill-in-the-Blank, Multiple-response; similar to the quizzes you have completed this semester
+- **Scope:** Chapters 1 to 4 (Weeks 1–6).
 
 **Materials:**
-- Provided formula sheet (print your own copy; must remain unmarked).
-- One double-sided A4 help sheet, **handwritten** only (they allow digital note now)
-- Calculator
+- Formula sheet: provided on Canvas — you must print this yourself; do not write on it; it contains CDF tables for the standard normal and Poisson distributions
+- Help sheet: one A4 sheet, front and back; must be self-curated (created by you); may be handwritten, computer-typeset, or a combination
+- Scrap paper: blank paper for workings; will not be collected
+- Calculator: NUS-approved models only, including graphic calculators on the approved list; verify your model at https://myportal.nus.edu.sg/studentportal/academics/all/docs/List-of-Approved-Calculators.pdf 
