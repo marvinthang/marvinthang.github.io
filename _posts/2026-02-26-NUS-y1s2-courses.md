@@ -205,6 +205,10 @@ TA: Wong Yean Ling
 
 **Materials:**
 - Formula sheet: provided on Canvas — you must print this yourself; do not write on it; it contains CDF tables for the standard normal and Poisson distributions
-- Help sheet: one A4 sheet, front and back; must be self-curated (created by you); may be handwritten, computer-typeset, or a combination
-- Scrap paper: blank paper for workings; will not be collected
-- Calculator: NUS-approved models only, including graphic calculators on the approved list; verify your model at https://myportal.nus.edu.sg/studentportal/academics/all/docs/List-of-Approved-Calculators.pdf 
+- Help sheet: one A4 sheet, front and back; may be handwritten, computer-typeset, or a combination
+- Scrap paper: blank paper for workings
+- Calculator
+
+Mean: 16.13 / 20
+Quartiles: 4 / 14 / 17 / 19 / 20
+Mine: 20 / 20
