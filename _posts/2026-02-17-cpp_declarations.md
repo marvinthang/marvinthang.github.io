@@ -6,8 +6,7 @@ tags: [cpp, cppcon, declarations, c++]
 description: Back to Basics. Declarations in C++ - Ben Saks - CppCon 2022
 math: true
 ---
-Source: [Back to Basics: Declarations in C++ - Ben Saks - CppCon 2022
-](https://www.youtube.com/watch?v=IK4GhjmSC6w&list=PLHTh1InhhwT47Xpx7Cn-bPw9Qygjr98rs&index=3)
+Source: [Back to Basics: Declarations in C++ - Ben Saks - CppCon 2022](https://www.youtube.com/watch?v=IK4GhjmSC6w&list=PLHTh1InhhwT47Xpx7Cn-bPw9Qygjr98rs&index=3)
 
 ## Entities and Properties
 
