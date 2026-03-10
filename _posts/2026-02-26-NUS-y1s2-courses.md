@@ -207,7 +207,7 @@ TA: Wong Yean Ling
 
 ### Midterm 
 
-**CONTENT AND FORMAT:**: 
+**Format:**
 - Digital Assessment (Examplify)
 - Multiple-choice, True/False, Fill-in-the-Blank, Multiple-response; similar to the quizzes you have completed this semester
 - **Scope:** Chapters 1 to 4 (Weeks 1–6).
