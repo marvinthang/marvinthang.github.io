@@ -219,3 +219,8 @@ TA: Wong Yean Ling
 - Calculator
 
 Mean: 16.13 / 20 | Quartiles: 4 / 14 / 17 / 19 / 20 | Mine: 20 / 20
+
+![Desktop View](/assets/img/posts/y1s2/ST2334-midterm.png){: width="972" height="589" }
+<!-- ![Desktop View](/assets/img/posts/y1s2/ST2334-midterm.png){: width="972" height="589" .w-75 .normal} -->
+_Midterm Score Distribution_
+
