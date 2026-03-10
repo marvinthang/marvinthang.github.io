@@ -164,21 +164,30 @@ The midterm test paper is closed book with 20 MCQs/MRQs and one (1) open-ended q
 
 ### Quiz 
 
-No cheatsheet or calculator allowed.
+**Format:**
+- Closed-book examination
+- **Duration:** 90 mins
 
-The quiz was fairly easy.
+**Materials:**
+- **No** cheatsheet or calculator allowed.
 
-Mean: 79.29 / 100
-Quartiles: -1 / 68 / 92.5 / 100 / 100
-Mine: 100 / 100
+The quiz was fairly simple.
+
+Mean: 79.29 / 100 | Quartiles: -1 / 68 / 92.5 / 100 / 100 | Mine: 100 / 100
 
 ### Midterm
+
+**Format:**
+- Closed-book examination
+- **Duration:** 90 mins
 
 **Scope:** cover the first two chapters
 
 **Materials:**
 - Calculator
 - **No cheatsheet**
+
+Midterm was a bit harder than quiz, but still manageable.
 
 ## ST2334 - Probability and Statistics
 
@@ -209,6 +218,4 @@ TA: Wong Yean Ling
 - Scrap paper: blank paper for workings
 - Calculator
 
-Mean: 16.13 / 20
-Quartiles: 4 / 14 / 17 / 19 / 20
-Mine: 20 / 20
+Mean: 16.13 / 20 | Quartiles: 4 / 14 / 17 / 19 / 20 | Mine: 20 / 20
