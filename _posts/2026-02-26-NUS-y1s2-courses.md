@@ -24,6 +24,12 @@ toc_sticky: true
 
 ## CS2100 - Computer Organisation
 
+**Lecturers**: Aaron Tan, Prabhu Natarajan
+
+**TA**: Toh Yi Zhong
+
+**Lab TA**: Chen Xiangyun
+
 | Component            | Weightage |
 | -------------------- | --------- |
 | Tutorial  Attendance | 5%        |
@@ -51,6 +57,10 @@ toc_sticky: true
 
 ## CS2109S - Introduction to AI and Machine Learning
 
+**Lecturers**: Muhammad RIZKI Maulana, CONGHUI Hu, PATRICK Rebentrost
+
+**TA**: Beh Chuen Yang
+
 | Component        | Weightage |
 | ---------------- | --------- |
 | Coursemology     | 30%       |
@@ -73,6 +83,10 @@ toc_sticky: true
 
 
 ## CS3230 - Design and Analysis of Algorithms
+
+**Lecturers**: Chen Yu, Sanjay Jain, Warut Suksompong
+
+**TA**: Yeung Man Tsung (Benson)
 
 | Component      | Weightage |
 | -------------- | --------- |
@@ -104,13 +118,17 @@ toc_sticky: true
 
 The midterm MCQs were pretty easy, I did it in 5-10 mins.
 
-But the proof questions were long and harder but still manageable. I tried to answer very carefully and in a lot of detail, but that took too much time and I couldn’t finish the last question. 
+But the proof questions were long and harder but still manageable. I tried to answer very carefully qnd detailedly, but that took too much time and I could only finish half of the last part.
 
-My friend wrote much shorter answers and still got full marks (50/50), so my advice is to keep your proof answers short, clear and easy for the prof to follow rather than making them overly detailed.
+My friend wrote much shorter answers and still got full marks (50/50), so my advice is to keep your proof answers short, clear and easy for the prof to follow rather than making them overly detailed (like me).
 
 ## CS3233 - Competitive Programming
 
 ## IS1108 - Digital and AI Ethics
+
+**Lecturer**: Lee Boon Kee
+
+**TA**: Canva Chua Qi Xun
 
 | Component           | Weightage |
 | ------------------- | --------- |
@@ -141,6 +159,10 @@ The midterm test paper is closed book with 20 MCQs/MRQs and one (1) open-ended q
 - **No materials** allowed.
 
 ## MA2213 - Numerical Analysis I
+
+**Lecturer**: Fu Zhaohui
+
+**TA**: He Runyang
 
 | Component                | Weightage |
 | ------------------------ | --------- |
@@ -179,11 +201,9 @@ Midterm was a bit harder than quiz, but still manageable.
 
 ## ST2334 - Probability and Statistics
 
-Lecturers: 
-Prof. Adrian Roellin (Weeks 1–7),
-Dr Somabha Mukherjee (Weeks 7–13)
+**Lecturers**: Adrian Roellin (Weeks 1–7), Somabha Mukherjee (Weeks 7–13)
 
-TA: Wong Yean Ling
+**TA**: Wong Yean Ling
 
 | Component      | Weightage |
 | -------------- | --------- |
