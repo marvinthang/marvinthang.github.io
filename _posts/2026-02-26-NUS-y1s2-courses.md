@@ -98,13 +98,15 @@ toc_sticky: true
 
 **Materials:**
 - Open book
-- **No calculator** allowed
+- **No calculator**
 
 | Mean: 27.83 / 50 | Quartiles: ? / 22.5 / 27 / 33 / 50 | Mine: 48 / 50 | 
 
-The midterm MCQs were pretty easy, I could do it in 10 mins.
-But the essay questions were long and harder but still manageable. I tried to answer the essays very carefully and in a lot of detail, but that took too much time and I couldn’t finish the last question. 
-My friend wrote much shorter answers and still got full marks (50/50), so my advice is to keep your essay answers short, clear and easy for the prof to follow rather than making them overly detailed.
+The midterm MCQs were pretty easy, I did it in 5-10 mins.
+
+But the proof questions were long and harder but still manageable. I tried to answer very carefully and in a lot of detail, but that took too much time and I couldn’t finish the last question. 
+
+My friend wrote much shorter answers and still got full marks (50/50), so my advice is to keep your proof answers short, clear and easy for the prof to follow rather than making them overly detailed.
 
 ## CS3233 - Competitive Programming
 
@@ -135,27 +137,6 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 
 The midterm test paper is closed book with 20 MCQs/MRQs and one (1) open-ended question which will each feature a case study for students to analyze an ethical scenario in computing, and apply relevant frameworks and justify recommendations with structured reasoning.
 
-**Expected Structure of Answers**
-- Issue Identification: Start by summarizing the case background, identifying the central ethical issues, and noting any critical facts or contextual constraints.
-- Stakeholder Analysis: List all relevant stakeholders, their roles, interests, and how they are affected by the scenario.
-- Framework Application: Apply required ethical frameworks (e.g., FISh, Principle of Double Effect, Consequentialist, etc.) to guide decision-making and solution analysis.
-- Options and Solutions: Outline possible courses of action, evaluating the pros and cons of each using evidence from the case and course content.
-- Recommendation and Justification: Commit to one solution or recommendation, supporting it with logical arguments and referencing frameworks.
-- Reflection: Briefly note any potential broader impact or lessons, if relevant.
-
-**Tips:**
-
-- Read carefully, divide questions into component tasks, and underline keywords.
-- Address all elements in sequence: context, issues, stakeholder analysis, application of frameworks, evaluation, and recommendation.
-- Avoid simply listing facts; demonstrate critical thinking and the ability to justify decisions.
-
-**What Makes a Strong Answer:**
-
-- **Clarity**: Concise and logical structure, with clear header statements for each section.
-- **Evidence-Based**: Use facts from the case and course references where appropriate.
-- **Framework Alignment**: Directly relate arguments to established ethical principles or guidelines discussed in class.
-- Students should aim for thorough, well-supported responses addressing all stages of ethical analysis required for the computing context.
-
 **Materials**:
 - **No materials** allowed.
 
@@ -180,7 +161,7 @@ The midterm test paper is closed book with 20 MCQs/MRQs and one (1) open-ended q
 
 The quiz was fairly simple.
 
-Mean: 79.29 / 100 | Quartiles: -1 / 68 / 92.5 / 100 / 100 | Mine: 100 / 100
+| Mean: 79.29 / 100 | Quartiles: -1 / 68 / 92.5 / 100 / 100 | Mine: 100 / 100 |
 
 ### Midterm
 
