@@ -52,9 +52,6 @@ toc_sticky: true
 - Any printed materials
 - Calculator
 
-**Notes**:
-- Bring your own rough papers, pencils, eraser, etc.
-
 ## CS2109S - Introduction to AI and Machine Learning
 
 **Lecturers**: Muhammad RIZKI Maulana, CONGHUI Hu, PATRICK Rebentrost
@@ -143,20 +140,19 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 - Examplify Lockdown / Secure
 - There are 20 MCQ/MRQ questions, and 1 Essay question with a case study. You must answer all questions.
 - **Duration:** 80 mins
+- 20 MCQs/MRQs
+- 1 open-ended question which will each feature a case study for students to analyze an ethical scenario in computing, and apply relevant frameworks and justify recommendations with structured reasoning.
 
-**Scope:** You are required to synthesize ethical principles, ethical framework, technical and governance considerations covered in the course. Scope includes the following key topics:
+**Scope:** 
 - Professional Ethics
 - AI Ethics and Governance
 - Data Privacy and Protection
 - Human Computer Interaction and Ethical UX Design
 - Automation and Autonomous Systems
 - Ethical AI Product Management
-- You are required to apply the FISh approach thoroughly, referencing ethical norms, ethical decision-making frameworks, data privacy laws such as PDPA, and embedding privacy and fairness considerations from system design to deployment. You should reflect on trade-offs via the Principle of Double Effect and illustrate mature ethical judgment consistent with IS1108 learning outcomes.
-
-The midterm test paper is closed book with 20 MCQs/MRQs and one (1) open-ended question which will each feature a case study for students to analyze an ethical scenario in computing, and apply relevant frameworks and justify recommendations with structured reasoning.
 
 **Materials**:
-- **No materials** allowed.
+- **No materials**.
 
 ## MA2213 - Numerical Analysis I
 
@@ -179,7 +175,7 @@ The midterm test paper is closed book with 20 MCQs/MRQs and one (1) open-ended q
 - **Duration:** 90 mins
 
 **Materials:**
-- **No** cheatsheet or calculator allowed.
+- **No** cheatsheet or calculator.
 
 The quiz was fairly simple.
 
@@ -213,17 +209,17 @@ Midterm was a bit harder than quiz, but still manageable.
 | Final          | 60%       |
 
 
+
 ### Midterm 
 
 **Format:**
 - Digital Assessment (Examplify)
-- Multiple-choice, True/False, Fill-in-the-Blank, Multiple-response; similar to the quizzes you have completed this semester
+- Format: MCQ, TF, FITB, MRQ
 - **Scope:** Chapters 1 to 4 (Weeks 1–6).
 
 **Materials:**
-- Formula sheet: provided on Canvas — you must print this yourself; do not write on it; it contains CDF tables for the standard normal and Poisson distributions
-- Help sheet: one A4 sheet, front and back; may be handwritten, computer-typeset, or a combination
-- Scrap paper: blank paper for workings
+- Formula sheet: provided on Canvas - you must print this yourself; do not write on it; it contains CDF tables for the standard normal and Poisson distributions
+- One double-sided A4 help sheet
 - Calculator
 
 Mean: 16.13 / 20 | Quartiles: 4 / 14 / 17 / 19 / 20 | Mine: 20 / 20
