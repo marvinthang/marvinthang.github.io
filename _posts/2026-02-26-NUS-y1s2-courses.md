@@ -83,6 +83,7 @@ toc_sticky: true
 | Final Exam     | 40%       |
 
 ### Midterm
+
 **Format:** 
 - Written Assessment (Pen and Paper)
 - **Duration:** 80 mins
@@ -98,6 +99,12 @@ toc_sticky: true
 **Materials:**
 - Open book
 - **No calculator** allowed
+
+| Mean: 27.83 / 50 | Quartiles: ? / 22.5 / 27 / 33 / 50 | Mine: 48 / 50 | 
+
+The midterm MCQs were pretty easy, I could do it in 10 mins.
+But the essay questions were long and harder but still manageable. I tried to answer the essays very carefully and in a lot of detail, but that took too much time and I couldn’t finish the last question. 
+My friend wrote much shorter answers and still got full marks (50/50), so my advice is to keep your essay answers short, clear and easy for the prof to follow rather than making them overly detailed.
 
 ## CS3233 - Competitive Programming
 
