@@ -30,14 +30,19 @@ toc_sticky: true
 
 **Lab TA**: Chen Xiangyun
 
-| Component            | Weightage |
-| -------------------- | --------- |
-| Tutorial  Attendance | 5%        |
-| Quizzes              | 3%        |
-| Labs                 | 10%       |
-| 3 Assignments        | 12%       |
-| Mid-term             | 20%       |
-| Final                | 50%       |
+| Component            | Weight | Max | Mean  | Quartiles                 | marvinthang | Score (%) |
+| -------------------- | ------ | --- | ----- | ------------------------- | ----------- | --------- |
+| Tutorial  Attendance | 5%     | 10  | ?     | ?                         | ?           | ?%        |
+| Quizzes              | 3%     | 3   | ?     | ?                         | ?           | ?%        |
+| Labs                 | 10%    | 185 | ?     | ?                         | ?           | ?%        |
+| Assignment 1         | 4%     | 40  | 36.39 | 0 / 35.5 / 37.5 / 39 / 40 | 40          | 4%        |
+| Assignment 2         | 4%     | 40  | 34.88 | 0 / 33.88 / 36 / 38 / 40  | 40          | 4%        |
+| Assignment 3         | 4%     | 40  | ?     | ?                         | ?           | ?%        |
+| Mid-term             | 20%    | 40  | 20.41 | 4 / 15 / 20 / 25 / 38     | 38          | 19%       |
+| Final                | 50%    | ?   | ?     | ?                         | ?           | ?%        |
+
+Total: ?%
+
 
 ### Midterm
 
@@ -58,12 +63,12 @@ toc_sticky: true
 
 **TA**: Beh Chuen Yang
 
-| Component        | Weightage |
-| ---------------- | --------- |
-| Coursemology     | 30%       |
-| Capstone Project | 10%       |
-| Midterm          | 30%       |
-| Final            | 30%       |
+| Component        | Weight |
+| ---------------- | ------ |
+| Coursemology     | 30%    |
+| Capstone Project | 10%    |
+| Midterm          | 30%    |
+| Final            | 30%    |
 
 ### Midterm
 **Format:**
@@ -85,13 +90,13 @@ toc_sticky: true
 
 **TA**: Yeung Man Tsung (Benson)
 
-| Component      | Weightage |
-| -------------- | --------- |
-| Tutorials      | 5%        |
-| Assignments    | 25%       |
-| Lecture Attend | 2%        |
-| Midterm        | 30%       |
-| Final Exam     | 40%       |
+| Component      | Weight |
+| -------------- | ------ |
+| Tutorials      | 5%     |
+| Assignments    | 25%    |
+| Lecture Attend | 2%     |
+| Midterm        | 30%    |
+| Final Exam     | 40%    |
 
 ### Midterm
 
@@ -127,13 +132,13 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 
 **TA**: Canva Chua Qi Xun
 
-| Component           | Weightage |
-| ------------------- | --------- |
-| Class Participation | 10%       |
-| Group Debate        | 20%       |
-| Midterm test        | 30%       |
-| Group Product Pitch | 20%       |
-| Individual Report   | 20%       |
+| Component           | Weight |
+| ------------------- | ------ |
+| Class Participation | 10%    |
+| Group Debate        | 20%    |
+| Midterm test        | 30%    |
+| Group Product Pitch | 20%    |
+| Individual Report   | 20%    |
 
 ### Midterm
 **Format:** 
@@ -160,13 +165,13 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 
 **TA**: He Runyang
 
-| Component                | Weightage |
-| ------------------------ | --------- |
-| Class Participation      | 10%       |
-| Quiz (5th week)          | 15%       |
-| Homework (two sets)      | 15%       |
-| Mid-term test (7th week) | 20%       |
-| Final exam               | 40%       |
+| Component                | Weight |
+| ------------------------ | ------ |
+| Class Participation      | 10%    |
+| Quiz (5th week)          | 15%    |
+| Homework (two sets)      | 15%    |
+| Mid-term test (7th week) | 20%    |
+| Final exam               | 40%    |
 
 ### Quiz 
 
@@ -195,18 +200,20 @@ The quiz was fairly simple.
 
 Midterm was a bit harder than quiz, but still manageable.
 
+| Mean: 80.77 / 100 | Quartiles: 25 / 70 / 85 / 95 / 100 | Mine: 100 / 100 |
+
 ## ST2334 - Probability and Statistics
 
 **Lecturers**: Adrian Roellin (Weeks 1–7), Somabha Mukherjee (Weeks 7–13)
 
 **TA**: Wong Yean Ling
 
-| Component      | Weightage |
-| -------------- | --------- |
-| Online quizzes | 10%       |
-| Tutorial       | 5%        |
-| Midterm        | 25%       |
-| Final          | 60%       |
+| Component      | Weight |
+| -------------- | ------ |
+| Online quizzes | 10%    |
+| Tutorial       | 5%     |
+| Midterm        | 25%    |
+| Final          | 60%    |
 
 
 
