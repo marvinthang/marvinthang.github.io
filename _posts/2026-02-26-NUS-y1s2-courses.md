@@ -87,7 +87,7 @@ If the sum of ALL your quiz marks is greater than 80%, you will receive 3 marks.
 Nothing much to say, I did make-up midterm, that was terrible.
 
 ![Desktop View](/assets/img/posts/y1s2/CS2109S-midterm.png){: width="972" height="589" }
-_Midterm Score Distribution_
+_CS2109S Midterm Score Distribution_
 
 ## CS3230 - Design and Analysis of Algorithms
 
@@ -129,6 +129,17 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 
 ## CS3233 - Competitive Programming
 
+[Course website](https://www.comp.nus.edu.sg/~stevenha/cs3233.html)
+
+[Open the Google Sheet](https://docs.google.com/spreadsheets/d/1NprA9S5GTnIXBcV9YF-VitNcmofvTRCrDOrwCnZzeOw/edit?usp=sharing)
+
+<iframe
+  src="https://docs.google.com/spreadsheets/d/1NprA9S5GTnIXBcV9YF-VitNcmofvTRCrDOrwCnZzeOw/htmlview"
+  width="100%"
+  height="600"
+  frameborder="0">
+</iframe>
+
 ## IS1108 - Digital and AI Ethics
 
 **Lecturer**: Lee Boon Kee
@@ -168,14 +179,14 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 
 **TA**: He Runyang
 
-| Component                | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
-| ------------------------ | ------ | --- | ----- | -------------------------- | ----------- | ----- |
-| Class Participation      | 10%    | 100 | 97.89 | 80 / 100 / 100 / 100 / 100 | 100         | 10%   |
-| Quiz (5th week)          | 15%    | 100 | 80.18 | 0 / 68 / 92 / 100 / 100    | 100         | 10%   |
-| Homework 1               | 7.5%   | 100 | 97.39 | 0 / 98 / 100 / 100 / 100   | 100         | 7.5%  |
-| Homework 2               | 7.5%   | 100 | ?     | ?                          | ?           | ?     |
-| Mid-term test (7th week) | 20%    | 100 | 78.2  | -1 / 67.5 / 85 / 95 / 100  | 100         | 20%   |
-| Final exam               | 40%    | ?   | ?     | ?                          | ?           | ?     |
+| Component           | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
+| ------------------- | ------ | --- | ----- | -------------------------- | ----------- | ----- |
+| Class Participation | 10%    | 100 | 97.89 | 80 / 100 / 100 / 100 / 100 | 100         | 10%   |
+| Quiz (5th week)     | 15%    | 100 | 80.18 | 0 / 68 / 92 / 100 / 100    | 100         | 10%   |
+| Homework 1          | 7.5%   | 100 | 97.39 | 0 / 98 / 100 / 100 / 100   | 100         | 7.5%  |
+| Homework 2          | 7.5%   | 100 | ?     | ?                          | ?           | ?     |
+| Midterm (7th week)  | 20%    | 100 | 78.2  | -1 / 67.5 / 85 / 95 / 100  | 100         | 20%   |
+| Final exam          | 40%    | ?   | ?     | ?                          | ?           | ?     |
 
 ### Quiz 
 
@@ -229,5 +240,5 @@ Midterm was a bit harder than quiz, but still manageable.
 
 ![Desktop View](/assets/img/posts/y1s2/ST2334-midterm.png){: width="972" height="589" }
 <!-- ![Desktop View](/assets/img/posts/y1s2/ST2334-midterm.png){: width="972" height="589" .w-75 .normal} -->
-_Midterm Score Distribution_
+_ST2334 Midterm Score Distribution_
 
