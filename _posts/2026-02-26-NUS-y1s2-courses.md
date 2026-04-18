@@ -32,17 +32,18 @@ toc_sticky: true
 
 | Component            | Weight | Max | Mean  | Quartiles                 | marvinthang | Score (%) |
 | -------------------- | ------ | --- | ----- | ------------------------- | ----------- | --------- |
-| Tutorial  Attendance | 5%     | 10  | ?     | ?                         | ?           | ?%        |
-| Quizzes              | 3%     | 3   | ?     | ?                         | ?           | ?%        |
-| Labs                 | 10%    | 185 | ?     | ?                         | ?           | ?%        |
+| Tutorial  Attendance | 5%     | 10  | ?     | ?                         | 11          | ?%        |
+| Quizzes              | 3%     | 3   | 2.71  | 0 / 3 / 3 / 3 / 3         | 3           | 3%        |
+| Labs                 | 10%    | 185 | ?     | ?                         | 184.5       | ?%        |
 | Assignment 1         | 4%     | 40  | 36.39 | 0 / 35.5 / 37.5 / 39 / 40 | 40          | 4%        |
 | Assignment 2         | 4%     | 40  | 34.88 | 0 / 33.88 / 36 / 38 / 40  | 40          | 4%        |
-| Assignment 3         | 4%     | 40  | ?     | ?                         | ?           | ?%        |
+| Assignment 3         | 4%     | 20  | 18.54 | 0 / 18.88 / 20 / 20 / 20  | 20          | 4%        |
 | Mid-term             | 20%    | 40  | 20.41 | 4 / 15 / 20 / 25 / 38     | 38          | 19%       |
 | Final                | 50%    | ?   | ?     | ?                         | ?           | ?%        |
 
 Total: ?%
 
+If the sum of ALL your quiz marks is greater than 80%, you will receive 3 marks. If it is between 70% and 80%, you will receive 2 marks. If it is between 60% and 70%, you will receive 1 mark. No marks are awarded if the sum is less than 60%.
 
 ### Midterm
 
@@ -63,12 +64,12 @@ Total: ?%
 
 **TA**: Beh Chuen Yang
 
-| Component        | Weight |
-| ---------------- | ------ |
-| Coursemology     | 30%    |
-| Capstone Project | 10%    |
-| Midterm          | 30%    |
-| Final            | 30%    |
+| Component        | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
+| ---------------- | ------ | --- | ----- | -------------------------- | ----------- | ----- |
+| Coursemology     | 30%    | 30  | ?     | ?                          | 30          | 30%   |
+| Capstone Project | 10%    | ?   | ?     | ?                          | ?           | ?%    |
+| Midterm          | 30%    | 100 | 61.97 | 10.5 / 54 / 63.5 / 71 / 94 | 70          | 21%   |
+| Final            | 30%    | ?   | ?     | ?                          | ?           | ?%    |
 
 ### Midterm
 **Format:**
@@ -83,6 +84,10 @@ Total: ?%
 - One double-sided A4 help sheet
 - (Graphing) calculator
 
+Nothing much to say, I did make-up midterm, that was terrible.
+
+![Desktop View](/assets/img/posts/y1s2/CS2109S-midterm.png){: width="972" height="589" }
+_Midterm Score Distribution_
 
 ## CS3230 - Design and Analysis of Algorithms
 
@@ -90,13 +95,13 @@ Total: ?%
 
 **TA**: Yeung Man Tsung (Benson)
 
-| Component      | Weight |
-| -------------- | ------ |
-| Tutorials      | 5%     |
-| Assignments    | 25%    |
-| Lecture Attend | 2%     |
-| Midterm        | 30%    |
-| Final Exam     | 40%    |
+| Component      | Weight | Max | Mean  | Quartiles                    | marvinthang | Score |
+| -------------- | ------ | --- | ----- | ---------------------------- | ----------- | ----- |
+| Tutorials      | 5%     | 20  | ?     | ?                            | 20          | 5%    |
+| Assignments    | 25%    | 50  | ?     | ?                            | 50          | 25%   |
+| Lecture Attend | 2%     | 10  | 7.22  | 0 / 6 / 9 / 10 / 10          | 7           | 1.4%  |
+| Midterm        | 30%    | 50  | 27.87 | 0 / 22.5 / 27.5 / 33.25 / 50 | 48          | 29%   |
+| Final Exam     | 40%    | ?   | ?     | ?                            | ?           | ?%    |
 
 ### Midterm
 
@@ -115,8 +120,6 @@ Total: ?%
 **Materials:**
 - Open book
 - **No calculator**
-
-| Mean: 27.83 / 50 | Quartiles: ? / 22.5 / 27 / 33 / 50 | Mine: 48 / 50 | 
 
 The midterm MCQs were pretty easy, I did it in 5-10 mins.
 
@@ -165,13 +168,14 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 
 **TA**: He Runyang
 
-| Component                | Weight |
-| ------------------------ | ------ |
-| Class Participation      | 10%    |
-| Quiz (5th week)          | 15%    |
-| Homework (two sets)      | 15%    |
-| Mid-term test (7th week) | 20%    |
-| Final exam               | 40%    |
+| Component                | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
+| ------------------------ | ------ | --- | ----- | -------------------------- | ----------- | ----- |
+| Class Participation      | 10%    | 100 | 97.89 | 80 / 100 / 100 / 100 / 100 | 100         | 10%   |
+| Quiz (5th week)          | 15%    | 100 | 80.18 | 0 / 68 / 92 / 100 / 100    | 100         | 10%   |
+| Homework 1               | 7.5%   | 100 | 97.39 | 0 / 98 / 100 / 100 / 100   | 100         | 7.5%  |
+| Homework 2               | 7.5%   | 100 | ?     | ?                          | ?           | ?     |
+| Mid-term test (7th week) | 20%    | 100 | 78.2  | -1 / 67.5 / 85 / 95 / 100  | 100         | 20%   |
+| Final exam               | 40%    | ?   | ?     | ?                          | ?           | ?     |
 
 ### Quiz 
 
@@ -183,8 +187,6 @@ My friend wrote much shorter answers and still got full marks (50/50), so my adv
 - **No** cheatsheet or calculator.
 
 The quiz was fairly simple.
-
-| Mean: 79.29 / 100 | Quartiles: -1 / 68 / 92.5 / 100 / 100 | Mine: 100 / 100 |
 
 ### Midterm
 
@@ -200,22 +202,18 @@ The quiz was fairly simple.
 
 Midterm was a bit harder than quiz, but still manageable.
 
-| Mean: 80.77 / 100 | Quartiles: 25 / 70 / 85 / 95 / 100 | Mine: 100 / 100 |
-
 ## ST2334 - Probability and Statistics
 
 **Lecturers**: Adrian Roellin (Weeks 1–7), Somabha Mukherjee (Weeks 7–13)
 
 **TA**: Wong Yean Ling
 
-| Component      | Weight |
-| -------------- | ------ |
-| Online quizzes | 10%    |
-| Tutorial       | 5%     |
-| Midterm        | 25%    |
-| Final          | 60%    |
-
-
+| Component      | Weight | Max | Mean | Quartiles                | marvinthang | Score |
+| -------------- | ------ | --- | ---- | ------------------------ | ----------- | ----- |
+| Online quizzes | 10%    | ?   | ?    | ?                        | ?           | ?     |
+| Tutorial       | 5%     | ?   | ?    | ?                        | ?           | ?     |
+| Midterm        | 25%    | 20  | 16.1 | 4 / 14 / 17 / 18.75 / 20 | 20          | 25%   |
+| Final          | 60%    | ?   | ?    | ?                        | ?           | ?%    |
 
 ### Midterm 
 
@@ -228,8 +226,6 @@ Midterm was a bit harder than quiz, but still manageable.
 - Formula sheet: provided on Canvas - you must print this yourself; do not write on it; it contains CDF tables for the standard normal and Poisson distributions
 - One double-sided A4 help sheet
 - Calculator
-
-Mean: 16.13 / 20 | Quartiles: 4 / 14 / 17 / 19 / 20 | Mine: 20 / 20
 
 ![Desktop View](/assets/img/posts/y1s2/ST2334-midterm.png){: width="972" height="589" }
 <!-- ![Desktop View](/assets/img/posts/y1s2/ST2334-midterm.png){: width="972" height="589" .w-75 .normal} -->
