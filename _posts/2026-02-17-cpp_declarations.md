@@ -91,25 +91,25 @@ Examples:
   * This means `x` is an array of `N` elements.
   * Each element has type `int *`.
   * So `x` is an array of `N` pointers to `int`.
-  * Another way to see it is: `int *(x[N])`, so `x` is an array of `N` elements, each element is a pointer to `int`.
+  * Another way to see it is: `int (*(x[N]))`, so `x` is an array of `N` elements, each element is a pointer to `int`.
 * `int (*x)[N]`
   * The parentheses force `*x` to bind first.
   * This means `x` is a pointer.
   * Then `[N]` tells us it points to an array of `N` elements.
   * So `x` is a pointer to an array of `N` ints.
-  * Another way to see it is: `int (*x)[N]`, so `*x` is an array of `N` elements, each element is an `int`, thus `x` is a pointer to an array of `N` ints.
+  * Another way to see it is: `int ((*x)[N])`, so `*x` is an array of `N` elements, each element is an `int`, thus `x` is a pointer to an array of `N` ints.
 * `int *f()`
   * `()` has higher precedence than `*`, so we read `f()` first.
   * This means `f` is a function.
   * Its return type is `int *`.
   * So `f` is a function returning a pointer to `int`.
-  * Another way to see it is: `int *(f())`, so `f()` is a function returning a pointer to `int`, thus `f` is a function returning a pointer to `int`.
+  * Another way to see it is: `int (*(f()))`, so `f()` is a function returning a pointer to `int`, thus `f` is a function returning a pointer to `int`.
 * `int (*f)()`
   * The parentheses force `*f` to bind first.
   * This means `f` is a pointer.
   * Then `()` tells us it points to a function.
   * That function returns `int`.
-  * Another way to see it is: `int (*f)()`, so `*f` is a function returning `int`, thus `f` is a pointer to a function returning `int`.
+  * Another way to see it is: `int ((*f)())`, so `*f` is a function returning `int`, thus `f` is a pointer to a function returning `int`.
 So `f` is a pointer to a function returning `int`.
 
 > Order of declaration specifiers doesn't matter.
