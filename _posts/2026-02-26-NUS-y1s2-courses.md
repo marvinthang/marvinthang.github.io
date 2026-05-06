@@ -307,8 +307,7 @@ My main mistake was writing too much detail, which cost me time and made me only
 - 10 MCQ (2 marks each) = 20 marks
 - 4 proof questions (10 marks each) = 40 marks
 
-**Scope:**
-- Anything covered in lectures/assignments/tutorials
+**Scope:** Anything covered in lectures/assignments/tutorials
 
 **Materials:**
 - Open book
@@ -332,9 +331,7 @@ Because I had a CP background from high school, I found CS3230 quite easy and st
 
 I did not attend any lecture at all, and I found that reading the slides was enough for me. The slides were clear enough to follow, especially if you already have some algorithms background.
 
-Overall, I think the course is good and well-structured. It provides a solid foundation in algorithms and complexity theory, especially if you want to properly understand why common algorithmic techniques work.
-
-The main thing I learned was how to present algorithmic arguments properly: proving DP and greedy solutions, analysing time complexity, and writing correctness proofs clearly.
+Overall, I think the course is good and well-structured. It provides a solid foundation in algorithms and complexity theory. The main thing I learned was how to present algorithmic arguments properly: proving DP and greedy solutions, analysing time complexity, and writing correctness proofs clearly.
 
 I would recommend this course to anyone interested in algorithms. However, it may not be very challenging if you already have a strong CP background.
 
