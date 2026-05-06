@@ -315,9 +315,9 @@ My main mistake was writing too much detail, which cost me time and made me only
 
 The MCQs were quite standard and not very challenging.
 
-The essay questions were also reasonable: one greedy question, one DP question, one NP-completeness proof, and one weighing question. The NP-completeness question was quite guided since it explicitly said to reduce from 3-SAT.
+The essay questions were also reasonable: one greedy question, one DP question, one NP-completeness proof, and one weighing question. The NP-completeness question was quite guided since it explicitly said to reduce from 3-SAT. The hardest question was the weighing one. I did not see the optimal idea, so I wrote a simpler but non-optimal solution. 
 
-The hardest question was the weighing one. I did not see the optimal idea, so I wrote a simpler but non-optimal solution. I also wrote shorter answers this time, but probably made them too short and lost some marks due to missing details.
+Learning from my mistakes, I wrote shorter answers for essay questions this time, but probably made them too short and lost some marks due to missing details.
 
 Overall, the final exam was reasonable. If you understood the assignments and tutorials properly, most questions should feel familiar.
 
