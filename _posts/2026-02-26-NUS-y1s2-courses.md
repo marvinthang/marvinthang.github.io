@@ -33,18 +33,24 @@ math: true
 
 [Course Website](https://www.comp.nus.edu.sg/~cs2100/)
 
+### Grading Scheme
+
 | Component            | Weight | Max | Mean  | Quartiles                     | marvinthang | Score (%) |
 | -------------------- | ------ | --- | ----- | ----------------------------- | ----------- | --------- |
 | Tutorial  Attendance | 5%     | 10  | 9.51  | 0 / 10 / 10 / 10 / 10         | 10          | 5%        |
 | Quizzes              | 3%     | 3   | 2.71  | 0 / 3 / 3 / 3 / 3             | 3           | 3%        |
-| Labs                 | 10%    | 185 | 176.3 | 0 / 181.5 / 183.5 / 185 / 185 | 184.5       | 2.99%     |
+| Labs                 | 10%    | 185 | 176.3 | 0 / 181.5 / 183.5 / 185 / 185 | 184.5       | 9.97%     |
 | Assignment 1         | 4%     | 40  | 36.4  | 0 / 35.5 / 37.5 / 39 / 40     | 40          | 4%        |
 | Assignment 2         | 4%     | 40  | 34.88 | 0 / 33.88 / 36 / 38 / 40      | 40          | 4%        |
 | Assignment 3         | 4%     | 20  | 18.54 | 0 / 18.88 / 20 / 20 / 20      | 20          | 4%        |
 | Mid-term             | 20%    | 40  | 20.31 | 4 / 15 / 20 / 25 / 38         | 38          | 19%       |
-| Final                | 50%    | ?   | ?     | ?                             | ?           | ?%        |
+| Final                | 50%    | 100 | ?     | ?                             | 98.5        | 49.25%    |
 
-Total: ?%
+**Total:** 98.22%
+
+**Expected Grade:** A+
+
+### Content
 
 ### Quizzes
 
@@ -104,16 +110,21 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
 
 **Lecturers**: Muhammad RIZKI Maulana, CONGHUI Hu, PATRICK Rebentrost
 
-**TA**: Beh Chuen Yang
+**TA**: Beh Chuen Yang (N00bcak)
+
+### Grading Scheme
 
 | Component        | Weight | Max | Mean  | Quartiles                    | marvinthang | Score |
 | ---------------- | ------ | --- | ----- | ---------------------------- | ----------- | ----- |
 | Coursemology     | 30%    | 30  | 29.6  | 7 / 30 / 30 / 30 / 30        | 30          | 30%   |
 | Capstone Project | 10%    | 100 | 81.55 | 0 / 73 / 99 / 100 / 100      | 100         | 10%   |
 | Midterm          | 30%    | 100 | 62.74 | 10.5 / 54 / 64.5 / 72.5 / 97 | 70          | 21%   |
-| Final            | 30%    | ?   | ?     | ?                            | ?           | ?%    |
+| Final            | 30%    | 100 | ?     | ?                            | 89          | 26.7% |
 
-### (Potential) Topics
+**Total:** 87.7%
+**Expected Grade:** A
+
+### Content
 
 - "Classical" AI (Search)
   - **Uninformed Search:**
@@ -121,28 +132,26 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
     - Depth-First Search (DFS)
     - Depth-Limited Search (DLS)
     - Iterative Deepening Search (IDS)
-  **Informed Search:**
-    - Greedy Best-First Search
+    - Uniform-Cost Search (UCS)
+  - **Informed Search:**
     - A* Search
-    Heuristic functions and their design
-  **Local Search:**
+    - Heuristic functions (Admissibility, Consistency)
+  - **Local Search:**
     - Hill-Climbing
-    - Simulated Annealing
-    - Evaluation functions for local search strategies
-  **Adversarial Search:**
+  - **Adversarial Search:**
     - Minimax Algorithm
     - Alpha-Beta Pruning
-    - Evaluation functions for game scenarios
 
 - "Classical" Machine Learning
-  - **Decision Trees and Ensembles:**
-    - Decision Trees
-    - Ensemble Methods (e.g., Random Forests, Gradient Boosting)
-  - **Linear/Logistic Regression:**
-    - Logistic Regression
+  - **Decision Trees**
+  - **Regression:**
     - Linear Regression
+    - Logistic Regression
     - Gradient Descent
     - Normal Equation for solving linear regression
+  - **Regularization:**
+    - L1 Regularization (Lasso Regression)
+    - L2 Regularization (Ridge Regression)
   - **Kernel Methods:**
       - Dual formulation of ML
       - Kernel Methods for non-linear data
@@ -152,9 +161,9 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
 - "Modern" Machine Learning:
   - **Deep learning:**
       - Convolutional Neural Networks (CNN)
-        - Recurrent Neural Networks (RNN)
-        - Attention Mechanisms
-        - Transformers
+      - Recurrent Neural Networks (RNN)
+      - Attention Mechanisms
+      - Transformers
   - **Unsupervised (deep) learning**
 
 ### Coursemology
@@ -217,31 +226,55 @@ _CS2109S Capstone Project Score Distribution_
 
 **TA**: Yeung Man Tsung (Benson)
 
+### Grading Scheme
+
 | Component      | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
 | -------------- | ------ | --- | ----- | -------------------------- | ----------- | ----- |
 | Tutorials      | 5%     | 20  | 18.5  | 1 / 20 / 20 / 20 / 20      | 20          | 5%    |
 | Assignments    | 25%    | 25  | 24.43 | 0 / 25 / 25 / 25 / 25      | 25          | 25%   |
 | Lecture Attend | 2%     | 10  | 7.22  | 0 / 6 / 9 / 10 / 10        | 7           | 1.4%  |
 | Midterm        | 30%    | 50  | 27.83 | 0 / 22.5 / 27.25 / 33 / 50 | 48          | 29%   |
-| Final Exam     | 40%    | ?   | ?     | ?                          | ?           | ?%    |
+| Final Exam     | 40%    | 60  | 33.69 | 0 / 27 / 34 / 42 / 56      | 54          | 36%   |
 
-Total: ?%
+**Total:** 96.4%  
+**Expected Grade:** A+
+
+### Content
+
+- Week 1: Asymptotic Analysis
+- Week 2: Recurrence and Master Theorem
+- Week 3: Proof of Correctness + Divide and Conquer
+- Week 4: Sorting Algorithms
+  - Lower Bound for Comparison-Based Sorting
+  - Average-Case Analysis of Quick Sort
+- Week 5: Randomised Algorithms
+- Week 6: Dynamic Programming
+- Week 7: Greedy Algorithms
+- Week 9: Amortised Analysis
+- Week 10+12: Reductions & Intractability
+  - NP and NP-Complete
 
 ### Tutorials
 
-Tutorial attendance, where 1 mark is awarded for each session attended (12 marks total), and participation in two tutorials (worth 5 marks each), are collectively capped at 20 marks, and scaled to 5% of your overall grade.
+> Tutorial marks come from attendance and participation. Each tutorial attended gives 1 mark, for 12 marks total. Participation in two tutorials gives 5 marks each, and everything is capped at 20 marks.
+
+Unlike last semester, you need to attend at least 10 out of 12 tutorials to get the full 20 marks.
+
+Participation is quite easy to get. You just need to give a reasonable short answer for tutorial questions during tutorial. No need to produce some galaxy-brain proof on the spot.
 
 ### Assignments
 
-Your best seven assignments (56 marks total) are capped at 50 marks and scaled to 25% of your overall grade.
+> Your best 7 out of 10 assignments are counted (8 marks each). The raw total is 56 marks, capped at 50 marks.
 
-I found the assignments to be quite challenging, but I stopped doing them after Assignment 7 (when I got full marks) to save time for other courses. 
+I found the assignments quite challenging, but they were actually very useful for understanding the material.
 
-I would recommend doing at least the first 7 assignments, and then you can choose to skip the rest if you want to focus on other courses.
+I stopped doing them after Assignment 7 because I already got full marks and wanted to save time for other courses.
 
 ### Lecture Attendance (Bonus)
 
-Lecture attendance, where 0.2% is awarded for each lecture attended, up to 10 lectures. Attendance must be claimed by scanning the QR code flashed during lecture.
+> Lecture attendance gives 0.2% per lecture, up to 10 lectures. Attendance is claimed by scanning a QR code shown during the lecture break.
+
+The QR code is only available for a short window, usually around 5 minutes, so you need to be around during the break to claim it.
 
 ### Midterm
 
@@ -249,43 +282,61 @@ Lecture attendance, where 0.2% is awarded for each lecture attended, up to 10 le
 - Written Assessment (Pen and Paper)
 - **Duration:** 80 mins
 - 10 MCQ (2 marks each) = 20 marks
-- 3 proof questions, some broken down into parts = 30 marks total
+- 3 proof questions = 30 marks total
   - 1st question has 1 part
   - 2nd question has 2 parts
   - 3rd question has 3 parts
 
-**Scope:**
-- All lectures up to Week 5 lecture (inclusive) and corresponding assignments and tutorials.
+**Scope:** All lectures up to Week 5 lecture (inclusive)
 
 **Materials:**
 - Open book
 - **No calculator**
 
-The midterm MCQs were pretty easy, I did it in 5-10 mins.
+The MCQs were quite standard and pretty easy.
 
-But the proof questions were long and harder but still manageable. I tried to answer very carefully qnd detailedly, but that took too much time and I could only finish half of the last part.
+This semester’s midterm focused more on proof of correctness and probability, with no DP or greedy questions like last semester. The proof questions were long, but still manageable.
 
-My friend wrote much shorter answers and still got full marks (50/50), so my advice is to keep your proof answers short, clear and easy for the prof to follow rather than making them overly detailed (like me).
+My main mistake was writing too much detail, which cost me time and made me only finish around half of the last part. So my advice is to keep proof answers short, clear, and easy to follow. Don’t over-explain every tiny step unless you enjoy donating time to the void.
 
 ### Final Exam
 
 **Format:**
+- **Duration:** 2 hours
 - Written Assessment (Pen and Paper)
 - 10 MCQ (2 marks each) = 20 marks
 - 4 proof questions (10 marks each) = 40 marks
-  - 1 proof question will be on NP-completeness.
-    - You will be asked to show that a certain problem is NP-complete.
-    - We will suggest which NP-hard problem to reduce from.
-- **Duration:** 2 hours
 
 **Scope:**
-- Anything covered in lectures/assignments/tutorials throughout the
-semester can be tested (except Lecture 11 on week 13), though more
-emphasis will be placed on material after the midterm (Lecture 6-10).
+- Anything covered in lectures/assignments/tutorials
 
 **Materials:**
 - Open book
 - **No calculator**
+
+The MCQs were quite standard and not very challenging.
+
+The essay questions were also reasonable: one greedy question, one DP question, one NP-completeness proof, and one weighing question. The NP-completeness question was quite guided since it explicitly said to reduce from 3-SAT.
+
+The hardest question was the weighing one. I did not see the optimal idea, so I wrote a simpler but non-optimal solution. I also wrote shorter answers this time, but probably made them too short and lost some marks due to missing details.
+
+Overall, the final exam was reasonable. If you understood the assignments and tutorials properly, most questions should feel familiar.
+
+### Overall Thoughts
+
+- Workload: 3/10
+- Enjoyability: 8/10
+- Difficulty: 2/10
+
+Because I had a CP background from high school, I found CS3230 quite easy and straightforward. I was able to get an A+ without much effort compared to my other modules. That said, the assignments were still quite long, so I had to put in decent effort.
+
+I did not attend any lecture at all, and I found that reading the slides was enough for me. The slides were clear enough to follow, especially if you already have some algorithms background.
+
+Overall, I think the course is good and well-structured. It provides a solid foundation in algorithms and complexity theory, especially if you want to properly understand why common algorithmic techniques work.
+
+The main thing I learned was how to present algorithmic arguments properly: proving DP and greedy solutions, analysing time complexity, and writing correctness proofs clearly.
+
+I would recommend this course to anyone interested in algorithms. However, it may not be very challenging if you already have a strong CP background.
 
 ## CS3233 - Competitive Programming
 
@@ -299,6 +350,8 @@ emphasis will be placed on material after the midterm (Lecture 6-10).
   height="600"
   frameborder="0">
 </iframe>
+
+**Grade:** A+ (joint-1)
 
 ## IS1108 - Digital and AI Ethics
 
@@ -314,7 +367,8 @@ emphasis will be placed on material after the midterm (Lecture 6-10).
 | Group Debate        | 20%    | 20  | 15.96 | 0 / 15 / 16 / 17 / 18  | 15          | 15%   |
 | Group Product Pitch | 20%    | 20  | ?     | ?                      | ?           | ?     |
 
-Total: ?%
+**Total:** ?%
+**Expected Grade:** B
 
 ### Key Topics
 The following are key topics for this course:
