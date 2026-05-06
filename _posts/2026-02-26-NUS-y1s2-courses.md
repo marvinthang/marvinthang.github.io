@@ -25,10 +25,8 @@ math: true
 
 ## CS2100 - Computer Organisation
 
-**Lecturers**: Aaron Tan, Prabhu Natarajan
-
-**TA**: Toh Yi Zhong
-
+**Lecturers**: Aaron Tan, Prabhu Natarajan  
+**TA**: Toh Yi Zhong  
 **Lab TA**: Chen Xiangyun
 
 [Course Website](https://www.comp.nus.edu.sg/~cs2100/)
@@ -46,11 +44,14 @@ math: true
 | Mid-term             | 20%    | 40  | 20.31 | 4 / 15 / 20 / 25 / 38         | 38          | 19%       |
 | Final                | 50%    | 100 | ?     | ?                             | 98.5        | 49.25%    |
 
-**Total:** 98.22%
-
+**Total:** 98.22%  
 **Expected Grade:** A+
 
 ### Content
+
+### Lecture (Recitation)
+
+The recitation is recorded.
 
 ### Quizzes
 
@@ -81,10 +82,10 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
 
 **Format**: 
 - Pen-and-paper, open-book
-- MCQs (20 marks) and FITBs (20 marks)
 - **Duration**: 1.5 hours
+- MCQs (20 marks) and FITBs (20 marks)
 
-**Scope**: Everything covered up to and including Processor Datapath and Control, recitations 0-6, tutorials 1-5, and labs 0-4.
+**Scope**: Everything covered up to and including Processor Datapath and Control
 
 **Materials**:
 - Any printed materials
@@ -94,9 +95,8 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
 
 **Format**:
 - Pen-and-paper, open-book
-- 17 MCQs (34 marks)
-- 6 multi-parts questions (66 marks)
 - **Duration**: 2 hours
+- 17 MCQs (34 marks) and 6 multi-parts questions (66 marks)
 
 **Scope**:
 - Earlier topics (~30%)
@@ -108,21 +108,20 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
 
 ## CS2109S - Introduction to AI and Machine Learning
 
-**Lecturers**: Muhammad RIZKI Maulana, CONGHUI Hu, PATRICK Rebentrost
-
+**Lecturers**: Muhammad RIZKI Maulana, CONGHUI Hu, PATRICK Rebentrost  
 **TA**: Beh Chuen Yang (N00bcak)
 
 ### Grading Scheme
 
-| Component        | Weight | Max | Mean  | Quartiles                    | marvinthang | Score |
-| ---------------- | ------ | --- | ----- | ---------------------------- | ----------- | ----- |
-| Coursemology     | 30%    | 30  | 29.6  | 7 / 30 / 30 / 30 / 30        | 30          | 30%   |
-| Capstone Project | 10%    | 100 | 81.55 | 0 / 73 / 99 / 100 / 100      | 100         | 10%   |
-| Midterm          | 30%    | 100 | 62.74 | 10.5 / 54 / 64.5 / 72.5 / 97 | 70          | 21%   |
-| Final            | 30%    | 100 | ?     | ?                            | 89          | 26.7% |
+| Component        | Weight | Max | Mean  | Quartiles                    | marvinthang | Score  |
+| ---------------- | ------ | --- | ----- | ---------------------------- | ----------- | ------ |
+| Coursemology     | 30%    | 30  | 29.6  | 7 / 30 / 30 / 30 / 30        | 30          | 30%    |
+| Capstone Project | 10%    | 100 | 81.55 | 0 / 73 / 99 / 100 / 100      | 100         | 10%    |
+| Midterm          | 30%    | 100 | 62.74 | 10.5 / 54 / 64.5 / 72.5 / 97 | 70          | 21%    |
+| Final            | 30%    | 100 | 70.61 | 17 / 63 / 72.25 / 82 / 97.5  | 97.5        | 29.25% |
 
-**Total:** 87.7%
-**Expected Grade:** A
+**Total:** 90.25%  
+**Expected Grade:** A+
 
 ### Content
 
@@ -141,7 +140,6 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
   - **Adversarial Search:**
     - Minimax Algorithm
     - Alpha-Beta Pruning
-
 - "Classical" Machine Learning
   - **Decision Trees**
   - **Regression:**
@@ -166,6 +164,10 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
       - Transformers
   - **Unsupervised (deep) learning**
 
+### Lecture
+
+Lectures are recorded and made available on Panopto.
+
 ### Coursemology
 
 The Coursemology component is determined by the level achieved in Coursemology, which is based on the experience points (EXP) earned. EXP can be gained through various activities, including:
@@ -181,16 +183,17 @@ This is capped at 30,000 EXP, which corresponds to Level 30, and is scaled to 30
 You only need to do all 4 problem sets, complete all surveys, do all lecture trainings, then you only need to attend 5 tutorial (try to get participation marks in those 5 tutorials) to get the maximum 30 marks for this component.
 
 ### Midterm
+
 **Format:**
 - Digital Assessment (Examplify)
-- ~30 questions, including MCQ/MRQ/FITB/TF
+- **Duration:** 20 hours
+- 30 questions, including MCQ/MRQ/FITB/TF
 
-**Scope:** 
-- All topics covered until and including Lecture 6
+**Scope:** All topics covered until and including Lecture 6
 
 **Materials:**
 - One double-sided A4 help sheet
-- (Graphing) calculator
+- Calculator
 
 Nothing much to say, I did make-up midterm, that was terrible.
 
@@ -208,22 +211,20 @@ _CS2109S Capstone Project Score Distribution_
 
 **Format**: 
 - Digital Assessment (Examplify)
-- **Questions format**: MCQ/MRQ/FITB/TF
-- **Number of questions**: ~30 questions
 - **Duration**: 2 hours
-
-**Scope**:
-- All topics covered in lectures, trainings, tutorials, and problem sets, from Week 1 – 13
-- $>$ 90% will be on machine learning
+- 32 questions, including MCQ/MRQ/FITB/TF
 
 **Materials**:
 - One A4 cheatsheet, both sides
-- Calculators
+- Calculator
+
+$>$ 90% will be on machine learning
+
+There is 1 available cheatsheet on examplify, you maybe don't need your printed cheatsheet, but yeh with your own cheatsheet, it maybe faster to find the relevant formula or concept, so i would still recommend preparing a printed cheatsheet.
 
 ## CS3230 - Design and Analysis of Algorithms
 
-**Lecturers**: Chen Yu, Sanjay Jain, Warut Suksompong
-
+**Lecturers**: Chen Yu, Sanjay Jain, Warut Suksompong  
 **TA**: Yeung Man Tsung (Benson)
 
 ### Grading Scheme
@@ -233,10 +234,10 @@ _CS2109S Capstone Project Score Distribution_
 | Tutorials      | 5%     | 20  | 18.5  | 1 / 20 / 20 / 20 / 20      | 20          | 5%    |
 | Assignments    | 25%    | 25  | 24.43 | 0 / 25 / 25 / 25 / 25      | 25          | 25%   |
 | Lecture Attend | 2%     | 10  | 7.22  | 0 / 6 / 9 / 10 / 10        | 7           | 1.4%  |
-| Midterm        | 30%    | 50  | 27.83 | 0 / 22.5 / 27.25 / 33 / 50 | 48          | 29%   |
+| Midterm        | 30%    | 50  | 27.83 | 0 / 22.5 / 27.25 / 33 / 50 | 48          | 28.8% |
 | Final Exam     | 40%    | 60  | 33.69 | 0 / 27 / 34 / 42 / 56      | 54          | 36%   |
 
-**Total:** 96.4%  
+**Total:** 96.2%  
 **Expected Grade:** A+
 
 ### Content
@@ -260,7 +261,7 @@ _CS2109S Capstone Project Score Distribution_
 
 Unlike last semester, you need to attend at least 10 out of 12 tutorials to get the full 20 marks.
 
-Participation is quite easy to get. You just need to give a reasonable short answer for tutorial questions during tutorial. No need to produce some galaxy-brain proof on the spot.
+Participation is quite easy to get. You just need to give a reasonable short answer for tutorial questions.
 
 ### Assignments
 
@@ -272,9 +273,13 @@ I stopped doing them after Assignment 7 because I already got full marks and wan
 
 ### Lecture Attendance (Bonus)
 
-> Lecture attendance gives 0.2% per lecture, up to 10 lectures. Attendance is claimed by scanning a QR code shown during the lecture break.
+> Lecture attendance gives 0.2% per lecture, up to 10 out of 11 lectures. Attendance is claimed by scanning a QR code shown during the lecture break.
 
 The QR code is only available for a short window, usually around 5 minutes, so you need to be around during the break to claim it.
+
+Lecture is recorded and made available on Panopto.
+
+I did not attend any lecture at all, and I found that reading the slides was enough for me. The slides were clear enough to follow, especially if you already have some algorithms background.
 
 ### Midterm
 
@@ -295,19 +300,17 @@ The QR code is only available for a short window, usually around 5 minutes, so y
 
 The MCQs were quite standard and pretty easy.
 
-This semester’s midterm focused more on proof of correctness and probability, with no DP or greedy questions like last semester. The proof questions were long, but still manageable.
+This sem's midterm focused more on proof of correctness and probability, with no DP or greedy questions like last sem. The proof questions were long, but still manageable.
 
 My main mistake was writing too much detail, which cost me time and made me only finish around half of the last part. So my advice is to keep proof answers short, clear, and easy to follow. Don’t over-explain every tiny step unless you enjoy donating time to the void.
 
 ### Final Exam
 
 **Format:**
-- **Duration:** 2 hours
 - Written Assessment (Pen and Paper)
+- **Duration:** 2 hours
 - 10 MCQ (2 marks each) = 20 marks
 - 4 proof questions (10 marks each) = 40 marks
-
-**Scope:** Anything covered in lectures/assignments/tutorials
 
 **Materials:**
 - Open book
@@ -329,8 +332,6 @@ Overall, the final exam was reasonable. If you understood the assignments and tu
 
 Because I had a CP background from high school, I found CS3230 quite easy and straightforward. I was able to get an A+ without much effort compared to my other modules. That said, the assignments were still quite long, so I had to put in decent effort.
 
-I did not attend any lecture at all, and I found that reading the slides was enough for me. The slides were clear enough to follow, especially if you already have some algorithms background.
-
 Overall, I think the course is good and well-structured. It provides a solid foundation in algorithms and complexity theory. The main thing I learned was how to present algorithmic arguments properly: proving DP and greedy solutions, analysing time complexity, and writing correctness proofs clearly.
 
 I would recommend this course to anyone interested in algorithms. However, it may not be very challenging if you already have a strong CP background.
@@ -348,12 +349,12 @@ I would recommend this course to anyone interested in algorithms. However, it ma
   frameborder="0">
 </iframe>
 
+**Total:** 100%  
 **Grade:** A+ (joint-1)
 
 ## IS1108 - Digital and AI Ethics
 
-**Lecturer**: Lee Boon Kee
-
+**Lecturer**: Lee Boon Kee  
 **TA**: Canva Chua Qi Xun
 
 | Component           | Weight | Max | Mean  | Quartiles              | marvinthang | Score |
@@ -364,7 +365,7 @@ I would recommend this course to anyone interested in algorithms. However, it ma
 | Group Debate        | 20%    | 20  | 15.96 | 0 / 15 / 16 / 17 / 18  | 15          | 15%   |
 | Group Product Pitch | 20%    | 20  | ?     | ?                      | ?           | ?     |
 
-**Total:** ?%
+**Total:** ?%  
 **Expected Grade:** B
 
 ### Key Topics
@@ -382,6 +383,7 @@ The following are key topics for this course:
 10.  Social Good and Sustainable Digital Practices
 
 ### Modes of Teaching and Learning
+
 This course is designed as a blended collaborative digital course to be delivered over two semesters per year. The delivery will consist of the following:
 
 - Online Learning
@@ -398,6 +400,8 @@ Underlying any ethical discussion will be the **FIS**h model which makes use of 
 2. **I**nvestigate - The group will self-organize to plan and execute the work in search of answers to address the problem.
 3. **S**hare - The group will agree on how to present findings to the other groups in the IS1108 cohort.
 
+### Lecture
+
 ### Tutorial (Class Participation)
 
 There was only 7 tutorials in total.
@@ -410,9 +414,8 @@ The individual assignment for the course is designed to encourage students to de
 
 **Format:** 
 - Examplify Lockdown / Secure
-- There are 20 MCQ/MRQ questions, and 1 Essay question with a case study. You must answer all questions.
 - **Duration:** 80 mins
-- 20 MCQs/MRQs
+- 20 MCQs/MRQs and 1 Essay question with a case study
 - 1 open-ended question which will each feature a case study for students to analyze an ethical scenario in computing, and apply relevant frameworks and justify recommendations with structured reasoning.
 
 **Scope:** 
@@ -436,8 +439,7 @@ As part of the course, students will collaborate in teams to identify ethical is
 
 ## MA2213 - Numerical Analysis I
 
-**Lecturer**: Fu Zhaohui
-
+**Lecturer**: Fu Zhaohui  
 **TA**: He Runyang
 
 | Component           | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
@@ -449,7 +451,12 @@ As part of the course, students will collaborate in teams to identify ethical is
 | Midterm (7th week)  | 20%    | 100 | 78.2  | -1 / 67.5 / 85 / 95 / 100  | 100         | 20%   |
 | Final exam          | 40%    | ?   | ?     | ?                          | ?           | ?     |
 
-Total: ?%
+**Total:** ?%  
+**Expected Grade:** ?
+
+### Lecture
+
+The lectures will be recorded and made available on Panopto.
 
 ### Class Participation
 
@@ -486,6 +493,10 @@ Midterm was a bit harder than quiz, but still manageable.
 
 ### Final Exam
 
+**Format:**
+- Closed-book examination
+- **Duration:** 120 mins
+
 **Scope:**
 - Computer arithmetic
 - Discrete methods for solving linear systems
@@ -511,23 +522,24 @@ Midterm was a bit harder than quiz, but still manageable.
 
 ## ST2334 - Probability and Statistics
 
-**Lecturers**: Adrian Roellin (Weeks 1–7), Somabha Mukherjee (Weeks 7–13)
-
+**Lecturers**: Adrian Roellin (Weeks 1–7), Somabha Mukherjee (Weeks 7–13)  
 **TA**: Wong Yean Ling
 
 | Component      | Weight | Max | Mean | Quartiles                | marvinthang | Score |
 | -------------- | ------ | --- | ---- | ------------------------ | ----------- | ----- |
-| Online quizzes | 10%    | ?   | ?    | ?                        | ?           | ?     |
+| Online quizzes | 10%    | ?   | ?    | ?                        | ?           | 10%   |
 | Tutorial       | 5%     | 5   | 4.98 | 0 / 5 / 5 / 5 / 5        | 5           | 5%    |
 | Midterm        | 25%    | 20  | 16.1 | 4 / 14 / 17 / 18.75 / 20 | 20          | 25%   |
 | Final          | 60%    | ?   | ?    | ?                        | ?           | ?%    |
 
-Total: ?%
+**Total:** ?%  
+**Expected Grade:** ?
 
 ### Teaching Mode
+
 This course is offered in a blended format. Each week, you will
-watch some 40 mins worth of content videos at your own time before the live lecture; and
-attend a "live" lecture in-person (in LT27) or via Zoom on Thursdays, 6–8pm.
+- watch some 40 mins worth of content videos at your own time before the live lecture; and
+- attend a "live" lecture in-person (in LT27) or via Zoom on Thursdays, 6–8pm.
 
 ### Lecture
 
@@ -541,7 +553,7 @@ A series of quizzes will be given via Canvas Quizzes.
 
 They will be graded on the basis of "completion" — as long as you attempt the quiz, you get full credit.
 
-There will be about 20 quizzes in total for the semester.
+There will be about 23 quizzes in total for the semester.
 
 If you complete at least 20 quizzes, you will be awarded the 10 marks assigned for this component.
 
@@ -557,10 +569,10 @@ If you miss a class, please go to another class for make-up, and keep the tutors
 
 **Format:**
 - Digital Assessment (Examplify)
-- Format: MCQ, TF, FITB, MRQ
 - **Duration:** 1 hour
+- Format: MCQ, TF, FITB, MRQ
 
-**Scope:** Chapters 1 to 4 (Weeks 1–6).
+**Scope:** Chapters 1 to 4 (Weeks 1–6)
 
 **Materials:**
 - Formula sheet: provided on Canvas - you must print this yourself; do not write on it; it contains CDF tables for the standard normal and Poisson distributions
@@ -575,13 +587,10 @@ _ST2334 Midterm Score Distribution_
 
 **Format:**
 - Digital Assessment (Examplify)
-- 36 questions, including MCQ, MRQ, and TF.
-- MRQ questions are not partially graded: all correct options must be selected to receive the mark.
 - **Duration**: 2 hours
-
-**Scope**: all chapters of the lecture notes
+- 36 questions, including MCQ, MRQ, and TF.
 
 **Materials:**
 - NEW: The formula sheets and statistical tables will be provided through Examplify. You are not allowed to bring a hardcopy to the exam. 
-- Help sheet: one A4 sheet, front and back; must be self-curated (created by you); may be handwritten, computer-typeset, or a combination.
+- One double-sided A4 help sheet
 - Calculator
