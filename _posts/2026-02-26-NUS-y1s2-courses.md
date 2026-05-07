@@ -49,36 +49,55 @@ math: true
 
 ### Content
 
-### Lecture (Recitation)
+- C Programming
+- Data Representation and Number Systems
+- MIPS Assembly
+- Instruction Set Architecture
+- Processor Datapath and Control
+- Boolean Algebra and Logic Circuits
+- Combinational and Sequential Logic
+- Pipelining
+- Cache
 
-The recitation is recorded.
+### Lectures / Recitations
 
-### Quizzes
+This mod is taught in **Blended Learning** mode. Basically, you are expected to watch prerecorded lecture videos and do weekly quizzes online.
 
-If the sum of ALL your quiz marks is greater than 80%, you will receive 3 marks. If it is between 70% and 80%, you will receive 2 marks. If it is between 60% and 70%, you will receive 1 mark. No marks are awarded if the sum is less than 60%.
+The actual lecture slot is called a recitation. From what I heard, the lecturers use it to recap the main points from the videos and answer questions. I never attended any recitation, so I cannot comment much on that. The recitations are recorded anyway.
 
-### Tutorials
+For me, reading the slides and watching the videos was enough. The slides were usually clear, and when they were not, the videos explained things quite well. The prerecorded videos are quite long though, so you can probably skip the easier parts or watch them at 2x speed.
 
-Tutorials are small group forums where you present and discuss answers to the tutorial questions, and raise your doubts for clarification. Answers come from you, not from your tutor. Your tutor can then build on your contribution to bring up any intricate points that have been overlooked, or to correct any misconception.
+Overall, I think this format saved me quite a lot of time.
 
-### Labs
+### Quizzes (3%)
 
-Labs form the practical element of CS2100. You are reminded that all submissions must be from your own effort. Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Plagiariam website.)
+There are weekly quizzes on Canvas. They are quite easy and straightforward, but they are still useful for recalling the main points from the lectures.
 
-You are to complete your lab assignment and submit it by hand to your tutor by the end of each lab session, unless otherwise stated.
+### Tutorials (5%)
 
-Late submission will not be accepted, unless prior permission has been granted.
+I highly recommend doing the tutorials. They are not too hard, but they helped me understand the material much better.
 
-### Assignments
+The tutorial questions are also quite similar in style to the midterm and final questions, so doing them is probably one of the best ways to prepare for exams. The detailed solutions are very helpful too.
 
-Three assignments will be given out.
-You are reminded that all submissions must be from your own effort, and must be submitted on time. Submit your answer to Canvas. Please submit a .pdf file, and name your file with your Student Number (eg: AxxxxxxxY.pdf).
+### Labs (10%)
 
-Late submission will not be accepted. We are absolutely strict on this.
+> You are to complete your lab assignment and submit it by hand to your tutor by the end of each lab session, unless otherwise stated.
 
-Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Plagiariam website.)
+The labs were not very relevant to the exams, so I did not put much effort into them.
 
-### Midterm
+Most labs were basically: finish the lab assignment before the session, show your result to the lab TA, submit it, and leave after 2 minutes. There were only 3 practical labs where you actually had to build circuits on-site.
+
+My advice is to pick a lab slot right after your tutorial, because they are usually in adjacent rooms. You can finish tutorial, submit your lab immediately, and go home.
+
+### Assignments (12%)
+
+There were 3 assignments. They were quite straightforward, but still had a decent amount of work. I spent around 1 hour on each and got full marks.
+
+Remember to double-check your answers carefully, either with friends or ChatGPT, because some questions are a bit tricky and it is easy to lose marks from small mistakes.
+
+That said, do not rely too much on them. Try to solve everything by yourself first to test your own understanding.
+
+### Midterm (20%)
 
 **Format**: 
 - Pen-and-paper, open-book
@@ -91,12 +110,22 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
 - Any printed materials
 - Calculator
 
-### Final Exam
+Similar to the PYPs, the midterm mostly tests your ability to work like a computer: do calculations by hand quickly and accurately.
+
+Luckily, I am quite good at that, so I did not find the midterm too hard. The main challenge is being careful because there are many small calculations, and one tiny mistake can destroy your answer.
+
+The midterm was a bit harder than I expected from the PYPs, but I still had some time to double-check. The MCQs required quite a good understanding of the content and were harder than the PYPs.
+
+One thing I did not like was that they tested some C concepts that did not really appear clearly in the course itself. If I were not already familiar with C, I might have gotten almost all the C questions wrong.
+
+Tips for the midterm: prepare your cheatsheet carefully. Include tables for register/instruction code in binary, ALU signals, and anything involving conversions. Also learn how to use n-base mode on your calculator properly.
+
+### Final Exam (50%)
 
 **Format**:
 - Pen-and-paper, open-book
 - **Duration**: 2 hours
-- 17 MCQs (34 marks) and 6 multi-parts questions (66 marks)
+- 17 MCQs (34 marks) and 6 multi-part questions (66 marks)
 
 **Scope**:
 - Earlier topics (~30%)
@@ -105,6 +134,44 @@ Plagiarism will not be tolerated and offenders will be dealt with. (Refer to Pla
 **Materials**:
 - Any printed materials
 - Calculator
+
+Similar to the midterm, I felt the final was much harder than the PYPs, but I actually enjoyed it quite a lot.
+
+The FITB questions were quite standard. Some parts were basically doing K-maps, flip-flops, and sequential circuits without too much thinking. However, around 40% of the paper was based on one MIPS code question, so if you misread the code, you could lose a lot of marks very quickly. Luckily, I did not mess that one up.
+
+I lost 0.5 marks because my rewritten C code was too similar to the MIPS logic, using something like `if (temp < 0) temp = -temp` instead of a cleaner `temp = abs(...)`. I also carelessly read one part wrongly. If not, I might have gotten a perfect score :<
+
+There was also a hard code conversion question that I almost got wrong, but somehow survived. They also tested static-0 hazard, which I almost forgot existed. I just filled in something that looked correct and somehow it was correct.
+
+Tips for the final: the paper is quite long, so you may not have time to double-check everything. Do each question carefully the first time. Prepare scratch paper for K-maps, flip-flop sequential circuits, and pipelining delay tables. That helped me a lot during the exam.
+
+### Overall Thoughts
+
+Workload: 6/10  
+Enjoyability: 7/10  
+Difficulty: 3/10
+
+The course content is quite heavy and broad. I still had to spend a lot of time processing the slides, doing quizzes and tutorials by myself, and completing assignments, even though I skipped the prerecorded lectures and recitations.
+
+This was probably the mod I spent the most time on this semester, partly because I was genuinely interested in computer design: how processors work, how they execute instructions, and how low-level hardware optimisations happen.
+
+The content is broad, but it does not go very deep. It feels more like a survey of many low-level computer systems concepts. Still, it gave me a rough understanding of what actually happens inside a computer, and it made me want to learn more about how modern processors really work.
+
+That said, I do not really like how the exams test the content by making us behave like a computer. A lot of the assessment is just doing mechanical calculations quickly and carefully.
+
+Overall, I would describe this module as more BFS than DFS. The difficulty is not very high, but there is a lot to memorise, understand, and execute accurately under time pressure.
+
+### How to Do Well
+
+If you enjoy low-level systems, CS2100 is quite interesting. It gives you a rough mental model of how C, assembly, circuits, processors, pipelines, and caches connect together.
+
+If you dislike mechanical calculations, the exams may feel annoying. The concepts are not too difficult, but you need to be fast and accurate with binary conversion, MIPS tracing, K-maps, pipelining, and cache questions.
+
+My advice is to read the slides at your own pace and not spend too much time on the lecture videos. Instead, focus on doing tutorials and assignments seriously. You can safely put less effort into labs if your main goal is exam preparation.
+
+Prepare a good cheatsheet and scratch papers, and practise PYPs. Understanding the concepts is only half the battle; the other half is not making silly mistakes under time pressure.
+
+Also, I am planning to create a CS2100 website to help students learn MIPS, datapath/control, K-map, pipelining, caching, and assembly code more interactively. Hopefully, it can make the module less about manually behaving like a computer and more about actually understanding how computers work.
 
 ## CS2109S - Introduction to AI and Machine Learning
 
@@ -182,6 +249,13 @@ This is capped at 30,000 EXP, which corresponds to Level 30, and is scaled to 30
 
 You only need to do all 4 problem sets, complete all surveys, do all lecture trainings, then you only need to attend 5 tutorial (try to get participation marks in those 5 tutorials) to get the maximum 30 marks for this component.
 
+### Capstone Project
+
+You will be presented with a problem, and your task is to develop a solution. Grading will primarily be based on how your solution performs. This is designed to encourage exploration and experimentation.
+
+![Desktop View](/assets/img/posts/y1s2/CS2109S-capstone.png){: width="972" height="589" }
+_CS2109S Capstone Project Score Distribution_
+
 ### Midterm
 
 **Format:**
@@ -200,13 +274,6 @@ Nothing much to say, I did make-up midterm, that was terrible.
 ![Desktop View](/assets/img/posts/y1s2/CS2109S-midterm.png){: width="972" height="589" }
 _(Old) CS2109S Midterm Score Distribution_
 
-### Capstone Project
-
-You will be presented with a problem, and your task is to develop a solution. Grading will primarily be based on how your solution performs. This is designed to encourage exploration and experimentation.
-
-![Desktop View](/assets/img/posts/y1s2/CS2109S-capstone.png){: width="972" height="589" }
-_CS2109S Capstone Project Score Distribution_
-
 ### Final Exam
 
 **Format**: 
@@ -221,6 +288,9 @@ _CS2109S Capstone Project Score Distribution_
 $>$ 90% will be on machine learning
 
 There is 1 available cheatsheet on examplify, you maybe don't need your printed cheatsheet, but yeh with your own cheatsheet, it maybe faster to find the relevant formula or concept, so i would still recommend preparing a printed cheatsheet.
+
+![Desktop View](/assets/img/posts/y1s2/CS2109S-final.png){: width="972" height="589" }
+_CS2109S Final Exam Score Distribution_
 
 ## CS3230 - Design and Analysis of Algorithms
 
@@ -255,33 +325,34 @@ There is 1 available cheatsheet on examplify, you maybe don't need your printed 
 - Week 10+12: Reductions & Intractability
   - NP and NP-Complete
 
-### Tutorials
+### Tutorials (5%)
 
-> Tutorial marks come from attendance and participation. Each tutorial attended gives 1 mark, for 12 marks total. Participation in two tutorials gives 5 marks each, and everything is capped at 20 marks.
+> Tutorial marks come from **attendance** and **participation**. Each tutorial attended gives 1 mark, for 12 marks total. Participation in two tutorials gives 5 marks each, and everything is capped at 20 marks.
 
-Unlike last semester, you need to attend at least 10 out of 12 tutorials to get the full 20 marks.
-
+Unlike last semester, you need to attend at least 10 out of 12 tutorials to get the full 20 marks.  
 Participation is quite easy to get. You just need to give a reasonable short answer for tutorial questions.
 
-### Assignments
+My TA was really good and explained things clearly. The tutorial questions were also useful for understanding the material. Because of that, I found tutorials quite beneficial, even though most of the time I was doing other things during tutorial.
+
+### Assignments (25%)
 
 > Your best 7 out of 10 assignments are counted (8 marks each). The raw total is 56 marks, capped at 50 marks.
 
-I found the assignments quite challenging, but they were actually very useful for understanding the material.
+I found the assignments quite challenging, but they were probably the most useful part of the module as they force you to actually think through the algorithms.
 
 I stopped doing them after Assignment 7 because I already got full marks and wanted to save time for other courses.
 
-### Lecture Attendance (Bonus)
+### Lecture Attendance (Bonus 2%)
 
 > Lecture attendance gives 0.2% per lecture, up to 10 out of 11 lectures. Attendance is claimed by scanning a QR code shown during the lecture break.
 
 The QR code is only available for a short window, usually around 5 minutes, so you need to be around during the break to claim it.
 
-Lecture is recorded and made available on Panopto.
+Lectures are recorded and uploaded on Panopto.
 
-I did not attend any lecture at all, and I found that reading the slides was enough for me. The slides were clear enough to follow, especially if you already have some algorithms background.
+I did not attend any lecture at all, and I found that reading the slides was enough for me. The slides were clear enough to follow, especially if you already have some algorithms background. For me, assignments and tutorials were more useful because they showed the expected way to write proofs.
 
-### Midterm
+### Midterm (30%)
 
 **Format:** 
 - Written Assessment (Pen and Paper)
@@ -302,9 +373,11 @@ The MCQs were quite standard and pretty easy.
 
 This sem's midterm focused more on proof of correctness and probability, with no DP or greedy questions like last sem. The proof questions were long, but still manageable.
 
-My main mistake was writing too much detail, which cost me time and made me only finish around half of the last part. So my advice is to keep proof answers short, clear, and easy to follow. Don’t over-explain every tiny step unless you enjoy donating time to the void.
+My main mistake was writing too much detail, which cost me time and made me only finish around half of the last part. So my advice is to keep proof answers short, clear, and easy to follow.
 
-### Final Exam
+The midterm was much easier than the PYPs I looked at. Some PYP questions, especially the coin weighing ones, felt much more challenging. Luckily, this semester’s midterm did not have that.
+
+### Final Exam (40%)
 
 **Format:**
 - Written Assessment (Pen and Paper)
@@ -318,9 +391,11 @@ My main mistake was writing too much detail, which cost me time and made me only
 
 The MCQs were quite standard and not very challenging.
 
-The essay questions were also reasonable: one greedy question, one DP question, one NP-completeness proof, and one weighing question. The NP-completeness question was quite guided since it explicitly said to reduce from 3-SAT. The hardest question was the weighing one. I did not see the optimal idea, so I wrote a simpler but non-optimal solution. 
+The essay questions were also reasonable: one greedy question, one DP question, one NP-completeness proof, and one weighing question. The NP-completeness question was quite guided since it explicitly said to reduce from 3-SAT.
 
-Learning from my mistakes, I wrote shorter answers for essay questions this time, but probably made them too short and lost some marks due to missing details.
+The hardest question was the coin weighing one. I'm too lazy to think of the optimal idea, so I wrote a simpler but non-optimal solution.
+
+Learning from my midterm mistake, I wrote shorter answers for the essay questions this time. It helped me finish everything quite early, but I was too lazy to double-check properly. I probably made some answers too short and lost marks due to missing details.
 
 Overall, the final exam was reasonable. If you understood the assignments and tutorials properly, most questions should feel familiar.
 
@@ -330,11 +405,16 @@ Overall, the final exam was reasonable. If you understood the assignments and tu
 - Enjoyability: 8/10
 - Difficulty: 2/10
 
-Because I had a CP background from high school, I found CS3230 quite easy and straightforward. I was able to get an A+ without much effort compared to my other modules. That said, the assignments were still quite long, so I had to put in decent effort.
+Because I had a CP background from high school, I found CS3230 quite easy and straightforward. Many topics like DnC, randomised algorithms, DP, greedy, and reductions were already familiar to me. I was able to get an A+ without much effort. That said, the assignments were still quite long, so I still had to put in decent effort.
 
-Overall, I think the course is good and well-structured. It provides a solid foundation in algorithms and complexity theory. The main thing I learned was how to present algorithmic arguments properly: proving DP and greedy solutions, analysing time complexity, and writing correctness proofs clearly.
+I actually enjoyed the module. It is not very flashy, but it teaches a very important CS skill: turning an algorithmic idea into a clean argument. In CP, you can often just submit code and pray to the judge. In CS3230, sadly, "it works because it feels right" is not a proof.
 
-I would recommend this course to anyone interested in algorithms. However, it may not be very challenging if you already have a strong CP background.
+The course does not go extremely deep into rigorous mathematical proof. It is more like an introduction to reasoning formally about algorithms. The main value is learning how to present algorithmic arguments properly: proving DP and greedy solutions, analysing time complexity, writing correctness proofs clearly, and I finally understanding what people mean when they keep talking about `P = NP`.
+
+**Difficulty Disclaimer**: 
+- My difficulty rating is very biased by my CP background. I had already seen many of the main ideas before, so the main challenge for me was proof presentation rather than discovering the algorithmic ideas from scratch.
+- If you are not comfortable with algorithms or proof-writing, the module can feel much harder.
+- So I would not say CS3230 is objectively easy. It is easy if you already have strong algorithmic maturity, but it can be quite challenging if this is your first serious proof-heavy algorithms module.
 
 ## CS3233 - Competitive Programming
 
