@@ -1,8 +1,8 @@
 ---
 title: Templates in C++
-date: 2026-05-11 00:00:00 +0800
+date: 2026-05-12 00:00:00 +0800
 categories: [cpp]
-tags: [cpp, cppcon, templates, c++]
+tags: [cpp, cppcon, templates, c++, function template, class template, variadic template, concepts, ctad, non-type template parameter]
 description: Back to Basics. Templates in C++ - Nicolai Josuttis - CppCon 2022
 
 math: true

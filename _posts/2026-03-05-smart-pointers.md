@@ -2,7 +2,7 @@
 title: Smart Pointers in C++
 date: 2026-03-05 08:00:00 +0800
 categories: [cpp]
-tags: [cpp, cppcon, smart-pointers, c++, pointer, pointers]
+tags: [cpp, cppcon, smart pointers, c++, pointer, pointers, unique_ptr, shared_ptr, weak_ptr, make_unique, make_shared, custom deleter]
 description: Back to Basics. Declarations in C++ - Ben Saks - CppCon 2022
 math: true
 ---

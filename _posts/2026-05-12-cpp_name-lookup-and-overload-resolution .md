@@ -1,8 +1,8 @@
 ---
 title: Name Lookup and Overload Resolution in C++
-date: 2026-05-12 00:00:00 +0800
-categories: [c++]
-tags: [c++, c++con, templates, c++]
+date: 2026-05-12 15:00:00 +0800
+categories: [cpp]
+tags: [cpp, cppcon, c++, name lookup, overload resolution, adl, dependent names, function template specialization]
 description: Back to Basics - Name Lookup and Overload Resolution in C++ - Mateusz Pusz - CppCon 2022
 
 
@@ -13,7 +13,7 @@ Source: [Back to Basics - Name Lookup and Overload Resolution in C++ - Mateusz P
 
 ## Why Overload Functions?
 
-Name lookup and overload resolution are among the most complex compile-time features in C++.
+Name lookup and [overload resolution](/posts/cpp-overload-resolution/) are among the most complex compile-time features in C++.
 
 When we write:
 
@@ -898,7 +898,7 @@ So the specialization of `#1` is not considered.
 > Prefer overloads over explicit function template specializations when customization is intended.
 {: .prompt-tip }
 
-## Overload Resolution
+## [Overload Resolution](/posts/cpp-overload-resolution/)
 
 Overload resolution selects the most appropriate overload at compile time.
 

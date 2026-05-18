@@ -2,7 +2,7 @@
 title: Value Semantics in C++
 date: 2026-04-18 00:00:00 +0800
 categories: [cpp]
-tags: [cpp, cppcon, value-semantics, c++]
+tags: [cpp, cppcon, value semantics, c++, std::variant, std::visit, std::optional, std::expected, std::function]
 description: Back to Basics. Cpp Value Semantics - Klaus Iglberger - CppCon 2022
 
 math: true
