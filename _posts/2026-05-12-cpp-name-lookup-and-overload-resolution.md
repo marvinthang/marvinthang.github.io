@@ -3,13 +3,13 @@ title: Name Lookup and Overload Resolution in C++
 date: 2026-05-12 15:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, c++, name lookup, overload resolution, adl, dependent names, function template specialization]
-description: Back to Basics - Name Lookup and Overload Resolution in C++ - Mateusz Pusz - CppCon 2022
+description: "Back to Basics: Name Lookup and Overload Resolution in C++ - Mateusz Pusz - CppCon 2022"
 
 
 math: true
 ---
 
-Source: [Back to Basics - Name Lookup and Overload Resolution in C++ - Mateusz Pusz - CppCon 2022](https://youtu.be/iDX2d7poJnI?si=4V2219zrGrwpK5O_)
+Source: [Back to Basics: Name Lookup and Overload Resolution in C++ - Mateusz Pusz - CppCon 2022](https://youtu.be/iDX2d7poJnI?si=4V2219zrGrwpK5O_)
 
 ## Why Overload Functions?
 

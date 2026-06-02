@@ -3,7 +3,7 @@ title: The C++ Core Guidelines
 date: 2026-05-13 00:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, c++, core guidelines, cppcoreguidelines, guidelines]
-description: Back to Basics. The C++ Core Guidelines - Rainer Grimm - CppCon 2022
+description: "Back to Basics: The C++ Core Guidelines - Rainer Grimm - CppCon 2022"
 
 math: true
 ---

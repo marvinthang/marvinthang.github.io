@@ -3,7 +3,7 @@ title: Smart Pointers in C++
 date: 2026-03-05 08:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, smart pointers, c++, pointer, pointers, unique_ptr, shared_ptr, weak_ptr, make_unique, make_shared, custom deleter]
-description: Back to Basics. Declarations in C++ - Ben Saks - CppCon 2022
+description: "Back to Basics: C++ Smart Pointers - David Olsen - CppCon 2022"
 math: true
 ---
 Source: [Back to Basics: C++ Smart Pointers - David Olsen - CppCon 2022](https://youtu.be/YokY6HzLkXs?si=lcCo9b8KTw_EFfqp)
@@ -31,20 +31,20 @@ Raw pointers have too many uses. They can be used for:
 - Some pointers can **never** be null (e.g. `this` pointer)
 - Some pointers can be null (e.g. optional pointer parameters)
 
-It would be nice if the type system helped enforce that/
+It would be nice if the type system helped enforce that.
 Unfortunately, the type system doesn’t help.
 `T*` can be used for **all combinations** of those characteristics.
 
 ## Smart Pointers
 
-Behaves like a pointer (... at least one of the roles of a pointer):
+A smart pointer behaves like a pointer in at least one of the usual pointer roles:
 - Points to an object
 - Can be dereferenced with `*` and `->`
 
-Adds additional **smart** semantics to (often) limit behavior to certain of a pointer’s possible roles
+Adds additional **smart** semantics that often limit behavior to certain pointer roles
 
 **Smart** can be almost anything:
-- Automatic release resources (most common)
+- Automatically release resources (most common)
 - Enforce restrictions (e.g. non-null)
 - Extra safety checks (e.g. bounds checking)
 
@@ -53,7 +53,7 @@ Sometimes the **smarts** are only in the name:
 
 ## Should I use raw pointers?
 
-- Use raw pointer for **non-owning** pointer to an object (but use a smart pointer for all **owning pointers** instead)
+- Use raw pointers for **non-owning** pointers to an object (but use a smart pointer for all **owning pointers** instead)
 - Use a span type in place of **non-owning pointers to arrays**: C++20 `std::span`, or `gsl::span`
 
 ## UNIQUE_PTR
@@ -286,7 +286,7 @@ std::unique_ptr<float[]> science(
 }
 ```
 
-Arguments are now `unique_ptr`, and return type is `unique_ptr`. 
+The arguments and return type now communicate ownership with `unique_ptr`. 
 
 The caller can use `std::move` to pass ownership of the arguments, and the return value will be moved to the caller.
 
@@ -294,7 +294,7 @@ The caller can use `std::move` to pass ownership of the arguments, and the retur
 WidgetBase* create_widget(InputType);
 ```
 
-better communicates its intent if changed to
+communicates its intent better as
 
 ```c++
 std::unique_ptr<WidgetBase> create_widget(InputType);
@@ -321,8 +321,7 @@ std::unique_ptr<T> d{c.get()};
 // crash due to double free
 ```
 
-> Don’t create a unique_ptr from a pointer unless you know where the pointer came 
-from and that it needs an owner
+> Don’t create a `unique_ptr` from a raw pointer unless you know where the pointer came from and that it needs an owner
 {: .prompt-warning }
 
 #### unique_ptr doesn’t solve the dangling pointer problem

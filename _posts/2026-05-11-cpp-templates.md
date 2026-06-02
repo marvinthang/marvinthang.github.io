@@ -3,7 +3,7 @@ title: Templates in C++
 date: 2026-05-12 00:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, templates, c++, function template, class template, variadic template, concepts, ctad, non-type template parameter]
-description: Back to Basics. Templates in C++ - Nicolai Josuttis - CppCon 2022
+description: "Back to Basics: Templates in C++ - Nicolai Josuttis - CppCon 2022"
 
 math: true
 ---
@@ -304,7 +304,7 @@ This says:
 {: .prompt-tip }
 
 
-### Multiple Template Parameters amd Return Type
+### Multiple Template Parameters and Return Type
 
 Templates can have more than one template parameter.
 
@@ -347,7 +347,7 @@ For example:
 
 ```c++
 template<typename T1, typename T2>
-??? mymax(T1 a, T2 b) {
+auto mymax(T1 a, T2 b) -> decltype(b < a ? a : b) {
     return b < a ? a : b;
 }
 ```

@@ -285,7 +285,7 @@ _(Old) CS2109S Midterm Score Distribution_
 
 $>$ 90% will be on machine learning
 
-There is 1 available cheatsheet on examplify, you maybe don't need your printed cheatsheet, but yeh with your own cheatsheet, it maybe faster to find the relevant formula or concept, so i would still recommend preparing a printed cheatsheet.
+Examplify provides one cheat sheet, so you may not strictly need a printed copy. Still, having your own printed cheat sheet makes it faster to find formulas and key concepts, so I would recommend preparing one.
 
 ![Desktop View](/assets/img/posts/y1s2/CS2109S-final.png){: width="972" height="589" }
 _CS2109S Final Exam Score Distribution_

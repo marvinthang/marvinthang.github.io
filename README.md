@@ -1,43 +1,97 @@
-# Chirpy Starter
+# marvinthang's blog
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+Personal technical blog for notes, course reviews, and learning write-ups, published at [marvinthang.github.io](https://marvinthang.github.io).
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+The site is built with [Jekyll](https://jekyllrb.com/) and the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme. Current posts focus on C++, systems/programming notes, and NUS course reviews.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Local Development
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+Install Ruby dependencies:
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+```sh
+bundle install
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+Run the site locally:
 
-## Usage
+```sh
+bash tools/run.sh
+```
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+By default, the site is served at `http://127.0.0.1:4000`.
 
-## Contributing
+Useful options:
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+```sh
+bash tools/run.sh --host 0.0.0.0
+bash tools/run.sh --production
+```
+
+## Writing Posts
+
+Posts live in `_posts/` and follow Jekyll's filename format:
+
+```text
+YYYY-MM-DD-post-slug.md
+```
+
+Each post starts with front matter. A typical post looks like this:
+
+```yaml
+---
+title: Post Title
+date: 2026-05-14 00:00:00 +0800
+categories: [cpp]
+tags: [cpp, concurrency]
+description: Short summary for previews and SEO.
+math: true
+---
+```
+
+Common fields:
+
+- `title`: Display title for the post.
+- `date`: Publication date and timezone.
+- `categories`: Broad grouping used by the archive pages.
+- `tags`: Searchable topic labels.
+- `description`: Short preview text.
+- `math`: Enables math rendering when needed.
+- `toc`: Controls the table of contents for the post.
+
+## Project Structure
+
+```text
+.
+|-- _config.yml       # Site and Chirpy configuration
+|-- _data/            # Contact, authors, sharing, and locale data
+|-- _includes/        # Local template overrides
+|-- _plugins/         # Local Jekyll plugins
+|-- _posts/           # Blog posts
+|-- _tabs/            # Top-level pages such as About, Tags, Archives
+|-- assets/           # CSS, images, favicons, and other static assets
+|-- tools/run.sh      # Local development server helper
+`-- tools/test.sh     # Production build and HTML checks
+```
+
+## Build And Test
+
+Build the production site and run HTML checks:
+
+```sh
+bash tools/test.sh
+```
+
+The test script builds into `_site/` with `JEKYLL_ENV=production`, then runs `htmlproofer` with external link checks disabled.
+
+## Configuration
+
+Main site settings are in `_config.yml`, including:
+
+- Site title, tagline, URL, and timezone.
+- Social links and contact metadata.
+- Theme mode, avatar, pagination, table of contents, comments, and PWA settings.
+- Post and tab permalink defaults.
 
 ## License
 
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+This repository uses the MIT License. See [LICENSE](LICENSE).

@@ -3,11 +3,11 @@ title: Overload Resolution in C++
 date: 2026-05-13 00:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, c++, overload resolution, overload, overload set, candidate, viable, conversion ranking, tie breaker, ambiguity]
-description: Back To Basics. Overload Resolution - CppCon 2021
+description: "Back to Basics: Overload Resolution - CppCon 2021"
 math: true
 ---
 
-Source: [Back To Basics: Overload Resolution - CppCon 2021](https://youtu.be/b5Kbzgx1w9A?si=DsDiVbqOCwqcIDLm)
+Source: [Back to Basics: Overload Resolution - CppCon 2021](https://youtu.be/b5Kbzgx1w9A?si=DsDiVbqOCwqcIDLm)
 
 ## Overload Resolution
 

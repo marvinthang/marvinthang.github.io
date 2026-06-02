@@ -3,7 +3,7 @@ title: Move Semantics in C++
 date: 2026-04-20 00:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, move semantics, c++, rvalue reference, std::move, std::forward, value categories, perfect forwarding, Rule of Five, ref-qualifiers]
-description: Back to Basics. Move Semantics - Andreas Fertig - CppCon 2022
+description: "Back to Basics: Move Semantics - Andreas Fertig - CppCon 2022"
 math: true
 ---
 

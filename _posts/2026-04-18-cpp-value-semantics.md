@@ -3,11 +3,11 @@ title: Value Semantics in C++
 date: 2026-04-18 00:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, value semantics, c++, std::variant, std::visit, std::optional, std::expected, std::function]
-description: Back to Basics. Cpp Value Semantics - Klaus Iglberger - CppCon 2022
+description: "Back to Basics: C++ Value Semantics - Klaus Iglberger - CppCon 2022"
 
 math: true
 ---
-Source: [Back to Basics: Cpp Value Semantics - Klaus Iglberger - CppCon 2022](https://youtu.be/G9MxNwUoSt0?si=wZegpCfo_CU2LPO6)
+Source: [Back to Basics: C++ Value Semantics - Klaus Iglberger - CppCon 2022](https://youtu.be/G9MxNwUoSt0?si=wZegpCfo_CU2LPO6)
 
 ## Toy Problem: Drawing Shapes
 
@@ -310,7 +310,7 @@ print(s);
 Here, `s` refers to the elements of `v`.  
 If `v` reallocates, `s` may still point to the old memory.
 
-So `s[2] = 99` still compiles, but the program now has undefined behaviour.  
+So `s[2] = 99` still compiles, but the program now has undefined behavior.  
 The span looks valid, but it is actually dangling.
 
 This is the main danger of reference semantics here.
@@ -431,17 +431,17 @@ std::optional<int> to_int(std::string_view s);
 ```
 
 This means the function either returns an `int`, or returns no value.
-It is simple and direct. 
+It is simple and direct.
 
 This is a good value-semantics design:
 
 * no question of **ownership**
 * **no pointer** involved
 * **no exception** overhead
-* **efficient** because of RVO and move semantics 
+* **efficient** because of RVO and move semantics
 
 The main limitation is that `std::optional` can only say success or failure.
-It **cannot** explain why the failure happened. 
+It **cannot** explain why the failure happened.
 
 ### `std::expected`
 
@@ -455,14 +455,14 @@ std::expected<int, std::string> to_int(std::string_view s);
 ```
 
 This means the function either returns an `int`, or returns an error message as a `std::string`.
-So it keeps the same simple value-based design, but carries more information than `std::optional`. 
+So it keeps the same simple value-based design, but carries more information than `std::optional`.
 
 It also has the same main benefits:
 
 * no question of **ownership**
 * no question of **semantics**
 * **no exception** overhead
-* **efficient** because of RVO and move semantics 
+* **efficient** because of RVO and move semantics
 
 So compared with `std::optional`, `std::expected` is useful when failure should carry an explanation.
 

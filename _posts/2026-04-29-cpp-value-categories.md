@@ -3,7 +3,7 @@ title: Value Categories in C++
 date: 2026-04-29 10:00:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, value categories, c++, move semantics, rvalue, lvalue, xvalue, prvalue, decltype, std::move, std::forward, std::decay]
-description: Back to Basics. Master C++ Value Categories With Standard Tools - Inbal Levi - CppCon 2022
+description: "Back to Basics: Master C++ Value Categories With Standard Tools - Inbal Levi - CppCon 2022"
 math: true
 ---
 

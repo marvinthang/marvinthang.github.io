@@ -3,7 +3,7 @@ title: Declarations in C++
 date: 2026-02-17 14:45:00 +0800
 categories: [cpp]
 tags: [cpp, cppcon, declarations, c++, declaration specifiers, declarators, const, constexpr, typename, dependent names, forwarding references]
-description: Back to Basics. Declarations in C++ - Ben Saks - CppCon 2022
+description: "Back to Basics: Declarations in C++ - Ben Saks - CppCon 2022"
 math: true
 ---
 Source: [Back to Basics: Declarations in C++ - Ben Saks - CppCon 2022](https://www.youtube.com/watch?v=IK4GhjmSC6w&list=PLHTh1InhhwT47Xpx7Cn-bPw9Qygjr98rs&index=3)
