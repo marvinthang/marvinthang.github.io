@@ -33,19 +33,23 @@ math: true
 
 ### Grading Scheme
 
-| Component            | Weight | Max | Mean  | Quartiles                     | marvinthang | Score (%) |
-| -------------------- | ------ | --- | ----- | ----------------------------- | ----------- | --------- |
-| Tutorial  Attendance | 5%     | 10  | 9.51  | 0 / 10 / 10 / 10 / 10         | 10          | 5%        |
-| Quizzes              | 3%     | 3   | 2.71  | 0 / 3 / 3 / 3 / 3             | 3           | 3%        |
-| Labs                 | 10%    | 185 | 176.3 | 0 / 181.5 / 183.5 / 185 / 185 | 184.5       | 9.97%     |
-| Assignment 1         | 4%     | 40  | 36.4  | 0 / 35.5 / 37.5 / 39 / 40     | 40          | 4%        |
-| Assignment 2         | 4%     | 40  | 34.88 | 0 / 33.88 / 36 / 38 / 40      | 40          | 4%        |
-| Assignment 3         | 4%     | 20  | 18.54 | 0 / 18.88 / 20 / 20 / 20      | 20          | 4%        |
-| Mid-term             | 20%    | 40  | 20.31 | 4 / 15 / 20 / 25 / 38         | 38          | 19%       |
-| Final                | 50%    | 100 | ?     | ?                             | 98.5        | 49.25%    |
+| Component            | Weight | Max | Mean   | Quartiles                                 | marvinthang | Score (%) |
+| -------------------- | ------ | --- | ------ | ----------------------------------------- | ----------- | --------- |
+| Tutorial  Attendance | 5%     | 10  | 9.53   | 0 / 10 / 10 / 10 / 10                     | 10          | 5%        |
+| Quizzes              | 3%     | 3   | 2.72   | 0 / 3 / 3 / 3 / 3                         | 3           | 3%        |
+| Labs                 | 10%    | 185 | 176.67 | 0 / 181.5 / 183.5 / 185 / 185             | 184.5       | 9.97%     |
+| Assignment 1         | 4%     | 40  | 36.49  | 0 / 35.5 / 37.5 / 39 / 40                 | 40          | 4%        |
+| Assignment 2         | 4%     | 40  | 34.97  | 0 / 34 / 36 / 38 / 40                     | 40          | 4%        |
+| Assignment 3         | 4%     | 20  | 18.56  | 0 / 18.63 / 20 / 20 / 20                  | 20          | 4%        |
+| Mid-term             | 20%    | 40  | 20.27  | 4 / 15 / 20 / 25 / 38                     | 38          | 19%       |
+| Final                | 50%    | 100 | 54.45  | 0-9.5 / 35-39.5 / 55 / 70-74.5 / 98.5-100 | 98.5        | 49.25%    |
+
+
+> Final exam quartiles are approximately estimated based on the distribution graph, as exact quartile values were not provided, except for the median.
+{: .prompt-warning }
 
 **Total:** 98.22%  
-**Expected Grade:** A+
+**Grade:** A+
 
 ### tl;dr
 
@@ -137,11 +141,14 @@ I lost 0.5 marks because my rewritten C code was too similar to the MIPS logic, 
 
 There was also a hard code conversion question that I almost got wrong, but somehow survived. They also tested the static-0 hazard, which I almost forgot existed. I just filled in something that looked correct and somehow it was correct.
 
-he marking is quite fast; they release the results after 5 days, but it could be even faster using Examplify. I don't see why they do not use it anymore. I think it would be better to give physical papers and type the answers into an Examplify box, so that the marking could be done in one night.
+The marking is quite fast; they release the results after 5 days, but it could be even faster using Examplify. I don't see why they do not use it anymore. I think it would be better to give physical papers and type the answers into an Examplify box, so that the marking could be done in one night.
 
 Also, I don't know why they do not release the PYP solutions. Even though you can find them on the internet or just ask seniors or TAs to send them to you, the teaching staff still state they don't have them.
 
 **Tips for the final:** The paper is quite long, so you may not have time to double-check everything. Do each question carefully the first time. Prepare scratch paper for K-maps, flip-flop sequential circuits, and pipelining delay tables. That helped me a lot during the exam.
+
+![Desktop View](/assets/img/posts/y1s2/CS2100-final.png){: width="972" height="589" }
+_CS2100 Final Exam Score Distribution_
 
 ### Overall Thoughts
 
@@ -178,15 +185,15 @@ Remember that understanding the theory is only half the battle; the other half i
 
 ### Grading Scheme
 
-| Component        | Weight | Max | Mean  | Quartiles                    | marvinthang | Score  |
-| ---------------- | ------ | --- | ----- | ---------------------------- | ----------- | ------ |
-| Coursemology     | 30%    | 30  | 29.6  | 7 / 30 / 30 / 30 / 30        | 30          | 30%    |
-| Capstone Project | 10%    | 100 | 81.55 | 0 / 73 / 99 / 100 / 100      | 100         | 10%    |
-| Midterm          | 30%    | 100 | 62.74 | 10.5 / 54 / 64.5 / 72.5 / 97 | 70          | 21%    |
-| Final            | 30%    | 100 | 70.61 | 17 / 63 / 72.25 / 82 / 97.5  | 97.5        | 29.25% |
+| Component        | Weight | Max | Mean  | Quartiles                     | marvinthang | Score  |
+| ---------------- | ------ | --- | ----- | ----------------------------- | ----------- | ------ |
+| Coursemology     | 30%    | 30  | 29.63 | 7 / 30 / 30 / 30 / 30         | 30          | 30%    |
+| Capstone Project | 10%    | 100 | 81.69 | 0 / 73.13 / 99 / 100 / 100    | 100         | 10%    |
+| Midterm          | 30%    | 100 | 62.75 | 10.5 / 54 / 64.5 / 72.5 / 96  | 70          | 21%    |
+| Final            | 30%    | 100 | 70.28 | 0 / 62.25 / 72 / 81.88 / 97.5 | 97.5        | 29.25% |
 
 **Total:** 90.25%  
-**Expected Grade:** A+
+**Grade:** A+
 
 ### Content
 
@@ -297,16 +304,16 @@ _CS2109S Final Exam Score Distribution_
 
 ### Grading Scheme
 
-| Component      | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
-| -------------- | ------ | --- | ----- | -------------------------- | ----------- | ----- |
-| Tutorials      | 5%     | 20  | 18.5  | 1 / 20 / 20 / 20 / 20      | 20          | 5%    |
-| Assignments    | 25%    | 25  | 24.43 | 0 / 25 / 25 / 25 / 25      | 25          | 25%   |
-| Lecture Attend | 2%     | 10  | 7.22  | 0 / 6 / 9 / 10 / 10        | 7           | 1.4%  |
-| Midterm        | 30%    | 50  | 27.83 | 0 / 22.5 / 27.25 / 33 / 50 | 48          | 28.8% |
-| Final Exam     | 40%    | 60  | 33.69 | 0 / 27 / 34 / 42 / 56      | 54          | 36%   |
+| Component      | Weight | Max | Mean  | Quartiles                    | marvinthang | Score |
+| -------------- | ------ | --- | ----- | ---------------------------- | ----------- | ----- |
+| Tutorials      | 5%     | 20  | 18.56 | 1 / 20 / 20 / 20 / 20        | 20          | 5%    |
+| Assignments    | 25%    | 25  | 24.49 | 0 / 25 / 25 / 25 / 25        | 25          | 25%   |
+| Lecture Attend | 2%     | 10  | 7.22  | 0 / 6 / 9 / 10 / 10          | 7           | 1.4%  |
+| Midterm        | 30%    | 50  | 27.88 | 0 / 22.5 / 27.5 / 33.38 / 50 | 48          | 28.8% |
+| Final Exam     | 40%    | 60  | 33.71 | 0 / 27 / 34 / 42 / 56        | 54          | 36%   |
 
 **Total:** 96.2%  
-**Expected Grade:** A+
+**Grade:** A+
 
 ### tl;dr
 
@@ -445,13 +452,13 @@ The course doesn't go extremely deep into rigorous mathematics; it is more of an
 | Component           | Weight | Max | Mean  | Quartiles              | marvinthang | Score |
 | ------------------- | ------ | --- | ----- | ---------------------- | ----------- | ----- |
 | Class Participation | 10%    | 10  | ?     | ?                      | ?           | ?     |
-| Individual Report   | 20%    | 20  | 15    | 0 / 14 / 15 / 16 / 18  | 16          | 16%   |
+| Individual Report   | 20%    | 20  | 15.01 | 0 / 14 / 15 / 16 / 18  | 16          | 16%   |
 | Midterm test        | 30%    | 30  | 20.92 | 13 / 20 / 21 / 22 / 24 | 23          | 23%   |
 | Group Debate        | 20%    | 20  | 15.96 | 0 / 15 / 16 / 17 / 18  | 15          | 15%   |
 | Group Product Pitch | 20%    | 20  | ?     | ?                      | ?           | ?     |
 
 **Total:** ?%  
-**Expected Grade:** B
+**Grade:** B+ (SU-ed)
 
 ### Key Topics
 The following are key topics for this course:
@@ -530,14 +537,14 @@ As part of the course, students will collaborate in teams to identify ethical is
 | Component           | Weight | Max | Mean  | Quartiles                  | marvinthang | Score |
 | ------------------- | ------ | --- | ----- | -------------------------- | ----------- | ----- |
 | Class Participation | 10%    | 100 | 97.89 | 80 / 100 / 100 / 100 / 100 | 100         | 10%   |
-| Quiz (5th week)     | 15%    | 100 | 80.18 | 0 / 68 / 92 / 100 / 100    | 100         | 10%   |
+| Quiz (5th week)     | 15%    | 100 | 80.18 | 0 / 68 / 92 / 100 / 100    | 100         | 15%   |
 | Homework 1          | 7.5%   | 100 | 97.39 | 0 / 98 / 100 / 100 / 100   | 100         | 7.5%  |
 | Homework 2          | 7.5%   | 100 | ?     | ?                          | ?           | ?     |
-| Midterm (7th week)  | 20%    | 100 | 78.2  | -1 / 67.5 / 85 / 95 / 100  | 100         | 20%   |
-| Final exam          | 40%    | ?   | ?     | ?                          | ?           | ?     |
+| Midterm (7th week)  | 20%    | 100 | 80.05 | 0 / 70 / 85 / 95 / 100     | 100         | 20%   |
+| Final exam          | 40%    | 100 | ?     | ?                          | ?           | ?     |
 
 **Total:** ?%  
-**Expected Grade:** ?
+**Grade:** A+
 
 ### Lecture
 
@@ -612,13 +619,13 @@ Midterm was a bit harder than quiz, but still manageable.
 
 | Component      | Weight | Max | Mean | Quartiles                | marvinthang | Score |
 | -------------- | ------ | --- | ---- | ------------------------ | ----------- | ----- |
-| Online quizzes | 10%    | ?   | ?    | ?                        | ?           | 10%   |
+| Online quizzes | 10%    | 10  | ?    | ?                        | 10          | 10%   |
 | Tutorial       | 5%     | 5   | 4.98 | 0 / 5 / 5 / 5 / 5        | 5           | 5%    |
-| Midterm        | 25%    | 20  | 16.1 | 4 / 14 / 17 / 18.75 / 20 | 20          | 25%   |
+| Midterm        | 25%    | 20  | 16.1 | 4 / 14 / 17 / 19 / 20    | 20          | 25%   |
 | Final          | 60%    | ?   | ?    | ?                        | ?           | ?%    |
 
 **Total:** ?%  
-**Expected Grade:** ?
+**Grade:** A+
 
 ### Teaching Mode
 
