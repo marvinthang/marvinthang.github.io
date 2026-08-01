@@ -302,6 +302,7 @@ LazyVim:
 gcc       toggle comment on current line
 V + gc    toggle comment on visual selection
 gcap      toggle comment on current paragraph
+ctrl + E  ignore suggestion and keep typing
 ```
 
 ## Debugging
@@ -355,6 +356,10 @@ p variable      # print variable
 bt              # backtrace / call stack
 watch expr      # stop when expr changes
 Ctrl-x a        # toggle TUI inside gdb
+display/i $pc   # show asm instruction at program counter
+info locals     # show local variables
+Ctrl-L          # refresh screen
+d 42             # delete breakpoint 42
 ```
 
 Compile with debug symbols and better stack traces:

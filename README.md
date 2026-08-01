@@ -18,6 +18,12 @@ Run the site locally:
 bash tools/run.sh
 ```
 
+Or run Jekyll directly with live reload:
+
+```sh
+bundle exec jekyll serve --livereload
+```
+
 By default, the site is served at `http://127.0.0.1:4000`.
 
 Useful options:
