@@ -53,7 +53,7 @@ Selected notes and reviews:
 - [NUS Y1S2 AY25/26 Course Review](/posts/NUS-y1s2-courses/)
 - [Probability](/posts/probability/)
 - [Git](/posts/git/)
-- [C++ Concurrency](/posts/cpp-concurrency/)
+- [C++ Concurrency](/posts/concurrency/)
 - [x86-64 ISA](/posts/x86-64_ISA/)
 
 ## Links
