@@ -617,12 +617,12 @@ Midterm was a bit harder than quiz, but still manageable.
 **Lecturers**: Adrian Roellin (Weeks 1–7), Somabha Mukherjee (Weeks 7–13)  
 **TA**: Wong Yean Ling
 
-| Component      | Weight | Max | Mean | Quartiles                | marvinthang | Score |
-| -------------- | ------ | --- | ---- | ------------------------ | ----------- | ----- |
-| Online quizzes | 10%    | 10  | ?    | ?                        | 10          | 10%   |
-| Tutorial       | 5%     | 5   | 4.98 | 0 / 5 / 5 / 5 / 5        | 5           | 5%    |
-| Midterm        | 25%    | 20  | 16.1 | 4 / 14 / 17 / 19 / 20    | 20          | 25%   |
-| Final          | 60%    | ?   | ?    | ?                        | ?           | ?%    |
+| Component      | Weight | Max | Mean | Quartiles             | marvinthang | Score |
+| -------------- | ------ | --- | ---- | --------------------- | ----------- | ----- |
+| Online quizzes | 10%    | 10  | ?    | ?                     | 10          | 10%   |
+| Tutorial       | 5%     | 5   | 4.98 | 0 / 5 / 5 / 5 / 5     | 5           | 5%    |
+| Midterm        | 25%    | 20  | 16.1 | 4 / 14 / 17 / 19 / 20 | 20          | 25%   |
+| Final          | 60%    | ?   | ?    | ?                     | ?           | ?%    |
 
 **Total:** ?%  
 **Grade:** A+
