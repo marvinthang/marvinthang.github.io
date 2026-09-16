@@ -14,7 +14,6 @@ math: true
 | Module Code                                                                       | Module Title                         | MCs |
 | --------------------------------------------------------------------------------- | ------------------------------------ | --- |
 | [CS2102](https://nusmods.com/courses/CS2102/database-systems)                     | Database Systems                     | 4   |
-| [CS2104](https://nusmods.com/courses/CS2104/programming-language-concepts)        | Programming Language Concepts        | 4   |
 | [CS2105](https://nusmods.com/courses/CS2105/introduction-to-computer-networks)    | Introduction to Computer Networks    | 4   |
 | [CS2106](https://nusmods.com/courses/CS2106/introduction-to-operating-systems)    | Introduction to Operating Systems    | 4   |
 | [CS3210](https://nusmods.com/courses/CS3210/parallel-computing)                   | Parallel Computing                   | 4   |
@@ -46,8 +45,6 @@ Individual marks may differ from group marks depending on contribution.
 
 individual assignment ; submit on Canvas
 
-## CS2104 - Programming Language Concepts
-
 ## CS2105 - Introduction to Computer Networks
 
 | Component     | Weight | Notes | Max | Mean | Quartiles | marvinthang | Score (%) |
@@ -56,6 +53,22 @@ individual assignment ; submit on Canvas
 | 2 Assignments | 20%    |       | ?   | ?    | ?         | ?           | ?         |
 | Midterm       | 23%    |       | ?   | ?    | ?         | ?           | ?         |
 | Final         | 50%    |       | ?   | ?    | ?         | ?           | ?         |
+
+### Midterm
+
+1. The midterm assessment will be on 7 October 2026 (week 8 lecture time). The exact duration is 60 minutes (10.15am - 11.15am).
+
+2. The scope of the assessment is lectures 1-6 and corresponding tutorials.
+
+3. The assessment will be conducted in MPSH 2B. The seating plan will be published by TA Yuan Bin next week.
+
+4. The assessment paper consists of MCQs and short questions. The total mark is 23.
+
+5. This is an CLOSED BOOK assessment. Students are supposed to bring their laptops to the venue and attempt the paper using Examplify. No second device or physical calculator is allowed.
+
+6. Students may bring in one A4 size, double-sided reference sheet. They can also use the calculator embedded in Examplify.  
+
+7. Three practice papers are provided for your preparation of the midterm assessment. They can be found in Canvas -> Files -> Midterm assessment folder. Answer and explanation to selected tough questions can be found at the back of the papers. If you have any question, please post on Piazza the forum or email me directly.
 
 ## CS2106 - Introduction to Operating Systems
 
@@ -95,8 +108,6 @@ individual assignment ; submit on Canvas
 | 3 Assignments       | 30%    |       | ?   | ?    | ?         | ?           | ?         |
 | Midterm             | 30%    |       | ?   | ?    | ?         | ?           | ?         |
 | Final Quiz          | 30%    |       | ?   | ?    | ?         | ?           | ?         |
-
-Attendance for Session 1 is mandatory (17 Aug)
 
 ## ST2132 - Mathematical Statistics
 

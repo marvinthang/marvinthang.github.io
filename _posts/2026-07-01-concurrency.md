@@ -7,45 +7,22 @@ description: Notes on C++ threads, ownership, argument passing, shared data, rac
 math: true
 ---
 
-## Managing Threads
-
-`joinable()` **only** checks whether a `std::thread` still **represents a thread of execution**, not whether that thread is currently running. A finished thread remains joinable until `join()` or `detach()` is called.
-
-Destroying a joinable `std::thread` calls `std::terminate()`. You must explicitly choose to either wait for the thread with `join()` or release ownership with `detach()`.
+## Introduction
 
 After a thread is joined or detached, the `std::thread` object no longer owns that thread of execution.
-
-> Destroying a joinable `std::thread` calls `std::terminate()`, even if the underlying thread has already finished, unless `join()` or `detach()` was called first.
-{: .prompt-warning }
 
 > Detaching is dangerous when the thread uses pointers or references to **local variables**. The spawning function may return while the detached thread is still running, leaving the detached thread with dangling references and UB.
 {: .prompt-warning }
 
-## Thread Ownership
-
-`std::thread` is **movable** but not copyable. This is what lets you transfer thread ownership into functions, return it from functions, or store threads in move-aware containers like `std::vector`.
-
 Because a `std::thread` has unique ownership, assigning a new thread to a `std::thread` object that already owns a joinable thread calls `std::terminate()`. You must first resolve the old thread by calling `join()` or `detach()`.
 
-## Passing Arguments
+### Passing Arguments
 
 Thread arguments are **copied by default** into internal storage. Later, those stored values are passed to the thread function as **rvalues**. This is true even if the thread function's parameter type looks like a reference.
 
 To pass a real reference into a thread function, wrap the argument with `std::ref()`.
 
-Move-only types, such as `std::unique_ptr`, must be passed with `std::move()` so ownership is transferred into the new thread.
-
 Be careful with implicit conversions. If you pass a `char*` to a thread function that expects a `std::string`, the conversion can happen inside the new thread, not necessarily in the spawning thread. If the original buffer goes out of scope first, the new thread may read invalid memory. Convert explicitly before launching the thread.
-
-```c++
-void f(int i, std::string const& s);
-
-std::thread t(f, 3, "hello");
-```
-
-Even though `f` takes a `std::string` as its second parameter, the string literal is initially passed to the `std::thread` constructor as a `char const*`. The conversion to `std::string` happens later, when the copied argument is used to invoke the thread function.
-
-That detail matters more when the argument points to a local buffer:
 
 ```c++
 void f(int i, std::string const& s);
@@ -61,65 +38,7 @@ void oops(int some_param) {
 
 In this case, there is a significant chance that `oops()` exits before the new thread converts `buffer` to a `std::string`. Once `oops()` returns, `buffer` no longer exists, so the detached thread may access invalid memory.
 
-The fix is to explicitly convert the buffer to a `std::string` before passing it to the thread constructor:
-
-```c++
-void f(int i, std::string const& s);
-
-void oops(int some_param) {
-    char buffer[1024];
-    sprintf(buffer, "%i", some_param);
-
-    std::string str(buffer);
-    std::thread t(f, 3, str);
-    t.detach();
-}
-```
-
-Now the conversion happens in the spawning thread. The `std::thread` constructor stores its own copy of the `std::string`, so the new thread is no longer dependent on the local character buffer.
-
-### References and `std::ref`
-
-We cannot pass a non-const reference to a temporary object, so the following code will not compile:
-
-```c++
-void f(int i, std::string& s);
-
-std::thread t(f, 3, std::string("hello")); // Error
-```
-
-The thread constructor stores a copy of each argument and then passes those stored values as rvalues to the thread function. A non-const lvalue reference cannot bind to that rvalue.
-
-To pass a non-const reference, keep an object alive outside the thread and wrap it with `std::ref()`:
-
-```c++
-void f(int i, std::string& s);
-
-std::string str("hello");
-std::thread t(f, 3, std::ref(str));
-```
-
-This mechanism is similar to `std::bind()`, which also copies its arguments by default and requires `std::ref()` when you want reference semantics.
-
-### Member Functions
-
-You can pass a member function pointer to a thread constructor, but you must also pass the object instance as the first argument:
-
-```c++
-class MyClass {
-public:
-    void memberFunction(int i) {
-        // Do something with i
-    }
-};
-
-MyClass obj;
-std::thread t(&MyClass::memberFunction, &obj, 42);
-```
-
-The thread invokes the member function using the object pointer or reference you provide, followed by the rest of the arguments.
-
-## Hardware Scaling and Identification
+### Hardware Scaling and Identification
 
 `std::thread::hardware_concurrency()` provides a runtime hint for how many hardware threads may run concurrently. This can help you divide workloads dynamically and avoid oversubscription, where creating too many runnable threads hurts performance through excessive context switching.
 
@@ -132,15 +51,10 @@ Each thread has a `std::thread::id`.
 * Thread IDs are useful for associating data or behavior with particular threads.
 * Their printed values are implementation-defined and have no semantic meaning.
 
-## Race Conditions and Data Races
+> A program can have a race condition even if there is no direct data race. For example, every stack member function may lock correctly, but the sequence `empty() -> top() -> pop()` can still be logically unsafe.
+{: .prompt-warning }
 
-* Race condition: The result depends on timing or ordering between threads.
-
-* Data race: Two or more threads access the same memory location concurrently, at least one access is a write, and there is no proper synchronization.
-
-A program can have a race condition even if there is no direct data race. For example, every stack member function may lock correctly, but the sequence `empty() -> top() -> pop()` can still be logically unsafe.
-
-## Avoiding Problematic Race Conditions
+### Avoiding Problematic Race Conditions
 
 There are three broad ways to avoid problematic race conditions.
 
@@ -150,30 +64,9 @@ Second, change the data structure design so each modification is made from small
 
 Third, use transaction-style updates. A thread does work privately, records the changes it wants to make, and then tries to commit them in one step. If another thread changed the data meanwhile, the transaction fails and restarts. C++ does not provide normal built-in support for software transactional memory in the standard thread library, but the concept is useful.
 
-## Structuring Protected Data
+#### Structuring Protected Data
 
 Usually, the mutex and the data it protects should be placed together in a class.
-
-```cpp
-class protected_list {
-private:
-    std::list<int> data;
-    mutable std::mutex m;
-
-public:
-    void add(int value) {
-        std::lock_guard<std::mutex> lock(m);
-        data.push_back(value);
-    }
-
-    bool contains(int value) const {
-        std::lock_guard<std::mutex> lock(m);
-        return std::find(data.begin(), data.end(), value) != data.end();
-    }
-};
-```
-
-This makes the relationship clear: `m` protects `data`. It also lets the class control access to the data.
 
 But simply putting a mutex inside a class is not enough. The interface must not leak protected data.
 
@@ -201,39 +94,9 @@ void process_data(Function func) {
 
 It looks protected because `func(data)` is called while holding the lock. But if `func` is user-supplied, it may store a pointer or reference to `data` somewhere else.
 
-## Interface-Level Race Conditions
-
-Using a mutex internally does not automatically make an interface safe. Sometimes the race condition comes from the interface itself.
-
-A normal stack interface often has:
-
-```cpp
-bool empty() const;
-T& top();
-void pop();
-```
-
-In single-threaded code, this is fine:
-
-```cpp
-if (!s.empty()) {
-    int value = s.top();
-    s.pop();
-    do_something(value);
-}
-```
-
-This works because nothing can change the stack between the calls. With a shared stack, another thread can modify the stack between operations.
-
 ### Designing a Thread-Safe Stack Interface
 
-A natural idea is to combine `top()` and `pop()`:
-
-```cpp
-T pop();
-```
-
-This removes the interface race, but it creates an exception-safety problem.
+A natural idea is to combine `top()` and `pop()`. This removes the interface race, but it creates an exception-safety problem.
 
 Suppose the stack stores `std::vector<int>`:
 
@@ -243,11 +106,7 @@ std::stack<std::vector<int>> s;
 
 Copying a `std::vector<int>` may allocate memory, and allocation can throw `std::bad_alloc`. If `pop()` removes the value first, then tries to return or copy it, and the copy throws, the value is lost.
 
-### Safe Pop Options
-
-#### OPTION 1: PASS IN A REFERENCE
-
-The caller provides a variable where the popped value should be stored.
+#### Option 1: Pass in a reference
 
 ```cpp
 void pop(T& value) {
@@ -265,15 +124,9 @@ std::vector<int> result;
 some_stack.pop(result);
 ```
 
-This combines `top()` and `pop()` under one lock. The disadvantages are that the caller must construct a `T` object before calling `pop()`, constructing `T` may be expensive or require unavailable arguments, and `T` must be assignable.
+The disadvantages are that the caller must construct a `T` object before calling `pop()`, constructing `T` may be expensive or require unavailable arguments, and `T` must be assignable.
 
-#### OPTION 2: REQUIRE A NO-THROW COPY CONSTRUCTOR OR MOVE CONSTRUCTOR
-
-Returning `T` directly can be safe:
-
-```cpp
-T pop();
-```
+#### Option 2: Require a no-throw copy constructor or move constructor
 
 You can express this requirement with type traits such as:
 
@@ -284,149 +137,30 @@ std::is_nothrow_move_constructible<T>
 
 This gives a simple interface, but it restricts what types can be stored in the stack.
 
-#### OPTION 3: RETURN A POINTER TO THE POPPED ITEM
+#### Option 3: Return a pointer to the popped item
 
 ```cpp
 std::shared_ptr<T> pop();
 ```
 
-A pointer can be copied without throwing, so the function can safely return the pointer after removing the item from the stack.
+The tradeoff is extra memory-management overhead, including possible heap allocation.
 
-```cpp
-std::shared_ptr<T> pop() {
-    std::lock_guard<std::mutex> lock(m);
-
-    if (data.empty()) {
-        throw empty_stack();
-    }
-
-    std::shared_ptr<T> const result =
-        std::make_shared<T>(data.top());
-
-    data.pop();
-
-    return result;
-}
-```
-
-The important detail is that `result` is created before `data.pop()`. If creating or copying the `T` fails, the stack is not modified. The tradeoff is extra memory-management overhead, including possible heap allocation.
-
-#### OPTION 4: PROVIDE BOTH OPTION 1 AND EITHER OPTION 2 OR 3
-
-```cpp
-std::shared_ptr<T> pop();
-void pop(T& value);
-```
+#### Option 4: Provide both Option 1 and either Option 2 or 3
 
 This gives users flexibility. They can choose convenience with `auto value = s.pop();`, or avoid `shared_ptr` overhead with `T value; s.pop(value);`.
 
-### Example Thread-Safe Stack
-
-Notice that there is no `top()`. `pop()` combines read and remove. Assignment is deleted. `empty()` may still exist, but it is only a hint; another thread may change the stack immediately after `empty()` returns. Correct code should call `pop()` and handle `empty_stack` if needed.
-
-```cpp
-#include <exception>
-#include <memory>
-#include <mutex>
-#include <stack>
-
-struct empty_stack : std::exception {
-    const char* what() const noexcept {
-        return "empty stack";
-    }
-};
-
-template<typename T>
-class threadsafe_stack {
-private:
-    std::stack<T> data;
-    mutable std::mutex m;
-
-public:
-    threadsafe_stack() {}
-
-    threadsafe_stack(const threadsafe_stack& other) {
-        std::lock_guard<std::mutex> lock(other.m);
-        data = other.data;
-    }
-
-    threadsafe_stack& operator=(const threadsafe_stack&) = delete;
-
-    void push(T new_value) {
-        std::lock_guard<std::mutex> lock(m);
-        data.push(std::move(new_value));
-    }
-
-    std::shared_ptr<T> pop() {
-        std::lock_guard<std::mutex> lock(m);
-
-        if (data.empty()) {
-            throw empty_stack();
-        }
-
-        std::shared_ptr<T> const result =
-            std::make_shared<T>(data.top());
-
-        data.pop();
-
-        return result;
-    }
-
-    void pop(T& value) {
-        std::lock_guard<std::mutex> lock(m);
-
-        if (data.empty()) {
-            throw empty_stack();
-        }
-
-        value = data.top();
-        data.pop();
-    }
-
-    bool empty() const {
-        std::lock_guard<std::mutex> lock(m);
-        return data.empty();
-    }
-};
-```
-
-The copy constructor locks `other.m` before copying `other.data`, because another thread may be modifying `other` while we copy it. The copy is done inside the constructor body instead of the initializer list so the mutex can be locked before copying the data.
-
-Copy assignment is deleted because it is not clear how to implement it safely. If we want to assign one stack to another, we must lock both mutexes. But if two threads try to assign stacks to each other at the same time, they can deadlock.
-
-But copy construction is safe because it only locks one mutex. The new stack is not shared with any other thread yet, so no other thread can be modifying it.
-
-## Locking Granularity
-
-A mutex must protect the entire operation that maintains an invariant, not just its individual steps.
-
-If locking is too fine-grained, race conditions may still occur. For example, deleting a node from a linked list updates multiple pointers, so protecting each node independently may not preserve the list’s invariant. The lock must cover the complete delete operation.
-
-However, locking too broadly also hurts performance. A single global mutex may ensure correctness, but it forces unrelated operations to block each other, increasing contention and reducing concurrency.
-
-Fine-grained locking may require acquiring multiple mutexes in one operation, which can introduce deadlock.
-
-## 3.2.4 Avoiding Deadlock
+### 3.2.4 Avoiding Deadlock
 
 ```c++
-class some_big_object;
-void swap(some_big_object& lhs,some_big_object& rhs);
-class X {
-private:
-    some_big_object some_detail;
-    std::mutex m;
-public:
-    X(some_big_object const& sd):some_detail(sd){}
-    friend void swap(X& lhs, X& rhs) {
-        if (&lhs==&rhs) return;
+friend void swap(X& lhs, X& rhs) {
+    if (&lhs==&rhs) return;
 
-        std::lock(lhs.m,rhs.m);
-        std::lock_guard<std::mutex> lock_a(lhs.m,std::adopt_lock);
-        std::lock_guard<std::mutex> lock_b(rhs.m,std::adopt_lock);
-        
-        swap(lhs.some_detail,rhs.some_detail);
-    }
-};
+    std::lock(lhs.m,rhs.m);
+    std::lock_guard<std::mutex> lock_a(lhs.m,std::adopt_lock);
+    std::lock_guard<std::mutex> lock_b(rhs.m,std::adopt_lock);
+    
+    swap(lhs.some_detail,rhs.some_detail);
+}
 ```
 
 `std::lock` locks multiple mutexes **without deadlock**. It may lock them in any order, but it guarantees that all locks are acquired before returning. If it cannot acquire all locks, it releases any locks it has already acquired and tries again.
@@ -443,8 +177,6 @@ void swap(X& lhs, X& rhs) {
     swap(lhs.some_detail, rhs.some_detail);
 }
 ```
-
-This example also use CTAD (Class Template Argument Deduction, C++17) to deduce the template arguments for `std::scoped_lock` from the constructor arguments.
 
 However, `std::lock` and `std::scoped_lock` does not prevent deadlock if the mutexes are acquired separately.
 
@@ -513,7 +245,7 @@ public:
     }
     void unlock() {
         if(this_thread_hierarchy_value!=hierarchy_value)
-            throw std::logic_error(“mutex hierarchy violated”); 
+            throw std::logic_error("mutex hierarchy violated")  ; 
         this_thread_hierarchy_value = previous_hierarchy_value;
         internal_mutex.unlock();
     }
@@ -531,15 +263,7 @@ public:
 thread_local unsigned long hierarchical_mutex::this_thread_hierarchy_value(ULONG_MAX);
 ```
 
-Even though out-of-order unlocking does not cause deadlock, but to avoid the hierarchy violation, the mutex must be unlocked in the reverse order of locking. Other mechnisms are possible, but this is a simple and effective one.
-
-#### Extending these guidelines beyond locks
-
-For example, it is a bad idea to wait for a thread while holding a lock.
-
-Similarly, if you're going to wait for a thread to finish, it might be worth identifying a thread hierarchy, so that a thread waits only for threads lower down the hierarchy.
-
-### 3.2.6 Flexible locking with `std::unique_lock`
+### `std::unique_lock`
 
 It does not always own the mutex. You can pass `std::adopt_lock` and `std::defer_lock` to the constructor to indicate that the mutex is already locked or that it should not be locked yet.
 
@@ -556,23 +280,6 @@ It has a flag to indicate whether it currently owns the mutex. This flag is chec
 
 ### Protecting shared data during initialization
 
-Using a mutex to do it may introduce extra overhead. A double-checking pattern is:
-
-```c++
-std::shared_ptr<some_resource> resource_ptr;
-std::mutex resource_mutex;
-void foo() {
-    std::unique_lock<std::mutex> lk(resource_mutex);
-    if(!resource_ptr) {
-        resource_ptr.reset(new some_resource);
-    }
-    lk.unlock();
-    resource_ptr->do_something();
-}
-```
-
-This is not thread-safe because the pointer maybe assigned before the object is fully constructed, making one thread call `do_something()` on a partially constructed object.
-
 Since C++11, you can use `std::call_once` to ensure that a function is called exactly once:
 
 ```c++
@@ -587,33 +294,7 @@ void foo() {
 }
 ```
 
-We can also create thread-safe lazy-initialization of a class member using `std::call_once`:
-
-```c++
-class X {
-private:
-    connection_info connection_details;
-    connection_handle connection;
-    std::once_flag connection_init_flag;
-    void open_connection() {
-        connection=connection_manager.open(connection_details);
-    }
-public:
-    X(connection_info const& connection_details_): connection_details(connection_details_) {}
-    void send_data(data_packet const& data) {
-        std::call_once(connection_init_flag,&X::open_connection,this);
-        connection.send_data(data);
-    }
-    data_packet receive_data() {
-        std::call_once(connection_init_flag,&X::open_connection,this);
-        return connection.receive_data();
-    }
-};
-```
-
-In this example, the initialization is done either by the first call to `send_data()` or `receive_data()`.
-
-The syntax is the same as the other functions in STD that accepts callable objects, such as constructors of `std::thread` and `std::bind`.
+We can also create thread-safe lazy-initialization of a class member using `std::call_once`.
 
 > `std::once_flag` is not movable or copyable, just like `std::mutex`. So if you use them as a class member, you must define these special member functions explicitly. Otherwise, the compiler will generate them, and the program will not compile.
 {: .prompt-warning }
@@ -657,118 +338,16 @@ With `std::mutex`, trying to lock the same mutex twice is UB. With `std::recursi
 
 But most of the time, if you think you want a recursive mutex, you probably need to change your design instead.
 
-Sometimes, a public member function calls another as part of its operations. The quick and dirty solution is to make the mutex recursive.  
-But this is not recommended because the second member function needs to work even when called with the invariants broken (because the first member function has not finished yet).
-
-A better solution is to refactor the code so that the public function calls a private helper function that does not lock the mutex.
-
 ## 4. Synchronizing concurrent operations
 
 ### 4.1.1. Condition variables
 
-`std::condition_variable` is a synchronization primitive that allows threads to wait until notified by another thread. It is used in conjunction with a mutex to protect shared data.
-
 There is also `std::condition_variable_any`, which can work with any lock type that meets the BasicLockable requirements, not just `std::unique_lock<std::mutex>`.
 
-```c++
-std::mutex mut;
-std::queue<data_chunk> data_queue;
-std::condition_variable data_cond;
-
-void data_preparation_thread() {
-    while (more_data_to_prepare()) {
-        data_chunk const data=prepare_data();
-        {
-            std::lock_guard<std::mutex> lk(mut);
-            data_queue.push(data);
-        }
-        data_cond.notify_one();
-    }
-}
-
-void data_processing_thread() {
-    while(true) {
-        std::unique_lock<std::mutex> lk(mut);
-        data_cond.wait(
-            lk,[]{return !data_queue.empty(); });
-        data_chunk data = data_queue.front();
-        data_queue.pop();
-        lk.unlock();
-
-        process(data);
-        if (is_last_chunk(data))
-            break;
-    }
-}
-```
-
-Note that we push data into the queue in a smaller scope, so you notify the condition variable after releasing the lock. This is a good practice to avoid waking up a waiting thread only to have it block again on the mutex.
-
-When the waiting thread reacquires the mutex and checks the condition, if it isn’t in direct response to a notification from another thread, it’s called a **spurious wake**.
+When the waiting thread reacquires the mutex and checks the condition, if it isn’t in direct response to a notification from another thread, it's called a **spurious wake**.
 
 > Therefore, it isn't advisable to use a function with side effects for the condition check.
 {: .prompt-warning }
-
-### 4.1.2. Building a thread-safe queue with condition variables
-
-```c++
-#include <queue>
-#include <memory>
-#include <mutex>
-#include <condition_variable>
-
-template<typename T>
-class threadsafe_queue {
-private:
-    mutable std::mutex mut;
-    std::queue<T> data_queue;
-    std::condition_variable data_cond;
-public:
- threadsafe_queue() {}
-    threadsafe_queue(threadsafe_queue const& other) {
-        std::lock_guard<std::mutex> lk(other.mut);
-        data_queue=other.data_queue;
-    }
-    void push(T new_value) {
-        std::lock_guard<std::mutex> lk(mut);
-        data_queue.push(new_value);
-        data_cond.notify_one();
-    }
-    void wait_and_pop(T& value) {
-        std::unique_lock<std::mutex> lk(mut);
-        data_cond.wait(lk,[this]{return !data_queue.empty();});
-        value=data_queue.front();
-        data_queue.pop();
-    }
-    std::shared_ptr<T> wait_and_pop() {
-        std::unique_lock<std::mutex> lk(mut);
-        data_cond.wait(lk,[this]{return !data_queue.empty();});
-        std::shared_ptr<T> res(std::make_shared<T>(data_queue.front()));
-        data_queue.pop();
-        return res;
-    }
-    bool try_pop(T& value) {
-        std::lock_guard<std::mutex> lk(mut);
-        if(data_queue.empty())
-            return false;
-        value=data_queue.front();
-        data_queue.pop();
-        return true;
-    }
-    std::shared_ptr<T> try_pop() {
-        std::lock_guard<std::mutex> lk(mut);
-        if(data_queue.empty())
-            return std::shared_ptr<T>();
-        std::shared_ptr<T> res(std::make_shared<T>(data_queue.front()));
-        data_queue.pop();
-        return res;
-    }
-    bool empty() const {
-        std::lock_guard<std::mutex> lk(mut);
-        return data_queue.empty();
-    }
-};
-```
 
 ### 4.2. Waiting for one-off events with futures
 
@@ -783,54 +362,12 @@ In the `std::shared_future` case, all the instances will become ready at the sam
 #### 4.2.1. Returning values from background tasks (`std::async`)
 
 ```c++
-#include <future>
-#include <iostream>
-int find_the_answer_to_ltuae();
-void do_other_stuff();
-int main() {
-    std::future<int> the_answer=std::async(find_the_answer_to_ltuae);
-    do_other_stuff();
-    std::cout<<"The answer is "<<the_answer.get()<<std::endl;
-}
+std::future<int> the_answer=std::async(find_the_answer_to_ltuae);
+do_other_stuff();
+std::cout<<"The answer is "<<the_answer.get()<<std::endl;
 ```
 
-```c++
-#include <string>
-#include <future>
-struct X {
-    void foo(int,std::string const&);
-    std::string bar(std::string const&);
-};
-
-X x;
-auto f1=std::async(&X::foo,&x,42,"hello"); // call x.foo(42,"hello")
-auto f2=std::async(&X::bar,x,"goodbye");   // call tmpx.bar("goodbye"), where tmpx is a copy of x
-
-struct Y {
-    double operator()(double);
-};
-
-Y y;
-auto f3=std::async(Y(),3.141);          // call tmpy(3.141), where tmpy is move-constructed from Y()
-auto f4=std::async(std::ref(y),2.718);  // call y(2.718)
-
-X baz(X&);
-std::async(baz,std::ref(x)); // call baz(x)
-
-class move_only {
-public:
-    move_only();
-    move_only(move_only&&)
-    move_only(move_only const&) = delete;
-    move_only& operator=(move_only&&);
-    move_only& operator=(move_only const&) = delete;
-    void operator()();
-};
-
-auto f5=std::async(move_only()); // call tmp(), where tmp is move-constructed from move_only()
-```
-
-By default, it’s up to the implementation whether `std::async` starts a new thread, or whether the task runs synchronously when the future is waited for.  
+By default, it's up to the implementation whether `std::async` starts a new thread, or whether the task runs synchronously when the future is waited for.  
 In most cases this is what you want, but you can specify which to use with an additional parameter to `std::async` before the function to call. This parameter is of the type `std::launch`:
 
 - `std::launch::deferred`: indicate that the function call is to be deferred until a non-timed waiting function such as
@@ -839,22 +376,11 @@ performs that first wait.
 - `std::launch::async`: indicate that the function call is to be run asynchronously in a separate thread.
 -  `std::launch::deferred | std::launch::async` (default): indicate that the implementation may choose.
 
-If the function call is deferred, it may never run. For example:
-```c++
-auto f6=std::async(std::launch::async,Y(),1.2);             // run in new thread
-auto f7=std::async(std::launch::deferred,baz,std::ref(x));  // run when f7.wait() or f7.get() is called
-auto f8=std::async(
-    std::launch::deferred | std::launch::async,             // implementation chooses
-    baz,std::ref(x));
-auto f9=std::async(baz,std::ref(x));                        // implementation chooses
-f7.wait();                                                  // invoke deferred call
-```
+If the function call is deferred, it may never run.
 
 #### 4.2.2. Associating a task with a future (`std::packaged_task`)
 
 The type don't have to match exactly; you can construct a `std::packaged_task<double(doubl)>` from a function that takes an `int` and return a `float` because the types are implicitly convertible.
-
-The return type of the specified function signature identifies the type of the `std::future<>` returned from the `get_future()` member function, whereas the argument list of the function signature is used to specify the signature of the packaged task’s function call operator.
 
 ```c++
 template<>
@@ -871,66 +397,29 @@ The `std::packaged_task` object is a callable object, and it can be wrapped in a
 
 You can thus wrap a task in a `std::packaged_task` and retrieve the future before passing the `std::packaged_task` object elsewhere to be invoked in due course. 
 
-##### Passing tasks between threads
-
-This is a common pattern for GUI applications. Often, there is a single GUI thread that handles all the user interface events, and other threads that perform background work. The background threads can post tasks to the GUI thread to update the user interface.
-
-```c++
-#include <deque>
-#include <mutex>
-#include <future>
-#include <thread>
-#include <utility>
-
-std::mutex m;
-std::deque<std::packaged_task<void()> > tasks;
-bool gui_shutdown_message_received();
-void get_and_process_gui_message();
-
-void gui_thread() {
-    while(!gui_shutdown_message_received()) {
-        get_and_process_gui_message();
-        std::packaged_task<void()> task;
-        {
-            std::lock_guard<std::mutex> lk(m);
-            if(tasks.empty())
-                continue;
-            task=std::move(tasks.front());
-            tasks.pop_front();
-        }
-        task();
-    }
-}
-
-std::thread gui_bg_thread(gui_thread);
-
-template<typename Func>
-std::future<void> post_task_for_gui_thread(Func f) {
-    std::packaged_task<void()> task(f);
-    std::future<void> res=task.get_future();
-    std::lock_guard<std::mutex> lk(m);
-    tasks.push_back(std::move(task));
-    return res;
-}
-```
-
 #### 4.2.3. Making (std::)promises
 
 ```c++
 #include <future>
-void process_connections(connection_set& connections) {
-    while(!done(connections)) {
-        for(connection_iterator connection=connections.begin(),end=connections.end();
-                connection!=end; ++connection) {
-            if(connection->has_incoming_data()) {
-                data_packet data=connection->incoming();
-                std::promise<payload_type>& p=
-                connection->get_promise(data.id);
+
+void process_connections(connection_set& connections)
+{
+    while (!done(connections))
+    {
+        for (connection_iterator connection = connections.begin(), end = connections.end(); connection != end; ++connection) {
+            if (connection->has_incoming_data()) {
+                data_packet data = connection->incoming();
+
+                std::promise<payload_type>& p = connection->get_promise(data.id);
+
                 p.set_value(data.payload);
             }
-            if(connection->has_outgoing_data()) {
-                outgoing_packet data=connection->top_of_outgoing_queue();
+
+            if (connection->has_outgoing_data()) {
+                outgoing_packet data = connection->top_of_outgoing_queue();
+
                 connection->send(data.payload);
+
                 data.promise.set_value(true);
             }
         }
@@ -961,6 +450,7 @@ catch(...) {
 This use `std::current_exception()` to retrieve the thrown exception.
 
 > We shouldn't use `catch(const std::exception& e)`, partly because `set_exception()` takes a `std::exception_ptr`, not a `std::exception`. We can cast the `std::exception` to `std::exception_ptr` using `std::make_exception_ptr()`, but that would create a copy of the exception object, and also the static type of the exception is `std::exception`, so the dynamic type information is sliced. `std::current_exception()` returns a `std::exception_ptr` that points to the original exception object, preserving its dynamic type.
+{: .prompt-warning }
 
 > `set_exception()` requires a `std::exception_ptr`, so the caught exception object cannot be passed directly. Using `std::make_exception_ptr(e)` would create a new exception object based on the static type of `e`, which is `std::exception`, causing slicing if the original exception was a derived type such as `std::runtime_error`.  
 > Instead, `std::current_exception()` obtains an `std::exception_ptr` referring to the currently handled exception while preserving its dynamic type. catch (...) is often used so that non-`std::exception` exceptions are preserved as well.
@@ -984,25 +474,6 @@ Different copies may safely call `wait()` or `get()` while referring to the same
 {: .prompt-warning }
 
 To convert a `std::future<T>` into a `std::shared_future<T>`, call `std::future<T>::share()` or move the `std::future<T>` into the constructor of `std::shared_future<T>`. The original `std::future` becomes invalid after ownership is transferred.
-
-
-```c++
-std::promise<int> p;
-std::future<int> f(p.get_future());
-assert(f.valid());
-std::shared_future<int> sf(std::move(f));
-assert(!f.valid());
-assert(sf.valid()); 
-
-std::promise<std::string> p;
-std::shared_future<std::string> sf(p.get_future()); 
-
-std::promise< std::map< SomeIndexType, SomeDataType, SomeComparator, SomeAllocator>::iterator> p;
-auto sf=p.get_future().share(); 
-
-std::promise<std::string> p;
-std::shared_future sf(p.get_future()); // C++17 CTAD
-```
 
 ### 4.3 Waiting with a time limit
 
@@ -1469,8 +940,6 @@ std::experimental::future<
         std::experimental::future<double>>> result=
     std::experimental::when_all(std::move(f1),std::move(f2),std::move(f3));
 ```
-
-#### 4.4.7. Latches and barriers in the Concurrency TS
 
 ### Latch vs Barrier
 
