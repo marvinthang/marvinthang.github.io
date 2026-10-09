@@ -1069,3 +1069,17 @@ void process_data(data_source &source, data_sink &sink) {
     }
 }
 ```
+
+## 5. C++ Memory Order (carefully)
+
+## 6. Lock-based concurrent structures (~50-60%, learn design principles)
+
+## 7. Lock-free structures (~70-80%)
+
+## 8. Designing concurrent code (100%)
+
+## 9. Advanced thread management (~60-70%)
+
+## 10. Parallel algorithms (~20%, mostly library/API knowledge)
+
+## 11. Testing/debugging (~50%, concepts)

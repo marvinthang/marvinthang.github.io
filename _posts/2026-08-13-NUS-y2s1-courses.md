@@ -23,16 +23,16 @@ math: true
 
 ## CS2102 - Database Systems
 
-| Component                                                 | Weight  | Notes                     | Max | Mean | Quartiles | marvinthang | Score (%) |
-| --------------------------------------------------------- | ------- | ------------------------- | --- | ---- | --------- | ----------- |
-| Project 1: Entity-Relationship Diagram                    | 5%      |                           | ?   | ?    | ?         | ?           | ?         |
-| Project #2: Schema and Query                              | 10%     |                           | ?   | ?    | ?         | ?           | ?         |
-| Project #3: Stored Functions and Triggers                 | 10%     |                           | ?   | ?    | ?         | ?           | ?         |
-| Assignment #1: SQL Query                                  | 5%      |                           | ?   | ?    | ?         | ?           | ?         |
-| Assignment #2: Functional Dependencies and Normalizations | 5%      |                           | ?   | ?    | ?         | ?           | ?         |
-| Midterm                                                   | 25%     |                           | ?   | ?    | ?         | ?           | ?         |
-| Final                                                     | 40%     |                           | ?   | ?    | ?         | ?           | ?         |
-| Tutorial                                                  | Penalty | -1% for each, attend 9/11 | ?   | ?    | ?         | ?           | ?         |
+| Component     | Weight  | Notes                     | Max | Mean | Quartiles | marvinthang | Score (%) |
+| ------------- | ------- | ------------------------- | --- | ---- | --------- | ----------- | --------- |
+| Project #1    | 5%      |                           | 5   | ?    | ?         | 5           | 5         |
+| Project #2    | 10%     |                           | ?   | ?    | ?         | ?           | ?         |
+| Project #3    | 10%     |                           | ?   | ?    | ?         | ?           | ?         |
+| Assignment #1 | 5%      |                           | 5   | ?    | ?         | 5           | 5         |
+| Assignment #2 | 5%      |                           | ?   | ?    | ?         | ?           | ?         |
+| Midterm       | 25%     |                           | ?   | ?    | ?         | ?           | ?         |
+| Final         | 40%     |                           | ?   | ?    | ?         | ?           | ?         |
+| Tutorial      | Penalty | -1% for each, attend 9/11 | ?   | ?    | ?         | ?           | ?         |
 
 ### Projects
 
@@ -48,7 +48,7 @@ individual assignment ; submit on Canvas
 ## CS2105 - Introduction to Computer Networks
 
 | Component     | Weight | Notes | Max | Mean | Quartiles | marvinthang | Score (%) |
-| ------------- | ------ | ----- | --- | ---- | --------- | ----------- |
+| ------------- | ------ | ----- | --- | ---- | --------- | ----------- | --------- |
 | Tutorial      | 7%     |       | ?   | ?    | ?         | ?           | ?         |
 | 2 Assignments | 20%    |       | ?   | ?    | ?         | ?           | ?         |
 | Midterm       | 23%    |       | ?   | ?    | ?         | ?           | ?         |
@@ -102,18 +102,36 @@ individual assignment ; submit on Canvas
 
 ## IS2218 - Digital Platforms for Business
 
-| Component           | Weight | Notes | Max | Mean | Quartiles | marvinthang | Score (%) |
-| ------------------- | ------ | ----- | --- | ---- | --------- | ----------- | --------- |
-| Class Participation | 10%    |       | ?   | ?    | ?         | ?           | ?         |
-| 3 Assignments       | 30%    |       | ?   | ?    | ?         | ?           | ?         |
-| Midterm             | 30%    |       | ?   | ?    | ?         | ?           | ?         |
-| Final Quiz          | 30%    |       | ?   | ?    | ?         | ?           | ?         |
+| Component           | Weight | Notes | Max | Mean  | Quartiles               | marvinthang | Score (%) |
+| ------------------- | ------ | ----- | --- | ----- | ----------------------- | ----------- | --------- |
+| Class Participation | 10%    |       | ?   | ?     | ?                       | ?           | ?         |
+| 3 Assignments       | 30%    |       | ?   | ?     | ?                       | ?           | ?         |
+| Midterm             | 30%    |       | 30  | 20.41 | 3 / 16.5 / 21 / 24 / 30 | 27          | 27        |
+| Final Quiz          | 30%    |       | 30  | ?     | ?                       | ?           | ?         |
+
+### Midterm
+
+* Marks: 30 Marks
+* Date: 28 September; 0830-0930 hours (Please report by 0815 hrs)
+* Venue and Seating Plan: MPSH 1A and 1B (Seating plan will be shared later)
+* Format: 20 Multiple Choice Questions; Exam is closed-book. You are allowed to bring a 1-page (2 sides) A4-sized formula sheet, which can be either handwritten or typed.  See sample questions here.
+* Duration: 50 minutes
+* Software: Examplify. Please install this on your computers. This is critical. 
+* Syllabus: Till the end of "Financial Statement Analysis". The Coursera course will not be tested for the midterm. 
+* Calculators: Calculators are **not allowed**. Examplify will have a calculator for use within the software. 
+* Rough Sheets: Rough sheets for calculation are allowed, and will also be available at the venue. 
 
 ## ST2132 - Mathematical Statistics
 
 | Component       | Weight | Notes                 | Max | Mean | Quartiles | marvinthang | Score (%) |
 | --------------- | ------ | --------------------- | --- | ---- | --------- | ----------- | --------- |
-| Lecture Quizzes | 10 %   | best 80%              | ?   | ?    | ?         | ?           |
+| Lecture Quizzes | 10 %   | best 60%              | ?   | ?    | ?         | ?           |
 | Tutorial        | 10 %   | Attend 8/11           | ?   | ?    | ?         | ?           | ?         |
 | Midterm         | 25 %   | 25 MCQs               | ?   | ?    | ?         | ?           | ?         |
 | Final           | 55 %   | MCQs & structured qns | ?   | ?    | ?         | ?           |
+
+### Midterm
+
+On the Friday of Week 7, instead of a lecture, we have a one-hour test comprising 25 MCQ questions. The topics covered is everything up to L10, on confidence intervals, and up to T5.
+
+You will need to bring a laptop or a similar device. It will be locked from accessing materials on the internet or its hard drive. You are allowed to bring a 2-sided A4 help sheet.
