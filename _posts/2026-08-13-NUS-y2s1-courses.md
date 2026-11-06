@@ -21,37 +21,21 @@ math: true
 | [IS2218](https://nusmods.com/courses/IS2218/digital-platforms-for-business)       | Digital Platforms for Business       | 4   |
 | [ST2132](https://nusmods.com/courses/ST2132/mathematical-statistics)              | Mathematical Statistics              | 4   |
 
-## Finals and end-of-term assessments
-
-All times are Singapore time (SGT) for AY2026/27 Semester 1. The Registrar assigns individual exam venues and seats where the course refers students to their exam notification.
-
-| Date | Course | Assessment and preparation |
-| --- | --- | --- |
-| Sat 7 Nov, 08:00–09:00 (report by 07:45) | IS2218 · 30% | **50-minute** closed-book MCQ quiz on Examplify, worth 30 marks. Covers everything after the midterm, including Coursera. Bring one double-sided A4 formula sheet (typed or handwritten). Rough paper is allowed. Use the Examplify calculator only. Check the assigned seat in MPSH 1A or 1B. [Instructions and seating plan](https://canvas.nus.edu.sg/courses/97328/discussion_topics/511274) · [Sample questions](https://canvas.nus.edu.sg/courses/97328/files/9576356?wrap=1) |
-| Sun 15 Nov, 23:59 | ES2660 · 35% | CA3 is the final individual commentary. Bring a complete draft to Tutorial 12 for peer review and read the Logical Fallacies notes beforehand. [Tutorial and submission reminder](https://canvas.nus.edu.sg/courses/94125/discussion_topics/513946) |
-| Mon 23 Nov, 13:00–15:00 | CS2105 · 50% | Examplify: MCQs, multiple-response questions and short answers. Covers all live and recorded lectures, tutorials, assignments and Piazza discussions. Bring two A4 cheat sheets and a non-programmable scientific calculator. Check the Registrar’s notice for the venue and seat. [Finals announcement](https://canvas.nus.edu.sg/courses/93780/discussion_topics/513161) · [Timetable](https://api.nusmods.com/v2/2026-2027/modules/CS2105.json) |
-| Thu 26 Nov, 13:00–15:00 | ST2132 · 55% | MCQs and structured questions. The course overview specifies no personal cheat sheet for the final. Review the supplied formula list in advance. [Course overview](https://canvas.nus.edu.sg/courses/96178/modules/items/824072) · [Exam formula list](https://canvas.nus.edu.sg/courses/96178/modules/items/874189) |
-| Fri 27 Nov, 09:00–11:00 | CS2106 · 50% | MPSH 2A. Closed book, with two double-sided A4 sheets. Bring a pen, 2B pencils, an eraser and a calculator. There are 15 MCQs (30 marks) and three structured questions (40 marks). Focus on Lectures 5–11, Tutorials 5–11 and Labs 3–4. Midterm concepts can recur. Know the underlying inode and FAT structures from Lecture 11. [Final assessment details](https://canvas.nus.edu.sg/courses/93785/discussion_topics/507989) |
-| Sat 28 Nov, 13:00–15:00 | CS2102 · 40% | Pen-and-paper, closed book. All lectures and tutorials are examinable. Bring one A4 sheet with notes on both sides. Calculators and electronic devices are prohibited. Check the Registrar’s email or SMS for the venue. [Final assessment](https://canvas.nus.edu.sg/courses/93752/assignments/268897) |
-| Tue 1 Dec, 17:00–19:00 | CS3210 · 40% | In person and open book. [Assessment page](https://canvas.nus.edu.sg/courses/96995/modules/items/820150) · [Timetable](https://api.nusmods.com/v2/2026-2027/modules/CS3210.json) |
-
 ## CS2102 - Database Systems
 
 
-| Component     | Weight  | Notes                                    | Max | Mean | Quartiles | marvinthang | Score (%) |
-| ------------- | ------- | ---------------------------------------- | --- | ---- | --------- | ----------- | --------- |
-| Project #1    | 5%      | Entity-Relationship Diagram              | 5   | ?    | ?         | 5           | 5%        |
-| Project #2 | 10% | Combined project mark posted under Schema | 10 | ? | ? | 9 | 9% |
+| Component     | Weight  | Notes                                                | Max | Mean | Quartiles | marvinthang | Score (%) |
+| ------------- | ------- | ---------------------------------------------------- | --- | ---- | --------- | ----------- | --------- |
+| Project #1    | 5%      | Entity-Relationship Diagram                          | 5   | ?    | ?         | 5           | 5%        |
+| Project #2    | 10%     | Combined project mark posted under Schema            | 10  | ?    | ?         | 9           | 9%        |
 | Project #3    | 10%     | Implementation submitted 5 Nov; test case due 13 Nov | ?   | ?    | ?         | ?           | ?         |
-| Assignment #1 | 5%      | SQL queries                              | 5   | ?    | ?         | 5           | 5%        |
-| Assignment #2 | 5% | Normalization, submitted 3 Nov | 5 | ? | ? | ? | ? |
-| Midterm | 25% | Marks released on Softmark | 25 | ? | ? | ? | ? |
-| Final         | 40%     | Grade not posted                         | 40  | ?    | ?         | ?           | ?         |
-| Tutorial      | Penalty | -1% for each absence beyond 2; attend 9/11 | ?   | ?    | ?         | ?           | ?         |
+| Assignment #1 | 5%      | SQL queries                                          | 5   | ?    | ?         | 5           | 5%        |
+| Assignment #2 | 5%      | Normalization, submitted 3 Nov                       | 5   | ?    | ?         | ?           | ?         |
+| Midterm       | 25%     | Marks released on Softmark                           | 25  | ?    | ?         | ?           | ?         |
+| Final         | 40%     | Grade not posted                                     | 40  | ?    | ?         | ?           | ?         |
+| Tutorial      | Penalty | -1% for each absence beyond 2; attend 9/11           | ?   | ?    | ?         | ?           | ?         |
 
-Project 2’s three submissions share one mark. [Project 2 announcement](https://canvas.nus.edu.sg/courses/93752/discussion_topics/508110). The teaching team released the midterm marks separately on Softmark. [Midterm announcement](https://canvas.nus.edu.sg/courses/93752/discussion_topics/503348). Canvas has separate 10-point entries for Project 3's implementation and test case; their combination is not inferred from those placeholders. Published class statistics were not available for Project 1 or Assignment 1.
-
-Checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/courses/93752/grades).
+Project 2’s three submissions share one mark. Midterm marks are on Softmark.
 
 ### Projects
 
@@ -64,23 +48,27 @@ Individual marks may differ from group marks depending on contribution.
 
 individual assignment ; submit on Canvas
 
+### Final exam (40%)
+
+- **Date:** Sat 28 Nov, 13:00–15:00 SGT
+- **Format:** Closed-book, pen-and-paper exam.
+- **Scope:** All lectures and tutorials.
+- **Materials:** One double-sided A4 sheet. Calculators and electronic devices are prohibited.
+- **Venue:** Check the Registrar’s email or SMS for your assigned venue.
+
 ## CS2105 - Introduction to Computer Networks
 
-| Component          | Weight       | Max | Mean  | Quartiles             | marvinthang | Score (%) |
-| ------------------ | ------------ | --- | ----- | --------------------- | ----------- | --------- |
-| Tutorial attendance | 7%          | ?   | ?     | ?                     | ?           | ?         |
-| Assignment 0       | 20% combined | 3   | 2.90  | 0 / 3 / 3 / 3 / 3     | 3           | ?         |
-| Assignment 1 | — | 8 | 7.92 | 0 / 8 / 8 / 8 / 8 | 8 | ? |
-| Assignment 2       | —            | 8   | ?     | ?                     | ?           | ?         |
-| Assignment 3       | —            | 2   | ?     | ?                     | ?           | ?         |
-| Midterm            | 23%          | 23  | 18.47 | 3 / 17 / 19 / 21 / 23 | 21          | 21%       |
-| Final              | 50%          | ?   | ?     | ?                     | ?           | ?         |
+| Component           | Weight       | Max | Mean  | Quartiles             | marvinthang | Score (%) |
+| ------------------- | ------------ | --- | ----- | --------------------- | ----------- | --------- |
+| Tutorial attendance | 7%           | ?   | ?     | ?                     | ?           | ?         |
+| Assignment 0        | 20% combined | 3   | 2.90  | 0 / 3 / 3 / 3 / 3     | 3           | 3         |
+| Assignment 1        |              | 8   | 7.92  | 0 / 8 / 8 / 8 / 8     | 8           | 8         |
+| Assignment 2        |              | 8   | ?     | ?                     | ?           | ?         |
+| Assignment 3        |              | 2   | ?     | ?                     | ?           | ?         |
+| Midterm             | 23%          | 23  | 18.47 | 3 / 17 / 19 / 21 / 23 | 21          | 21%       |
+| Final               | 50%          | ?   | ?     | ?                     | ?           | ?         |
 
-Assignments 0–3 share the 20% component. Canvas shows full marks for Assignments 0 and 1. Assignments 2 and 3 were submitted on 20 October and 3 November respectively. Their marks and the tutorial attendance mark are pending.
-
-Quartiles are listed as **minimum / Q1 / median / Q3 / maximum**. Score (%) is the contribution to the overall course grade, rather than the raw percentage score.
-
-Scores and statistics checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/courses/93780/grades). Component weights: [Canvas course information](https://canvas.nus.edu.sg/courses/93780).
+Assignments 0 to 3 share the 20% assignment weight.
 
 ### Midterm
 
@@ -98,91 +86,90 @@ Scores and statistics checked on 6 November 2026 against [Canvas Grades](https:/
 
 7. Three practice papers are provided for your preparation of the midterm assessment. They can be found in Canvas -> Files -> Midterm assessment folder. Answer and explanation to selected tough questions can be found at the back of the papers. If you have any question, please post on Piazza the forum or email me directly.
 
+### Final exam (50%)
+
+- **Date:** Mon 23 Nov, 13:00–15:00 SGT
+- **Format:** Examplify with multiple-choice, multiple-response and short-answer questions.
+- **Scope:** All live and recorded lectures, tutorials, assignments and Piazza discussions.
+- **Materials:** Two A4 cheat sheets and a non-programmable scientific calculator.
+- **Venue:** Check the Registrar’s notice for your venue and seat.
+
+[Finals announcement](https://canvas.nus.edu.sg/courses/93780/discussion_topics/513161) · [Timetable](https://api.nusmods.com/v2/2026-2027/modules/CS2105.json)
+
 ## CS2106 - Introduction to Operating Systems
 
 
-| Component       | Weight | Notes                                      | Max | Mean | Quartiles | marvinthang | Score (%) |
-| --------------- | ------ | ------------------------------------------ | --- | ---- | --------- | ----------- | --------- |
-| Lecture quizzes | 3%     | Quizzes 1–11: 46/46 so far | ?   | ?    | ?         | ?           | ?         |
-| Tutorial        | 2%     | Attendance grade not posted                 | ?   | ?    | ?         | ?           | ?         |
-| 4 lab assignments | 20%  | Demo-based; lab grades not shown            | ?   | ?    | ?         | ?           | ?         |
-| Midterm | 25% | Published score | 40 | 27.04 | 0 / 21 / 28 / 34 / 40 | 40 | 25% |
-| Final | 50% | 15 MCQs and 3 structured questions | 70 | ? | ? | ? | ? |
+| Component         | Weight | Notes                              | Max | Mean  | Quartiles             | marvinthang | Score (%) |
+| ----------------- | ------ | ---------------------------------- | --- | ----- | --------------------- | ----------- | --------- |
+| Lecture quizzes   | 3%     | Quizzes 1–11: 46/46 so far         | ?   | ?     | ?                     | ?           | ?         |
+| Tutorial          | 2%     | Attendance grade not posted        | ?   | ?     | ?                     | ?           | ?         |
+| 4 lab assignments | 20%    | Demo-based; lab grades not shown   | ?   | ?     | ?                     | ?           | ?         |
+| Midterm           | 25%    | Published score                    | 40  | 27.04 | 0 / 21 / 28 / 34 / 40 | 40          | 25%       |
+| Final             | 50%    | 15 MCQs and 3 structured questions | 70  | ?     | ?                     | ?           | ?         |
 
-Published quiz results:
+### Final exam (50%)
 
-| Quiz | Score | Mean | Minimum / Q1 / Median / Q3 / Maximum |
-| ---- | ----- | ---- | ----------------------------------- |
-| 1 | 5/5 | 4.65 | 0 / 5 / 5 / 5 / 5 |
-| 2    | 4/4   | 3.87 | 0 / 4 / 4 / 4 / 4                   |
-| 3    | 5/5   | 4.83 | 0 / 5 / 5 / 5 / 5                   |
-| 4    | 6/6   | 5.81 | 0 / 6 / 6 / 6 / 6                   |
-| 5    | 6/6   | 5.64 | 0 / 6 / 6 / 6 / 6                   |
-| 6 | 3/3 | 2.86 | 0 / 3 / 3 / 3 / 3 |
-| 7 | 3/3 | 2.69 | 0 / 3 / 3 / 3 / 3 |
-| 8 | 5/5 | 4.60 | 0 / 5 / 5 / 5 / 5 |
-| 9 | 3/3 | 2.51 | 0 / 3 / 3 / 3 / 3 |
-| 10 | 3/3 | 2.54 | 0 / 3 / 3 / 3 / 3 |
-| 11 | 3/3 | 1.12 | 0 / 0 / 0 / 3 / 3 |
+- **Date:** Fri 27 Nov, 09:00–11:00 SGT
+- **Format:** Closed book. The 15 multiple-choice questions carry 30 marks and the three structured questions carry 40 marks, for 70 marks in total.
+- **Scope:** Focus on Lectures 5–11, Tutorials 5–11 and Labs 3–4. Midterm concepts can recur. For Lecture 11, review how inodes and FAT represent files.
+- **Materials:** Two double-sided A4 sheets, a pen, 2B pencils, an eraser and a calculator.
+- **Venue:** MPSH 2A.
 
-The tally covers posted quiz attempts. Canvas has yet to publish the final 3% component grade.
-
-Checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/courses/93785/grades).
+[Final assessment details](https://canvas.nus.edu.sg/courses/93785/discussion_topics/507989)
 
 ## CS3210 - Parallel Computing
 
-| Component                       | Weight | Notes                                             | Max | Mean  | Quartiles               | marvinthang | Score (%) |
-| ------------------------------- | ------ | ------------------------------------------------- | --- | ----- | ----------------------- | ----------- | --------- |
-| Tutorial attendance             | 6%     | Attend at least 8 tutorials for full marks         | ?   | ?     | ?                       | ?           | ?         |
-| Tutorial report — Week 4        | 2%     | Individual; Tutorial 1 performance report          | 2   | 1.83  | 0 / 1.8 / 1.9 / 2 / 2   | 2           | 2%        |
-| Tutorial report — Week 11 | 2% | Tutorial 8 report submitted 22 Oct | 2 | ? | ? | ? | ? |
-| Programming Assignment 1 | 7% | Code score | 7 | 6.60 | 0 / 6.5 / 7 / 7 / 7 | 7 | 7% |
-| Programming Assignment 2 | 7% | Code score | 7 | 6.44 | 0 / 7 / 7 / 7 / 7 | 7 | 7% |
-| Programming Assignment 3        | 7%     | Pair or individual; not yet graded                 | ?   | ?     | ?                       | ?           | ?         |
-| Individual interview 1          | 7%     | In-person oral assessment of Assignment 1          | 7   | 6.03  | 0 / 5.5 / 6 / 6.5 / 7   | 6           | 6%        |
-| Individual interview 2 | 7% | Individual oral assessment | 7 | 6.33 | 5 / 6 / 6.5 / 7 / 7 | 7 | 7% |
-| Midterm                         | 15%    | Week 8; in-person, open book                       | 30  | 23.23 | 0 / 21 / 24 / 27 / 30 | 29          | 14.5%     |
-| Final                           | 40%    | In-person, open book                              | ?   | ?     | ?                       | ?           | ?         |
+| Component                | Weight | Notes                                      | Max | Mean  | Quartiles             | marvinthang | Score (%) |
+| ------------------------ | ------ | ------------------------------------------ | --- | ----- | --------------------- | ----------- | --------- |
+| Tutorial attendance      | 6%     | Attend at least 8 tutorials for full marks | ?   | ?     | ?                     | ?           | ?         |
+| Tutorial report, Week 4  | 2%     | Individual; Tutorial 1 performance report  | 2   | 1.83  | 0 / 1.8 / 1.9 / 2 / 2 | 2           | 2%        |
+| Tutorial report, Week 11 | 2%     | Tutorial 8 report submitted 22 Oct         | 2   | ?     | ?                     | ?           | ?         |
+| Programming Assignment 1 | 7%     | Code score                                 | 7   | 6.60  | 0 / 6.5 / 7 / 7 / 7   | 7           | 7%        |
+| Programming Assignment 2 | 7%     | Code score                                 | 7   | 6.44  | 0 / 7 / 7 / 7 / 7     | 7           | 7%        |
+| Programming Assignment 3 | 7%     | Pair or individual; not yet graded         | ?   | ?     | ?                     | ?           | ?         |
+| Individual interview 1   | 7%     | In-person oral assessment of Assignment 1  | 7   | 6.03  | 0 / 5.5 / 6 / 6.5 / 7 | 6           | 6%        |
+| Individual interview 2   | 7%     | Individual oral assessment                 | 7   | 6.33  | 5 / 6 / 6.5 / 7 / 7   | 7           | 7%        |
+| Midterm                  | 15%    | Week 8; in-person, open book               | 30  | 23.23 | 0 / 21 / 24 / 27 / 30 | 29          | 14.5%     |
+| Final                    | 40%    | In-person, open book                       | ?   | ?     | ?                     | ?           | ?         |
 
-Quartiles are listed as **minimum / Q1 / median / Q3 / maximum**. Score (%) is the contribution to the overall course grade, calculated as `score / max × weight`. Unreleased scores remain `?`; the Assignment 2 submission quiz is not treated as its programming grade.
+### Final exam (40%)
 
-Scores and statistics checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/courses/96995/grades). Assessment structure: [Canvas Assessment](https://canvas.nus.edu.sg/courses/96995/modules/items/820150).
+- **Date:** Tue 1 Dec, 17:00–19:00 SGT
+- **Format:** In-person, open-book exam.
+
+[Assessment page](https://canvas.nus.edu.sg/courses/96995/modules/items/820150) · [Timetable](https://api.nusmods.com/v2/2026-2027/modules/CS3210.json)
 
 ## ES2660 - Communicating in the Information Age
 
 
-| Component                     | Weight | Notes                                     | Max | Mean | Quartiles | marvinthang | Score (%) |
-| ----------------------------- | ------ | ----------------------------------------- | --- | ---- | --------- | ----------- | --------- |
-| CA1: Critical Analysis - Group | 30% | Group presentation | ? | ? | ? | 57.9 | ? |
-| CA2: Commentary Writing Part 1 | 15% | Submitted 11 Oct | ? | ? | ? | 67.1 | ? |
-| CA3: Commentary Writing Part 2 | 35%    | Not yet graded                            | ?   | ?    | ?         | ?           | ?         |
-| Participation                 | 20%    | 3 quizzes and 3 whiteboard discussions    | ?   | ?    | ?         | ?           | ?         |
+| Component                      | Weight | Notes                                  | Max | Mean | Quartiles | marvinthang | Score (%) |
+| ------------------------------ | ------ | -------------------------------------- | --- | ---- | --------- | ----------- | --------- |
+| CA1: Critical Analysis - Group | 30%    | Group presentation                     | ?   | ?    | ?         | 57.9        | ?         |
+| CA2: Commentary Writing Part 1 | 15%    | Submitted 11 Oct                       | ?   | ?    | ?         | 67.1        | ?         |
+| CA3: Commentary Writing Part 2 | 35%    | Not yet graded                         | ?   | ?    | ?         | ?           | ?         |
+| Participation                  | 20%    | 3 quizzes and 3 whiteboard discussions | ?   | ?    | ?         | ?           | ?         |
 
-| Participation quiz | Raw score | Submitted |
-| ------------------ | --------- | --------- |
-| Quiz 1 (Tutorial 1) | 14/14     | 20 Aug    |
-| Quiz 2 (Tutorial 2) | 10/10     | 27 Aug    |
-| Quiz 3 (Tutorial 8) | 13/13     | 4 Oct     |
+### Final commentary (35%)
 
-All three quizzes are complete with full raw marks. Their raw points are not converted into the overall participation grade, which also includes the whiteboard discussions. Canvas displays CA1 as 57.9/0 and CA2 as 67.1/0. The table records the posted numbers and leaves their weighted contributions open because Canvas shows no usable denominator.
+- **Deadline:** Sun 15 Nov, 23:59 SGT
+- **Submission:** CA3, individual commentary.
+- **Preparation:** Read the Logical Fallacies notes before Tutorial 12 and bring a complete draft for peer review.
 
-Checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/courses/94125/grades) and the published quiz results.
+[Tutorial and submission reminder](https://canvas.nus.edu.sg/courses/94125/discussion_topics/513946)
 
 ## IS2218 - Digital Platforms for Business
 
 
-| Component                | Weight | Notes                                | Max | Mean  | Quartiles               | marvinthang | Score (%) |
-| ------------------------ | ------ | ------------------------------------ | --- | ----- | ----------------------- | ----------- | --------- |
-| Class participation      | 10%    | Platform task 6%, survey 1%, attendance 3%; grades hidden | 10 | ? | ? | ? | ? |
-| Assignment 2: Accounting | 10%    | Submitted 6 Sep; grade hidden         | 10  | ?     | ?                       | ?           | ?         |
-| Assignment 3: FSA        | 10%    | Submitted 14 Sep; grade hidden        | 10  | ?     | ?                       | ?           | ?         |
-| Assignment 5: TVM | 10% | Submitted 12 Oct, grade hidden | 10 | ? | ? | ? | ? |
-| Midterm                  | 30%    | Published score                      | 30  | 20.41 | 3 / 16.5 / 21 / 24 / 30 | 27          | 27%       |
-| Final quiz               | 30%    | Not yet graded                       | 30  | ?     | ?                       | ?           | ?         |
+| Component                | Weight | Notes                                                     | Max | Mean  | Quartiles               | marvinthang | Score (%) |
+| ------------------------ | ------ | --------------------------------------------------------- | --- | ----- | ----------------------- | ----------- | --------- |
+| Class participation      | 10%    | Platform task 6%, survey 1%, attendance 3%; grades hidden | 10  | ?     | ?                       | ?           | ?         |
+| Assignment 2: Accounting | 10%    | Submitted 6 Sep; grade hidden                             | 10  | ?     | ?                       | ?           | ?         |
+| Assignment 3: FSA        | 10%    | Submitted 14 Sep; grade hidden                            | 10  | ?     | ?                       | ?           | ?         |
+| Assignment 5: TVM        | 10%    | Submitted 12 Oct, grade hidden                            | 10  | ?     | ?                       | ?           | ?         |
+| Midterm                  | 30%    | Published score                                           | 30  | 20.41 | 3 / 16.5 / 21 / 24 / 30 | 27          | 27%       |
+| Final quiz               | 30%    | Not yet graded                                            | 30  | ?     | ?                       | ?           | ?         |
 
-Assignment 1 (Platform Thinking) and Assignment 4 (the survey) belong to class participation, not the three 10% take-home assignments. Both were submitted; their grades and attendance marks are not posted.
-
-Checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/courses/97328/grades).
+Assignment 1 (Platform Thinking) and Assignment 4 (the survey) count towards class participation.
 
 ### Midterm
 
@@ -194,45 +181,38 @@ Checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/cou
 * Software: Examplify. Please install this on your computers. This is critical. 
 * Syllabus: Till the end of "Financial Statement Analysis". The Coursera course will not be tested for the midterm. 
 * Calculators: Calculators are **not allowed**. Examplify will have a calculator for use within the software. 
-* Rough Sheets: Rough sheets for calculation are allowed, and will also be available at the venue. 
+* Rough Sheets: Rough sheets for calculation are allowed, and will also be available at the venue.
+
+### Final quiz (30%)
+
+- **Date:** Sat 7 Nov, 08:00–09:00 (report by 07:45) SGT
+- **Format:** 50-minute closed-book multiple-choice quiz on Examplify, worth 30 marks.
+- **Scope:** Everything after the midterm, including Coursera.
+- **Materials:** One double-sided A4 formula sheet, typed or handwritten. Rough paper is allowed. Use only the Examplify calculator.
+- **Venue:** MPSH 1A or 1B. Check your assigned seat in the seating plan.
+
+[Instructions and seating plan](https://canvas.nus.edu.sg/courses/97328/discussion_topics/511274) · [Sample questions](https://canvas.nus.edu.sg/courses/97328/files/9576356?wrap=1)
 
 ## ST2132 - Mathematical Statistics
 
 
-| Component       | Weight | Notes                                     | Max | Mean | Quartiles | marvinthang | Score (%) |
-| --------------- | ------ | ----------------------------------------- | --- | ---- | --------- | ----------- | --------- |
-| Lecture quizzes | 10%    | Best 60%; published attempts total 27/32   | ?   | ?    | ?         | ?           | ?         |
-| Tutorial        | 10%    | Attend 8/11; final attendance grade pending | ?  | ?    | ?         | ?           | ?         |
-| Midterm         | 25%    | 25 MCQs; retained from existing notes      | 25  | ?    | ?         | 23          | 23%       |
-| Final           | 55%    | MCQs and structured questions             | 55  | ?    | ?         | ?           | ?         |
-
-Published quiz results:
-
-| Quiz | Score | Mean | Minimum / Q1 / Median / Q3 / Maximum |
-| ---- | ----- | ---- | ----------------------------------- |
-| 4 | 2/2 | 1.86 | 0 / 2 / 2 / 2 / 2 |
-| 5    | 2/2   | 1.88 | 0 / 2 / 2 / 2 / 2                   |
-| 6 | 2/2 | 1.80 | 1 / 2 / 2 / 2 / 2 |
-| 7    | 2/2   | 1.94 | 0 / 2 / 2 / 2 / 2                   |
-| 8 | 2/2 | 1.88 | 0 / 2 / 2 / 2 / 2 |
-| 9    | 2/2   | 1.78 | 0 / 2 / 2 / 2 / 2                   |
-| 11 | 2/2 | 1.88 | 1 / 2 / 2 / 2 / 2 |
-| 12   | 2/2   | 1.90 | 0 / 2 / 2 / 2 / 2                   |
-| 13   | 1/2   | 1.28 | 0 / 1 / 1 / 2 / 2                   |
-| 15 | 2/2 | 1.98 | 0 / 2 / 2 / 2 / 2 |
-| 16 | 2/2 | 1.94 | 0 / 2 / 2 / 2 / 2 |
-| 17 | 2/2 | 1.67 | 0 / 1 / 2 / 2 / 2 |
-| 18 | 2/2 | 1.93 | 0 / 2 / 2 / 2 / 2 |
-| 20 | 2/2 | 1.69 | 0 / 1 / 2 / 2 / 2 |
-| 21 | 0/2 | 1.10 | 0 / 1 / 1 / 2 / 2 |
-| 22 | 0/2 | 1.31 | 0 / 1 / 1.5 / 2 / 2 |
-
-Quizzes 1–3, 10, 14 and 19 have no posted score. The 27/32 tally covers only scored attempts; it is not the final best-60% quiz component. The previously recorded midterm score of 23/25 is preserved, but the midterm is not listed in the current Canvas gradebook and was not independently reverified there.
-
-Checked on 6 November 2026 against [Canvas Grades](https://canvas.nus.edu.sg/courses/96178/grades).
+| Component       | Weight | Notes                                       | Max | Mean | Quartiles | marvinthang | Score (%) |
+| --------------- | ------ | ------------------------------------------- | --- | ---- | --------- | ----------- | --------- |
+| Lecture quizzes | 10%    | Best 60%; published attempts total 27/32    | ?   | ?    | ?         | ?           | ?         |
+| Tutorial        | 10%    | Attend 8/11; final attendance grade pending | ?   | ?    | ?         | ?           | ?         |
+| Midterm         | 25%    | 25 MCQs; retained from existing notes       | 25  | ?    | ?         | 23          | 23%       |
+| Final           | 55%    | MCQs and structured questions               | 55  | ?    | ?         | ?           | ?         |
 
 ### Midterm
 
 On the Friday of Week 7, instead of a lecture, we have a one-hour test comprising 25 MCQ questions. The topics covered is everything up to L10, on confidence intervals, and up to T5.
 
 You will need to bring a laptop or a similar device. It will be locked from accessing materials on the internet or its hard drive. You are allowed to bring a 2-sided A4 help sheet.
+
+### Final exam (55%)
+
+- **Date:** Thu 26 Nov, 13:00–15:00 SGT
+- **Format:** Multiple-choice and structured questions.
+- **Materials:** Use the supplied formula list. Personal cheat sheets are prohibited.
+
+[Course overview](https://canvas.nus.edu.sg/courses/96178/modules/items/824072) · [Exam formula list](https://canvas.nus.edu.sg/courses/96178/modules/items/874189)
