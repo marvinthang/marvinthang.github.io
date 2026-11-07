@@ -28,9 +28,9 @@ math: true
 | ------------- | ------- | ---------------------------------------------------- | --- | ---- | --------- | ----------- | --------- |
 | Project #1    | 5%      | Entity-Relationship Diagram                          | 5   | ?    | ?         | 5           | 5%        |
 | Project #2    | 10%     | Combined project mark posted under Schema            | 10  | ?    | ?         | 9           | 9%        |
-| Project #3    | 10%     | Implementation submitted 5 Nov; test case due 13 Nov | ?   | ?    | ?         | ?           | ?         |
+| Project #3    | 10%     | Stored procedures, triggers and test case            | ?   | ?    | ?         | ?           | ?         |
 | Assignment #1 | 5%      | SQL queries                                          | 5   | ?    | ?         | 5           | 5%        |
-| Assignment #2 | 5%      | Normalization, submitted 3 Nov                       | 5   | ?    | ?         | ?           | ?         |
+| Assignment #2 | 5%      | Normalization                                        | 5   | ?    | ?         | ?           | ?         |
 | Midterm       | 25%     | Marks released on Softmark                           | 25  | ?    | ?         | 25          | 25%       |
 | Final         | 40%     | Grade not posted                                     | 40  | ?    | ?         | ?           | ?         |
 | Tutorial      | Penalty | -1% for each absence beyond 2; attend 9/11           | ?   | ?    | ?         | ?           | ?         |
@@ -99,7 +99,7 @@ Assignments 0 to 3 share the 20% assignment weight.
 
 | Component         | Weight | Notes                              | Max | Mean  | Quartiles             | marvinthang | Score (%) |
 | ----------------- | ------ | ---------------------------------- | --- | ----- | --------------------- | ----------- | --------- |
-| Lecture quizzes   | 3%     | Quizzes 1–11: 46/46 so far         | ?   | ?     | ?                     | ?           | ?         |
+| Lecture quizzes   | 3%     | Quizzes 1–11                       | 46  | ?     | ?                     | 46          | ?         |
 | Tutorial          | 2%     | Attendance grade not posted        | ?   | ?     | ?                     | ?           | ?         |
 | 4 lab assignments | 20%    | Demo-based; lab grades not shown   | ?   | ?     | ?                     | ?           | ?         |
 | Midterm           | 25%    | Published score                    | 40  | 27.04 | 0 / 21 / 28 / 34 / 40 | 40          | 25%       |
@@ -121,7 +121,7 @@ Assignments 0 to 3 share the 20% assignment weight.
 | ------------------------ | ------ | ------------------------------------------ | --- | ----- | --------------------- | ----------- | --------- |
 | Tutorial attendance      | 6%     | Attend at least 8 tutorials for full marks | ?   | ?     | ?                     | ?           | ?         |
 | Tutorial report, Week 4  | 2%     | Individual; Tutorial 1 performance report  | 2   | 1.83  | 0 / 1.8 / 1.9 / 2 / 2 | 2           | 2%        |
-| Tutorial report, Week 11 | 2%     | Tutorial 8 report submitted 22 Oct         | 2   | ?     | ?                     | ?           | ?         |
+| Tutorial report, Week 11 | 2%     | Tutorial 8 report                          | 2   | 1.8   | 0 / 1.8 / 1.9 / 2 / 2 | 1.8         | 1.8%      |
 | Programming Assignment 1 | 7%     | Code score                                 | 7   | 6.60  | 0 / 6.5 / 7 / 7 / 7   | 7           | 7%        |
 | Programming Assignment 2 | 7%     | Code score                                 | 7   | 6.44  | 0 / 7 / 7 / 7 / 7     | 7           | 7%        |
 | Programming Assignment 3 | 7%     | Pair or individual; not yet graded         | ?   | ?     | ?                     | ?           | ?         |
@@ -143,7 +143,7 @@ Assignments 0 to 3 share the 20% assignment weight.
 | Component                      | Weight | Notes                                  | Max | Mean | Quartiles | marvinthang | Score (%) |
 | ------------------------------ | ------ | -------------------------------------- | --- | ---- | --------- | ----------- | --------- |
 | CA1: Critical Analysis - Group | 30%    | Group presentation                     | ?   | ?    | ?         | 57.9        | ?         |
-| CA2: Commentary Writing Part 1 | 15%    | Submitted 11 Oct                       | ?   | ?    | ?         | 67.1        | ?         |
+| CA2: Commentary Writing Part 1 | 15%    |                                        | ?   | ?    | ?         | 67.1        | ?         |
 | CA3: Commentary Writing Part 2 | 35%    | Not yet graded                         | ?   | ?    | ?         | ?           | ?         |
 | Participation                  | 20%    | 3 quizzes and 3 whiteboard discussions | ?   | ?    | ?         | ?           | ?         |
 
@@ -161,11 +161,11 @@ Assignments 0 to 3 share the 20% assignment weight.
 | Component                | Weight | Notes                                                     | Max | Mean  | Quartiles               | marvinthang | Score (%) |
 | ------------------------ | ------ | --------------------------------------------------------- | --- | ----- | ----------------------- | ----------- | --------- |
 | Class participation      | 10%    | Platform task 6%, survey 1%, attendance 3%; grades hidden | 10  | ?     | ?                       | ?           | ?         |
-| Assignment 2: Accounting | 10%    | Submitted 6 Sep; grade hidden                             | 10  | ?     | ?                       | ?           | ?         |
-| Assignment 3: FSA        | 10%    | Submitted 14 Sep; grade hidden                            | 10  | ?     | ?                       | ?           | ?         |
-| Assignment 5: TVM        | 10%    | Submitted 12 Oct, grade hidden                            | 10  | ?     | ?                       | ?           | ?         |
+| Assignment 2: Accounting | 10%    | Grade hidden                                              | 10  | ?     | ?                       | ?           | ?         |
+| Assignment 3: FSA        | 10%    | Grade hidden                                              | 10  | ?     | ?                       | ?           | ?         |
+| Assignment 5: TVM        | 10%    | Grade hidden                                              | 10  | ?     | ?                       | ?           | ?         |
 | Midterm                  | 30%    | Published score                                           | 30  | 20.41 | 3 / 16.5 / 21 / 24 / 30 | 27          | 27%       |
-| Final quiz               | 30%    |                                                           | 30  | ?     | ?                         | 28.5        | 28.5%     |
+| Final quiz               | 30%    |                                                           | 30  | 19.96 | 6 / 16.13 / 21 / 24 / 30  | 28.5        | 28.5%     |
 
 Assignment 1 (Platform Thinking) and Assignment 4 (the survey) count towards class participation.
 
