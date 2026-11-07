@@ -31,11 +31,9 @@ math: true
 | Project #3    | 10%     | Implementation submitted 5 Nov; test case due 13 Nov | ?   | ?    | ?         | ?           | ?         |
 | Assignment #1 | 5%      | SQL queries                                          | 5   | ?    | ?         | 5           | 5%        |
 | Assignment #2 | 5%      | Normalization, submitted 3 Nov                       | 5   | ?    | ?         | ?           | ?         |
-| Midterm       | 25%     | Marks released on Softmark                           | 25  | ?    | ?         | ?           | ?         |
+| Midterm       | 25%     | Marks released on Softmark                           | 25  | ?    | ?         | 25          | 25%       |
 | Final         | 40%     | Grade not posted                                     | 40  | ?    | ?         | ?           | ?         |
 | Tutorial      | Penalty | -1% for each absence beyond 2; attend 9/11           | ?   | ?    | ?         | ?           | ?         |
-
-Project 2’s three submissions share one mark. Midterm marks are on Softmark.
 
 ### Projects
 
@@ -198,7 +196,7 @@ Assignment 1 (Platform Thinking) and Assignment 4 (the survey) count towards cla
 
 | Component       | Weight | Notes                                       | Max | Mean | Quartiles | marvinthang | Score (%) |
 | --------------- | ------ | ------------------------------------------- | --- | ---- | --------- | ----------- | --------- |
-| Lecture quizzes | 10%    | Best 60%; published attempts total 27/32    | ?   | ?    | ?         | ?           | ?         |
+| Lecture quizzes | 10%    | Best 60%; quizzes 1–3 excused; 27/32 on graded attempts    | ?   | ?    | ?         | ?           | ?         |
 | Tutorial        | 10%    | Attend 8/11; final attendance grade pending | ?   | ?    | ?         | ?           | ?         |
 | Midterm         | 25%    | 25 MCQs; retained from existing notes       | 25  | ?    | ?         | 23          | 23%       |
 | Final           | 55%    | MCQs and structured questions               | 55  | ?    | ?         | ?           | ?         |
