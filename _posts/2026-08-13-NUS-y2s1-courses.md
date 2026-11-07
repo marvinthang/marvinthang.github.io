@@ -165,7 +165,7 @@ Assignments 0 to 3 share the 20% assignment weight.
 | Assignment 3: FSA        | 10%    | Submitted 14 Sep; grade hidden                            | 10  | ?     | ?                       | ?           | ?         |
 | Assignment 5: TVM        | 10%    | Submitted 12 Oct, grade hidden                            | 10  | ?     | ?                       | ?           | ?         |
 | Midterm                  | 30%    | Published score                                           | 30  | 20.41 | 3 / 16.5 / 21 / 24 / 30 | 27          | 27%       |
-| Final quiz               | 30%    | Not yet graded                                            | 30  | ?     | ?                       | ?           | ?         |
+| Final quiz               | 30%    |                                                           | 30  | ?     | ?                         | 28.5        | 28.5%     |
 
 Assignment 1 (Platform Thinking) and Assignment 4 (the survey) count towards class participation.
 
