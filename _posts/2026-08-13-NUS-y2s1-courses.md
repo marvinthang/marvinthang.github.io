@@ -1,5 +1,5 @@
 ---
-title: NUS Y2S1 AY26/27 Course
+title: NUS Y2S1 AY26/27 Course Review
 date: 2026-08-13 00:00:00 +0800
 categories: [nus-course-review, y2s1]
 tags: [nus, course, review, y2s1]
@@ -20,8 +20,16 @@ math: true
 | [ES2660](https://nusmods.com/courses/ES2660/communicating-in-the-information-age) | Communicating in the Information Age | 4   |
 | [IS2218](https://nusmods.com/courses/IS2218/digital-platforms-for-business)       | Digital Platforms for Business       | 4   |
 | [ST2132](https://nusmods.com/courses/ST2132/mathematical-statistics)              | Mathematical Statistics              | 4   |
+| [CP3209](https://www.comp.nus.edu.sg/programmes/ug/project/urop/details/) | Undergraduate Research Project in Computing | 8 |
+
+Marks last checked against Canvas on **16 November 2026** for CS2102, CS2105, CS2106, CS3210, ES2660, IS2218 and ST2132. Unreleased marks remain `?`.
 
 ## CS2102 - Database Systems
+
+**Lecturers**: Christian von der Weth, Adi Yoga Sidi Prabawa  
+**TA**: Jerrell Lim Zhao Xun
+
+[Database systems resources](https://www.comp.nus.edu.sg/~adi-yoga/database/)
 
 
 | Component     | Weight  | Notes                                                | Max | Mean | Quartiles | marvinthang | Score (%) |
@@ -30,8 +38,8 @@ math: true
 | Project #2    | 10%     | Combined project mark posted under Schema            | 10  | ?    | ?         | 9           | 9%        |
 | Project #3    | 10%     | Stored procedures, triggers and test case            | ?   | ?    | ?         | ?           | ?         |
 | Assignment #1 | 5%      | SQL queries                                          | 5   | ?    | ?         | 5           | 5%        |
-| Assignment #2 | 5%      | Normalization                                        | 5   | ?    | ?         | ?           | ?         |
-| Midterm       | 25%     | Marks released on Softmark                           | 25  | ?    | ?         | 25          | 25%       |
+| Assignment #2 | 5%      | Normalization                                        | 5   | ?    | ?         | 4.5         | 4.5%      |
+| Midterm       | 25%     | Published on Canvas                                 | 25  | ?    | ?         | 25          | 25%       |
 | Final         | 40%     | Grade not posted                                     | 40  | ?    | ?         | ?           | ?         |
 | Tutorial      | Penalty | -1% for each absence beyond 2; attend 9/11           | ?   | ?    | ?         | ?           | ?         |
 
@@ -55,6 +63,9 @@ individual assignment ; submit on Canvas
 - **Venue:** Check the Registrar’s email or SMS for your assigned venue.
 
 ## CS2105 - Introduction to Computer Networks
+
+**Lecturers**: Zhou Lifeng, Jithin Vachery  
+**TAs**: Zhou Lifeng (Weeks 3–7), Nguyen Thai Binh (Weeks 9–13)
 
 | Component           | Weight       | Max | Mean  | Quartiles             | marvinthang | Score (%) |
 | ------------------- | ------------ | --- | ----- | --------------------- | ----------- | --------- |
@@ -96,6 +107,10 @@ Assignments 0 to 3 share the 20% assignment weight.
 
 ## CS2106 - Introduction to Operating Systems
 
+**Lecturers**: Jialin Li, Colin Tan Keng Yan  
+**Tutorial TA**: Chua Kee Chin  
+**Lab TA**: Ethan Wang Kang En
+
 
 | Component         | Weight | Notes                              | Max | Mean  | Quartiles             | marvinthang | Score (%) |
 | ----------------- | ------ | ---------------------------------- | --- | ----- | --------------------- | ----------- | --------- |
@@ -117,11 +132,15 @@ Assignments 0 to 3 share the 20% assignment weight.
 
 ## CS3210 - Parallel Computing
 
+**Lecturer**: Cristina Carbunaru  
+**TA**: Hrishikesh Sathyian
+
 | Component                | Weight | Notes                                      | Max | Mean  | Quartiles             | marvinthang | Score (%) |
 | ------------------------ | ------ | ------------------------------------------ | --- | ----- | --------------------- | ----------- | --------- |
-| Tutorial attendance      | 6%     | Attend at least 8 tutorials for full marks | ?   | ?     | ?                     | ?           | ?         |
+| Tutorial attendance      | 6%     | Attend at least 8 tutorials for full marks | 6   | ?    | ?                     | 6           | 6%        |
 | Tutorial report, Week 4  | 2%     | Individual; Tutorial 1 performance report  | 2   | 1.83  | 0 / 1.8 / 1.9 / 2 / 2 | 2           | 2%        |
 | Tutorial report, Week 11 | 2%     | Tutorial 8 report                          | 2   | 1.8   | 0 / 1.8 / 1.9 / 2 / 2 | 1.8         | 1.8%      |
+| Tutorial 11 report      | ?      | Final tutorial contribution not yet posted | 2   | 0.43  | 0 / 0 / 0 / 1 / 2     | 1.25        | ?         |
 | Programming Assignment 1 | 7%     | Code score                                 | 7   | 6.60  | 0 / 6.5 / 7 / 7 / 7   | 7           | 7%        |
 | Programming Assignment 2 | 7%     | Code score                                 | 7   | 6.44  | 0 / 7 / 7 / 7 / 7     | 7           | 7%        |
 | Programming Assignment 3 | 7%     | Pair or individual; not yet graded         | ?   | ?     | ?                     | ?           | ?         |
@@ -129,6 +148,8 @@ Assignments 0 to 3 share the 20% assignment weight.
 | Individual interview 2   | 7%     | Individual oral assessment                 | 7   | 6.33  | 5 / 6 / 6.5 / 7 / 7   | 7           | 7%        |
 | Midterm                  | 15%    | Week 8; in-person, open book               | 30  | 23.23 | 0 / 21 / 24 / 27 / 30 | 29          | 14.5%     |
 | Final                    | 40%    | In-person, open book                       | ?   | ?     | ?                     | ?           | ?         |
+
+The Tutorial 11 report score is listed separately from the Week 11 Tutorial 8 report. Canvas has not published the final tutorial score, so its additional weighted contribution is left uncalculated. [Canvas grades](https://canvas.nus.edu.sg/courses/96995/grades).
 
 ### Final exam (40%)
 
@@ -138,6 +159,8 @@ Assignments 0 to 3 share the 20% assignment weight.
 [Assessment page](https://canvas.nus.edu.sg/courses/96995/modules/items/820150) · [Timetable](https://api.nusmods.com/v2/2026-2027/modules/CS3210.json)
 
 ## ES2660 - Communicating in the Information Age
+
+**Instructor (G24)**: Chin Yen Looi
 
 
 | Component                      | Weight | Notes                                  | Max | Mean | Quartiles | marvinthang | Score (%) |
@@ -156,6 +179,8 @@ Assignments 0 to 3 share the 20% assignment weight.
 [Tutorial and submission reminder](https://canvas.nus.edu.sg/courses/94125/discussion_topics/513946)
 
 ## IS2218 - Digital Platforms for Business
+
+**Lecturer**: Vivek Sundar Magesh
 
 
 | Component                | Weight | Notes                                                     | Max | Mean  | Quartiles               | marvinthang | Score (%) |
@@ -193,6 +218,9 @@ Assignment 1 (Platform Thinking) and Assignment 4 (the survey) count towards cla
 
 ## ST2132 - Mathematical Statistics
 
+**Lecturer**: Yap Von Bing  
+**TA**: Gan Tong
+
 
 | Component       | Weight | Notes                                       | Max | Mean | Quartiles | marvinthang | Score (%) |
 | --------------- | ------ | ------------------------------------------- | --- | ---- | --------- | ----------- | --------- |
@@ -214,3 +242,27 @@ You will need to bring a laptop or a similar device. It will be locked from acce
 - **Materials:** Use the supplied formula list. Personal cheat sheets are prohibited.
 
 [Course overview](https://canvas.nus.edu.sg/courses/96178/modules/items/824072) · [Exam formula list](https://canvas.nus.edu.sg/courses/96178/modules/items/874189)
+
+## CP3209 - Undergraduate Research Project in Computing
+
+**Project**: Agentic AI  
+**Supervisor**: Bryan Kian Hsiang Low
+
+[UROP programme details](https://www.comp.nus.edu.sg/programmes/ug/project/urop/details/)
+
+## Teaching Assistant - CS2030S
+
+**Course**: Programming Methodology II  
+**Lecturers**: Adi Yoga Sidi Prabawa, Leong Wai Kay
+
+I also worked as a teaching assistant for CS2030S this semester. [Course materials](https://www.comp.nus.edu.sg/~adi-yoga/programming/)
+
+## CP2106 - Orbital
+
+**When**: Summer 2026  
+**Team**: nineteenthirtysix  
+**Teammate**: Lai Minh Quang  
+**Advisor**: Maahir Garg  
+**Project level**: Apollo 11
+
+I took Orbital over the summer. Our project focused on visualising concepts from CS2100 to help students learn computer organisation. Orbital is a four-unit independent software development project graded CS/CU. [Orbital programme](https://www.comp.nus.edu.sg/orbital/)
