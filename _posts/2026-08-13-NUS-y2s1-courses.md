@@ -22,7 +22,7 @@ math: true
 | [ST2132](https://nusmods.com/courses/ST2132/mathematical-statistics)              | Mathematical Statistics              | 4   |
 | [CP3209](https://www.comp.nus.edu.sg/programmes/ug/project/urop/details/) | Undergraduate Research Project in Computing | 8 |
 
-Marks last checked against Canvas on **16 November 2026** for CS2102, CS2105, CS2106, CS3210, ES2660, IS2218 and ST2132. Unreleased marks remain `?`.
+Marks last checked against Canvas on **27 November 2026** for CS2102, CS2105, CS2106, CS3210, ES2660, IS2218 and ST2132. Unreleased marks remain `?`, except for the CS2106 final score recorded from my own result below.
 
 ## CS2102 - Database Systems
 
@@ -69,15 +69,16 @@ individual assignment ; submit on Canvas
 
 | Component           | Weight       | Max | Mean  | Quartiles             | marvinthang | Score (%) |
 | ------------------- | ------------ | --- | ----- | --------------------- | ----------- | --------- |
-| Tutorial attendance | 7%           | ?   | ?     | ?                     | ?           | ?         |
+| Tutorial attendance | 7%           | 7   | 6.79  | 1 / 7 / 7 / 7 / 7     | 7           | 7%        |
 | Assignment 0        | 20% combined | 3   | 2.90  | 0 / 3 / 3 / 3 / 3     | 3           | 3         |
 | Assignment 1        |              | 8   | 7.92  | 0 / 8 / 8 / 8 / 8     | 8           | 8         |
-| Assignment 2        |              | 8   | ?     | ?                     | ?           | ?         |
-| Assignment 3        |              | 2   | ?     | ?                     | ?           | ?         |
+| Assignment 2        |              | 8   | 7.91  | 0 / 8 / 8 / 8 / 8     | 8           | 8         |
+| Assignment 3        |              | 2   | 1.92  | 0 / 2 / 2 / 2 / 2     | 2           | 2         |
+| Assignment Total    | 20% combined | 20  | 19.68 | 0 / 20 / 20 / 20 / 20 | 20          | 20%       |
 | Midterm             | 23%          | 23  | 18.47 | 3 / 17 / 19 / 21 / 23 | 21          | 21%       |
 | Final               | 50%          | ?   | ?     | ?                     | ?           | ?         |
 
-Assignments 0 to 3 share the 20% assignment weight.
+Assignments 0 to 3 share the 20% assignment weight. Canvas reports **20/20** for Assignment Total; the individual assignment rows are a breakdown and should not be added again. With **7/7** for tutorials and **21/23** for the midterm, the recorded pre-final contribution is **48/50**. [Canvas grades](https://canvas.nus.edu.sg/courses/93780/grades).
 
 ### Midterm
 
@@ -114,11 +115,15 @@ Assignments 0 to 3 share the 20% assignment weight.
 
 | Component         | Weight | Notes                              | Max | Mean  | Quartiles             | marvinthang | Score (%) |
 | ----------------- | ------ | ---------------------------------- | --- | ----- | --------------------- | ----------- | --------- |
-| Lecture quizzes   | 3%     | Quizzes 1–11                       | 46  | ?     | ?                     | 46          | ?         |
-| Tutorial          | 2%     | Attendance grade not posted        | ?   | ?     | ?                     | ?           | ?         |
-| 4 lab assignments | 20%    | Demo-based; lab grades not shown   | ?   | ?     | ?                     | ?           | ?         |
+| Lecture quizzes   | 3%     | Published Quiz Total; Quizzes 1–11 | 46  | ?     | ?                     | 46          | 3%        |
+| Tutorial          | 2%     | Published Roll Call Attendance    | 100 | 99.63 | 50 / 100 / 100 / 100 / 100 | 100      | 2%        |
+| 4 lab assignments | 20%    | Published Lab Total; 7/7 on each lab | 28 | 27.38 | 0 / 28 / 28 / 28 / 28 | 28          | 20%       |
 | Midterm           | 25%    | Published score                    | 40  | 27.04 | 0 / 21 / 28 / 34 / 40 | 40          | 25%       |
-| Final             | 50%    | 15 MCQs and 3 structured questions | 70  | ?     | ?                     | ?           | ?         |
+| Final             | 50%    | Self-reported result; not yet on Canvas | 70 | ? | ?                     | 66          | 47.14%    |
+
+Using my reported final result of **66/70**, the final contributes **47.14%** and the calculated overall score is **97.14%** (50% coursework + 66/70 × 50%). This is a calculated score, not a published overall grade.
+
+Lab scores: **7/7 each** for Labs 1–4. Class means are **6.80, 6.85, 6.87 and 6.87**, respectively; each lab has min/Q1/median/Q3/max of **0 / 7 / 7 / 7 / 7**. [Canvas grades](https://canvas.nus.edu.sg/courses/93785/grades).
 
 ### Final exam (50%)
 
@@ -140,16 +145,18 @@ Assignments 0 to 3 share the 20% assignment weight.
 | Tutorial attendance      | 6%     | Attend at least 8 tutorials for full marks | 6   | ?    | ?                     | 6           | 6%        |
 | Tutorial report, Week 4  | 2%     | Individual; Tutorial 1 performance report  | 2   | 1.83  | 0 / 1.8 / 1.9 / 2 / 2 | 2           | 2%        |
 | Tutorial report, Week 11 | 2%     | Tutorial 8 report                          | 2   | 1.8   | 0 / 1.8 / 1.9 / 2 / 2 | 1.8         | 1.8%      |
-| Tutorial 11 report      | ?      | Final tutorial contribution not yet posted | 2   | 0.43  | 0 / 0 / 0 / 1 / 2     | 1.25        | ?         |
+| Tutorial 11 report      | Included | Included in final tutorial total          | 2   | 0.43  | 0 / 0 / 0 / 1 / 2     | 1.25        | —         |
+| Assignment bonuses      | Included | Included in tutorial component            | 4   | ?     | ?                     | 1           | —         |
+| Total tutorial score    | 10% combined | Published total; do not add component rows again | 10 | 9.52 | 0 / 9.6 / 9.9 / 10 / 10 | 10      | 10%       |
 | Programming Assignment 1 | 7%     | Code score                                 | 7   | 6.60  | 0 / 6.5 / 7 / 7 / 7   | 7           | 7%        |
 | Programming Assignment 2 | 7%     | Code score                                 | 7   | 6.44  | 0 / 7 / 7 / 7 / 7     | 7           | 7%        |
-| Programming Assignment 3 | 7%     | Pair or individual; not yet graded         | ?   | ?     | ?                     | ?           | ?         |
+| Programming Assignment 3 | 7%     | Published code score                       | 7   | 6.69  | 0 / 7 / 7 / 7 / 7     | 7           | 7%        |
 | Individual interview 1   | 7%     | In-person oral assessment of Assignment 1  | 7   | 6.03  | 0 / 5.5 / 6 / 6.5 / 7 | 6           | 6%        |
 | Individual interview 2   | 7%     | Individual oral assessment                 | 7   | 6.33  | 5 / 6 / 6.5 / 7 / 7   | 7           | 7%        |
 | Midterm                  | 15%    | Week 8; in-person, open book               | 30  | 23.23 | 0 / 21 / 24 / 27 / 30 | 29          | 14.5%     |
 | Final                    | 40%    | In-person, open book                       | ?   | ?     | ?                     | ?           | ?         |
 
-The Tutorial 11 report score is listed separately from the Week 11 Tutorial 8 report. Canvas has not published the final tutorial score, so its additional weighted contribution is left uncalculated. [Canvas grades](https://canvas.nus.edu.sg/courses/96995/grades).
+Canvas has published the final tutorial score as **10/10**, contributing **10%** to the course grade. Attendance, tutorial reports and assignment bonuses are shown above as a breakdown; do not add them again to the published total. [Canvas grades](https://canvas.nus.edu.sg/courses/96995/grades).
 
 ### Final exam (40%)
 
